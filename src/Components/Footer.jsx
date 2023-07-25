@@ -1,0 +1,24 @@
+import React from "react";
+
+export default function Footer(){
+    return(
+        <>
+         <div className="home-container-footer about-container-footer">
+        <footer className="text-xs">© 2023 - all rights reserved</footer>
+        </div>
+        <div className="home-container-footer2 about-container-footer2">
+        <ul className="flex items-stretch gap-10 mx-10">
+            <li><a  href='https://www.youtube.com/watch?v=iYznuO2ANVk'><img className="max-h-5" src='src/assets/yt_logo_dark.png'></img></a></li>
+            <li><a  href='https://github.com/MattWaste'><img className="max-h-5" src='src/assets/github-mark.png'></img></a></li>
+            <li><a  href='https://mwdevices.gumroad.com/'><img className="max-h-5" src='src/assets/free-gumroad-7662442-6297428.png'></img></a></li>
+            <li><a  href='https://www.instagram.com/mwdevices/'><img className="max-h-5" src='src/assets/ig_logo_sm_png.png'></img></a></li>
+        </ul>
+        </div>
+        </>
+    )
+}
+
+
+
+
+
