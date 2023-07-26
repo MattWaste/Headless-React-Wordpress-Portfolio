@@ -3,9 +3,12 @@ import Person from "./scripts/Person"
 import ExampleReactComponent from "./scripts/ExampleReactComponent"
 import React from "react"
 import ReactDOM from "react-dom"
-import App from "./App.jsx"
+import { BrowserRouter } from 'react-router-dom'
+import App from "./scripts/App.jsx"
 
-const person1 = new Person("Brad")
-if (document.querySelector("#render-react-example-here")) {
-  ReactDOM.render(<App/>, document.querySelector("#render-react-example-here"))
-}
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <BrowserRouter>
+    <App/>
+  </BrowserRouter>
+  
+  )
