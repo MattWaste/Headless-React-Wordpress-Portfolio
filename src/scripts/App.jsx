@@ -7,7 +7,7 @@ import Dev from './Dev';
 
 function App() {
   return (
-  <div> fuck off
+  <div>
   <Routes>
     <Route  path="/" element={<HomePage/>}></Route>
     <Route  path="/contact" element={<Contact/>}></Route>   

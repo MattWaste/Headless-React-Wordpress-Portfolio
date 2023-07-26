@@ -6,7 +6,7 @@ import Footer from "./Footer";
 export default function HomePage(){
     return(
         <div className="pl-10 font-display home-container gap-5 ">
-        <video className="py-28 mr-5 home-container-header video-container"  src='src/assets/green portal 4.mp4'  autoPlay loop muted width="400px" height="300px" ></video>
+        <video className="py-28 mr-5 home-container-header video-container" src="src/public/greenportal4.mp4"   autoPlay loop muted width="400px" height="300px" ></video>
         <Header></Header>
         <div className="home-container-intro py-36">
         <h3 className="py-5">HELLO THERE</h3>
@@ -20,5 +20,3 @@ export default function HomePage(){
         </div>
     )
 }
-
-
