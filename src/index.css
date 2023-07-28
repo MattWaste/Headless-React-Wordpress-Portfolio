@@ -10,7 +10,7 @@ html,body,div{
   .video-container{
     max-height: 100%;
     overflow: hidden;
-    mask-image: url(./public/elipseExport.svg);
+    mask-image: url(http://mawtestsite.local/wp-content/uploads/2023/07/elipse_export.png);
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: contain;

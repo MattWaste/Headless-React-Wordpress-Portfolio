@@ -4084,7 +4084,7 @@ function About() {
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "about-container-header w-4/5 py-20  mr-  mt-10"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-    src: "src/assets/Mosaic transparent@2x.png"
+    src: "http://mawtestsite.local/wp-content/uploads/2023/07/Mosaic-transparent@2x.png"
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "about-container-intro py-64 px-10"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
@@ -4257,22 +4257,22 @@ function Footer() {
     href: "https://www.youtube.com/watch?v=iYznuO2ANVk"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     className: "max-h-5",
-    src: "src/assets/yt_logo_dark.png"
+    src: "http://mawtestsite.local/wp-content/uploads/2023/07/yt_logo_dark.png"
   }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: "https://github.com/MattWaste"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     className: "max-h-5",
-    src: "src/assets/github-mark.png"
+    src: "http://mawtestsite.local/wp-content/uploads/2023/07/github-mark.png"
   }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: "https://mwdevices.gumroad.com/"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     className: "max-h-5",
-    src: "src/assets/free-gumroad-7662442-6297428.png"
+    src: "http://mawtestsite.local/wp-content/uploads/2023/07/free-gumroad-7662442-6297428.png"
   }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: "https://www.instagram.com/mwdevices/"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     className: "max-h-5",
-    src: "src/assets/ig_logo_sm_png.png"
+    src: "http://mawtestsite.local/wp-content/uploads/2023/07/ig_logo_sm_png.png"
   }))))));
 }
 
@@ -4334,13 +4334,15 @@ function HomePage() {
     className: "pl-10 font-display home-container gap-5 "
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("video", {
     className: "py-28 mr-5 home-container-header video-container",
-    src: "src/public/greenportal4.mp4",
+    src: "http://mawtestsite.local/wp-content/uploads/2023/07/greenportal4.mp4",
     autoPlay: true,
     loop: true,
     muted: true,
     width: "400px",
     height: "300px"
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+    src: ""
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "home-container-intro py-36"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "py-5"

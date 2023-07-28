@@ -7,7 +7,7 @@ export default function About(){
         <div className="pl-10 font-display about-container gap-5  ">
         <Header></Header>
         <div className="about-container-header w-4/5 py-20  mr-  mt-10">
-            <img src="src/assets/Mosaic transparent@2x.png"></img>
+            <img src="http://mawtestsite.local/wp-content/uploads/2023/07/Mosaic-transparent@2x.png"></img>
         </div>
         <div className='about-container-intro py-64 px-10'>
             <p>
