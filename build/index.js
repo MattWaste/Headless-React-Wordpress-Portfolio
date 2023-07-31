@@ -4080,7 +4080,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function About() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "pl-10 font-display about-container gap-5  "
+    className: "pl-14 font-display about-container gap-5  "
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "about-container-header w-4/5 py-20  mr-  mt-10"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
@@ -4089,7 +4089,9 @@ function About() {
     className: "about-container-intro py-64 px-10"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "text-4xl"
-  }, "Matt West"), " is a life-long learner, a maker of digital imprints, and a designer of things. His work in music technology and web/application development have garnered thousands of users since 2015. Recent highlights include the release of the 'Shattered Delay' Audio Effect and the upcoming 'Muse' web app. ", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null), "He has worked at Ableton for over 8 years as a Brand Manager and product specalist and continues to make and produce music in a number of capacities. You can currently find Matt in Brooklyn New York, likely in his studio or on his bike.")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+  }, "Matt West"), " is a life-long learner, a maker of digital imprints, and a designer of things. His work in music technology and web/app development have garnered thousands of users since 2015. Recent highlights include the release of the 'Shattered Delay' Audio Effect and the upcoming 'Muse' web app. ", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null), "He has worked at Ableton for over 8 years as a Brand Manager and product specalist and continues to make and produce music in a number of capacities. You can currently find Matt in Brooklyn New York, likely in his studio or on his bike.")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    className: "bg-slate-100"
+  }));
 }
 
 /***/ }),
@@ -4112,7 +4114,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _HomePage_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HomePage.jsx */ "./src/scripts/HomePage.jsx");
 /* harmony import */ var _Contact_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Contact.jsx */ "./src/scripts/Contact.jsx");
 /* harmony import */ var _About_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./About.jsx */ "./src/scripts/About.jsx");
-/* harmony import */ var _Dev__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Dev */ "./src/scripts/Dev.jsx");
+/* harmony import */ var _Works__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Works */ "./src/scripts/Works.jsx");
 
 
 
@@ -4131,8 +4133,8 @@ function App() {
     path: "/about",
     element: (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_About_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], null)
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
-    path: "/dev",
-    element: (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Dev__WEBPACK_IMPORTED_MODULE_5__["default"], null)
+    path: "/Works",
+    element: (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Works__WEBPACK_IMPORTED_MODULE_5__["default"], null)
   })));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
@@ -4161,35 +4163,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function Contact() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "pl-10 font-display home-container gap-5 "
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
-}
-
-/***/ }),
-
-/***/ "./src/scripts/Dev.jsx":
-/*!*****************************!*\
-  !*** ./src/scripts/Dev.jsx ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Dev)
-/* harmony export */ });
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ "./src/scripts/Header.jsx");
-/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Footer */ "./src/scripts/Footer.jsx");
-
-
-
-
-function Dev() {
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "pl-10 font-display home-container gap-5 "
+    className: "pl-14 font-display home-container gap-5 "
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
 }
 
@@ -4295,7 +4269,7 @@ function Header() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "home-container-header about-container-header"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("ul", {
-    className: "flex items-stretch gap-10 mx-4 "
+    className: "flex items-stretch gap-10 mx-4 my-5 "
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: "/"
   }, "Home")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
@@ -4303,8 +4277,8 @@ function Header() {
   }, "Contact")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: "/about"
   }, "About")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
-    href: "/dev"
-  }, "Dev"))));
+    href: "/Works"
+  }, "Works"))));
 }
 
 /***/ }),
@@ -4331,9 +4305,9 @@ __webpack_require__.r(__webpack_exports__);
 
 function HomePage() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "pl-10 font-display home-container gap-5 "
+    className: "pl-14 font-display home-container gap-5 "
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("video", {
-    className: "py-28 mr-5 home-container-header video-container",
+    className: "py-40 pr-4  home-container-header video-container",
     src: "http://mawtestsite.local/wp-content/uploads/2023/07/greenportal4.mp4",
     autoPlay: true,
     loop: true,
@@ -4343,7 +4317,7 @@ function HomePage() {
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     src: ""
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "home-container-intro py-36"
+    className: "home-container-intro py-44"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "py-5"
   }, "HELLO THERE"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", {
@@ -4380,6 +4354,34 @@ class Person {
   }
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Person);
+
+/***/ }),
+
+/***/ "./src/scripts/Works.jsx":
+/*!*******************************!*\
+  !*** ./src/scripts/Works.jsx ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Works)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ "./src/scripts/Header.jsx");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Footer */ "./src/scripts/Footer.jsx");
+
+
+
+
+function Works() {
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "pl-14 font-display home-container gap-5 "
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+}
 
 /***/ }),
 
