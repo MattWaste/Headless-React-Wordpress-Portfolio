@@ -116,7 +116,6 @@ html,body,div{
   position: absolute;
   /* box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2); */
   z-index: 1;
-  padding-top: 2px;
 }
 
 /* Links inside the dropdown */
@@ -127,7 +126,8 @@ html,body,div{
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #8aab76}
+/* .dropdown-content a:hover {background-color: #8aab76} */
+ 
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -136,5 +136,5 @@ html,body,div{
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  color: violet-600 ;
 }

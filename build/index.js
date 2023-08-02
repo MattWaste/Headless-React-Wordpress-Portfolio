@@ -4247,6 +4247,11 @@ function Footer() {
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     className: "max-h-5",
     src: "http://mawtestsite.local/wp-content/uploads/2023/07/ig_logo_sm_png.png"
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    href: "https://www.linkedin.com/in/matthew-west-profile/"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+    className: "max-h-5",
+    src: "http://mawtestsite.local/wp-content/uploads/2023/08/linkedin-logo.png"
   }))))));
 }
 
@@ -4267,28 +4272,39 @@ __webpack_require__.r(__webpack_exports__);
 
 function Header() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "home-container-header about-container-header"
+    className: "home-container-header about-container-header text-lg"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("ul", {
-    className: "flex items-stretch gap-10 mx-4 my-5 "
+    className: "flex items-stretch gap-10 mx-4 my-5"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    className: " hover:text-violet-600",
     href: "/"
   }, "Home")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    className: " hover:text-violet-600",
     href: "/contact"
   }, "Contact")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    className: " hover:text-violet-600",
     href: "/about"
   }, "About")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "dropdown"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "dropbtn"
-  }, "Work"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "dropbtn  hover:text-violet-600"
+  }, " ", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    href: "/works"
+  }, "Works ", `\u25BC`)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "dropdown-content"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    className: "hover:text-violet-600",
     href: "#"
-  }, " Link1"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+  }, " MW Devices"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    className: "hover:text-violet-600",
     href: "#"
-  }, " Link2"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+  }, " Dev"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    className: "hover:text-violet-600",
     href: "#"
-  }, " Link3")))));
+  }, " Design"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    className: "hover:text-violet-600",
+    href: "#"
+  }, " Music")))));
 }
 
 /***/ }),

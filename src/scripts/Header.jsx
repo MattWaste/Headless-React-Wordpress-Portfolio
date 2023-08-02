@@ -2,17 +2,18 @@
 export default function Header(){
     return(
        
-        <div className="home-container-header about-container-header">
-            <ul className="flex items-stretch gap-10 mx-4 my-5 "> 
-                <li><a href="/">Home</a></li>
-                <li><a href="/contact">Contact</a></li>
-                <li><a href="/about">About</a></li>
+        <div className="home-container-header about-container-header text-lg">
+            <ul className="flex items-stretch gap-10 mx-4 my-5"> 
+                <li><a className=" hover:text-violet-600"  href="/">Home</a></li>
+                <li><a className=" hover:text-violet-600" href="/contact">Contact</a></li>
+                <li><a className=" hover:text-violet-600" href="/about">About</a></li>
                 <div className="dropdown">
-                    <button className="dropbtn">Work</button>
+                    <button className="dropbtn  hover:text-violet-600"> <a href="/works">Works {`\u25BC`}</a></button>
                     <div className="dropdown-content">
-                    <a href='#'> Link1</a>
-                    <a href='#'> Link2</a>
-                    <a href='#'> Link3</a>
+                    <a className="hover:text-violet-600" href='#'> MW Devices</a>
+                    <a className="hover:text-violet-600" href='#'> Dev</a>
+                    <a className="hover:text-violet-600" href='#'> Design</a>
+                    <a className="hover:text-violet-600" href='#'> Music</a>
                 </div>
                 </div>
             </ul>
