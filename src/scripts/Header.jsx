@@ -13,7 +13,7 @@ export default function Header(){
                     <a className="hover:text-violet-600" href='#'> MW Devices</a>
                     <a className="hover:text-violet-600" href='#'> Dev</a>
                     <a className="hover:text-violet-600" href='#'> Design</a>
-                    <a className="hover:text-violet-600" href='#'> Music</a>
+                    <a className="hover:text-violet-600" href={'http://mawtestsite.local/works#music'}> Music</a>
                 </div>
                 </div>
             </ul>

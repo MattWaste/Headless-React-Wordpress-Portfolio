@@ -4303,7 +4303,7 @@ function Header() {
     href: "#"
   }, " Design"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     className: "hover:text-violet-600",
-    href: "#"
+    href: 'http://mawtestsite.local/works#music'
   }, " Music")))));
 }
 
@@ -4405,8 +4405,17 @@ __webpack_require__.r(__webpack_exports__);
 
 function Works() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "pl-14 font-display home-container gap-5 "
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+    className: "pl-14 font-display works-container gap-5 "
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: " .home-container-intro text-4xl"
+  }, "MW Devices"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: " .home-container-intro text-4xl"
+  }, "Dev"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: " .home-container-intro text-4xl"
+  }, "Design"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    id: "music",
+    className: ".home-container-intro text-4xl"
+  }, "Music")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
 }
 
 /***/ }),
