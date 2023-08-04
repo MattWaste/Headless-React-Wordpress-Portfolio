@@ -6,7 +6,7 @@ export default function Works(){
     return(
         <div className="pl-14 font-display works-container gap-5 ">
         <Header></Header>
-        <div>
+        <div className="works-container-main">
             <div className=" .home-container-intro text-4xl">MW Devices</div>
             <div className=" .home-container-intro text-4xl">Dev</div>
             <div className=" .home-container-intro text-4xl">Design</div>

@@ -97,6 +97,17 @@ html,body,div{
 
   .works-container{
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer'
+    ;
+  }
+
+  .works-container-main{
+    grid-area: main;
   }
   
   /*  */  /*  */   /*  */ /*  */
