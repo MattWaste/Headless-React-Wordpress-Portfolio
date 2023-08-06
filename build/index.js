@@ -4082,7 +4082,7 @@ function About() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "pl-14 font-display about-container gap-5  "
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "about-container-header w-4/5 py-32    mt-10"
+    className: "about-container-main2 w-4/5 py-32    mt-10"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     src: "http://mawtestsite.local/wp-content/uploads/2023/07/Mosaic-transparent@2x.png"
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -4224,7 +4224,7 @@ function Footer() {
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("footer", {
     className: "text-xs"
   }, "\xA9 2023 - all rights reserved")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "home-container-footer2 about-container-footer2"
+    className: "home-container-footer2 about-container-footer2 works-container-footer2"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("ul", {
     className: "flex items-stretch gap-10 mx-10"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
@@ -4272,7 +4272,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function Header() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "home-container-header about-container-header text-lg"
+    className: "home-container-header about-container-header works-container-header text-lg"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("ul", {
     className: "flex items-stretch gap-10 mx-8 my-5"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
@@ -4333,7 +4333,7 @@ function HomePage() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "pl-14 font-display home-container gap-5 "
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("video", {
-    className: "py-40 pr-4  home-container-header video-container",
+    className: "py-40 pr-4  home-container-main2 video-container",
     src: "http://mawtestsite.local/wp-content/uploads/2023/07/greenportal4.mp4",
     autoPlay: true,
     loop: true,
