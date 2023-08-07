@@ -16,7 +16,7 @@ export default function About(){
              He has worked at Ableton for over 8 years as a Brand Manager and product specalist and continues to make and produce music in a number of capacities. You can currently find Matt in Brooklyn New York, likely in his studio or on his bike.
             </p>
         </div>
-        <Footer className="bg-slate-100"></Footer>
+        <Footer></Footer>
         </div>
     )
 }
