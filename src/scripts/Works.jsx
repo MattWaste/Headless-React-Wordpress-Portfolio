@@ -2,6 +2,8 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import ImageSlider from "./ImageSlider";
+import Slider from './Slider';
+import slides from './mock.json';
 
 
 export default function Works(){
@@ -11,7 +13,7 @@ export default function Works(){
         <div className="works-container-main no-scrollbar">
             <div id='mwdevices' className=" .works-container-intro text-4xl">MW Devices
             <p className="text-xl">Hi There</p>
-            <ImageSlider className ='ml-4'></ImageSlider>
+            <Slider slides={slides}></Slider>
             </div>    
             <div id='dev' className=" .works-container-intro text-4xl">Dev</div>
             <div id='design' className=" .works-container-intro text-4xl">Design</div>

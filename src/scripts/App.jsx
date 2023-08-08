@@ -4,6 +4,7 @@ import HomePage from  "./HomePage.jsx";
 import Contact from './Contact.jsx';
 import About from './About.jsx';
 import Works from './Works';
+import Test from './Test';
 
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
     <Route  path="/" element={<HomePage/>}></Route>
     <Route  path="/contact" element={<Contact/>}></Route>   
     <Route  path="/about" element={<About/>}></Route>   
-    <Route  path="/Works" element={<Works/>}></Route>   
+    <Route  path="/Works" element={<Works/>}></Route>
+    <Route  path='/test' element={<Test/>}></Route>    
   </Routes>
    </div>
 )}

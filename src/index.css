@@ -26,6 +26,8 @@ html,body,div{
   }
   body{
     background:#728c62;
+      position: relative;
+  height: 100%;
   }
 
   .video-container{

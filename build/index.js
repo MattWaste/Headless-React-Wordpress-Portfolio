@@ -4108,11 +4108,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var _HomePage_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HomePage.jsx */ "./src/scripts/HomePage.jsx");
 /* harmony import */ var _Contact_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Contact.jsx */ "./src/scripts/Contact.jsx");
 /* harmony import */ var _About_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./About.jsx */ "./src/scripts/About.jsx");
 /* harmony import */ var _Works__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Works */ "./src/scripts/Works.jsx");
+/* harmony import */ var _Test__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Test */ "./src/scripts/Test.jsx");
+
 
 
 
@@ -4121,18 +4123,21 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function App() {
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Routes, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Routes, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
     path: "/",
     element: (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_HomePage_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null)
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
     path: "/contact",
     element: (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Contact_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], null)
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
     path: "/about",
     element: (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_About_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], null)
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
     path: "/Works",
     element: (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Works__WEBPACK_IMPORTED_MODULE_5__["default"], null)
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+    path: "/test",
+    element: (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Test__WEBPACK_IMPORTED_MODULE_6__["default"], null)
   })));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
@@ -4377,6 +4382,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! swiper/css */ "./node_modules/swiper/swiper.css");
 /* harmony import */ var swiper_css_pagination__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! swiper/css/pagination */ "./node_modules/swiper/modules/pagination.css");
 /* harmony import */ var swiper_css_navigation__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! swiper/css/navigation */ "./node_modules/swiper/modules/navigation.css");
+/* harmony import */ var swiper_css_scrollbar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! swiper/css/scrollbar */ "./node_modules/swiper/modules/scrollbar.css");
+
 
 
 
@@ -4399,9 +4406,9 @@ function ImageSlider() {
       clickable: true
     },
     navigation: true,
-    modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_3__.Autoplay, swiper_modules__WEBPACK_IMPORTED_MODULE_3__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_3__.Navigation],
+    modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_3__.Autoplay, swiper_modules__WEBPACK_IMPORTED_MODULE_3__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_3__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_3__.Scrollbar],
     className: "mySwiper"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(swiper_react__WEBPACK_IMPORTED_MODULE_2__.SwiperSlide, null, "fuck off"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(swiper_react__WEBPACK_IMPORTED_MODULE_2__.SwiperSlide, null, "Slide 2"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(swiper_react__WEBPACK_IMPORTED_MODULE_2__.SwiperSlide, null, "Slide 3"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(swiper_react__WEBPACK_IMPORTED_MODULE_2__.SwiperSlide, null, "Slide 4"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(swiper_react__WEBPACK_IMPORTED_MODULE_2__.SwiperSlide, null, "Slide 5"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(swiper_react__WEBPACK_IMPORTED_MODULE_2__.SwiperSlide, null, "Slide 6"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(swiper_react__WEBPACK_IMPORTED_MODULE_2__.SwiperSlide, null, "Slide 7"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(swiper_react__WEBPACK_IMPORTED_MODULE_2__.SwiperSlide, null, "Slide 8"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(swiper_react__WEBPACK_IMPORTED_MODULE_2__.SwiperSlide, null, "Slide 9"));
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(swiper_react__WEBPACK_IMPORTED_MODULE_2__.SwiperSlide, null, "fuck off"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(swiper_react__WEBPACK_IMPORTED_MODULE_2__.SwiperSlide, null, "where is the second slide"));
 }
 
 /***/ }),
@@ -4429,6 +4436,67 @@ class Person {
 
 /***/ }),
 
+/***/ "./src/scripts/Slider.jsx":
+/*!********************************!*\
+  !*** ./src/scripts/Slider.jsx ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Slider)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/react */ "./node_modules/swiper/swiper-react.mjs");
+/* harmony import */ var _Users_matthewwest_Local_Sites_mawtestsite_app_public_wp_content_themes_brads_boilerplate_theme_tailwind_node_modules_swiper_swiper_bundle_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/swiper/swiper-bundle.min.css */ "./node_modules/swiper/swiper-bundle.min.css");
+
+
+
+function Slider(_ref) {
+  let {
+    slides
+  } = _ref;
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(swiper_react__WEBPACK_IMPORTED_MODULE_1__.Swiper, {
+    spaceBetween: 50,
+    slidesPerView: 3,
+    onSlideChange: () => console.log('slide change'),
+    onSwiper: swiper => console.log(swiper)
+  }, slides.map(slide => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(swiper_react__WEBPACK_IMPORTED_MODULE_1__.SwiperSlide, {
+    key: slide.image
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+    src: slide.image,
+    alt: slide.title
+  }))));
+}
+
+/***/ }),
+
+/***/ "./src/scripts/Test.jsx":
+/*!******************************!*\
+  !*** ./src/scripts/Test.jsx ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Test)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Slider */ "./src/scripts/Slider.jsx");
+/* harmony import */ var _mock_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./mock.json */ "./src/scripts/mock.json");
+
+
+
+function Test() {
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Slider__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    slides: _mock_json__WEBPACK_IMPORTED_MODULE_2__
+  }));
+}
+
+/***/ }),
+
 /***/ "./src/scripts/Works.jsx":
 /*!*******************************!*\
   !*** ./src/scripts/Works.jsx ***!
@@ -4446,6 +4514,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ "./src/scripts/Header.jsx");
 /* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Footer */ "./src/scripts/Footer.jsx");
 /* harmony import */ var _ImageSlider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ImageSlider */ "./src/scripts/ImageSlider.jsx");
+/* harmony import */ var _Slider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Slider */ "./src/scripts/Slider.jsx");
+/* harmony import */ var _mock_json__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./mock.json */ "./src/scripts/mock.json");
+
+
 
 
 
@@ -4461,8 +4533,8 @@ function Works() {
     className: " .works-container-intro text-4xl"
   }, "MW Devices", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "text-xl"
-  }, "Hi There"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_ImageSlider__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: "ml-4"
+  }, "Hi There"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Slider__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    slides: _mock_json__WEBPACK_IMPORTED_MODULE_6__
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     id: "dev",
     className: " .works-container-intro text-4xl"
@@ -4493,6 +4565,30 @@ __webpack_require__.r(__webpack_exports__);
 /*!****************************************************!*\
   !*** ./node_modules/swiper/modules/pagination.css ***!
   \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./node_modules/swiper/modules/scrollbar.css":
+/*!***************************************************!*\
+  !*** ./node_modules/swiper/modules/scrollbar.css ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./node_modules/swiper/swiper-bundle.min.css":
+/*!***************************************************!*\
+  !*** ./node_modules/swiper/swiper-bundle.min.css ***!
+  \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -17774,6 +17870,16 @@ SwiperSlide.displayName = 'SwiperSlide';
 
 
 
+
+/***/ }),
+
+/***/ "./src/scripts/mock.json":
+/*!*******************************!*\
+  !*** ./src/scripts/mock.json ***!
+  \*******************************/
+/***/ ((module) => {
+
+module.exports = JSON.parse('[{"image":"https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/8I37NtDffNV7AZlDa7uDvvqhovU.jpg","title":"Avatar: The Way of Water","subTitle":"Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.","interval":1500},{"image":"https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/bQXAqRx2Fgc46uCVWgoPz5L5Dtr.jpg","title":"Black Adam","subTitle":"Nearly 5,000 years after he was bestowed with the almighty powers of the Egyptian gods—and imprisoned just as quickly—Black Adam is freed from his earthly tomb, ready to unleash his unique form of justice on the modern world.","interval":500},{"image":"https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/yYrvN5WFeGYjJnRzhY0QXuo4Isw.jpg","title":"Black Panther: Wakanda Forever","subTitle":"Queen Ramonda, Shuri, M’Baku, Okoye and the Dora Milaje fight to protect their nation from intervening world powers in the wake of King T’Challa’s death. As the Wakandans strive to embrace their next chapter, the heroes must band together with the help of War Dog Nakia and Everett Ross and forge a new path for the kingdom of Wakanda.","interval":2500}]');
 
 /***/ })
 
