@@ -4470,10 +4470,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ "./src/scripts/Header.jsx");
 /* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Footer */ "./src/scripts/Footer.jsx");
-Object(function webpackMissingModule() { var e = new Error("Cannot find module './ImageSlider'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-/* harmony import */ var _Slider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Slider */ "./src/scripts/Slider.jsx");
-/* harmony import */ var _mock_json__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./mock.json */ "./src/scripts/mock.json");
-
+/* harmony import */ var _Slider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Slider */ "./src/scripts/Slider.jsx");
+/* harmony import */ var _mock_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./mock.json */ "./src/scripts/mock.json");
 
 
 
@@ -4499,9 +4497,9 @@ function Works() {
   }, "Design"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     id: "music",
     className: ".works-container-intro text-4xl"
-  }, "Music"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Slider__WEBPACK_IMPORTED_MODULE_5__.Slider, {
+  }, "Music"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Slider__WEBPACK_IMPORTED_MODULE_4__.Slider, {
     className: ".works-container-main2",
-    slides: _mock_json__WEBPACK_IMPORTED_MODULE_6__
+    slides: _mock_json__WEBPACK_IMPORTED_MODULE_5__
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
 }
 

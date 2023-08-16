@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import ImageSlider from "./ImageSlider";
 import {Slider} from './Slider';
 import slides from './mock.json';
 
