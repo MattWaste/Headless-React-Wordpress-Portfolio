@@ -1,14 +1,12 @@
 import {Swiper, SwiperSlide} from "swiper/react";
-import '/Users/matthewwest/Local Sites/mawtestsite/app/public/wp-content/themes/brads-boilerplate-theme-tailwind/node_modules/swiper/swiper-bundle.min.css';
+import '/Users/matthewwest/Documents/Important Files/Personal/Programming/vite React Projects/sliderTest/node_modules/swiper/swiper.css';
+import '/Users/matthewwest/Local Sites/mawtestsite/app/public/wp-content/themes/brads-boilerplate-theme-tailwind/node_modules/swiper/modules/navigation.css';
 
-export default function Slider({ slides }){
+import { Navigation } from 'swiper/modules';
+
+export const Slider = ({ slides }) => {
   return (
-    <Swiper
-      spaceBetween={50}
-      slidesPerView={3}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
+    <Swiper navigation={true} modules={[Navigation]}  slidesPerView={1} className="mySwiper">
       {slides.map((slide) => (
         <SwiperSlide key={slide.image}>
           <img src={slide.image} alt={slide.title}/>
@@ -16,5 +14,5 @@ export default function Slider({ slides }){
       ))}
     </Swiper>
   )
-
 }
+
