@@ -1,5 +1,5 @@
 import {Swiper, SwiperSlide} from "swiper/react";
-import '/Users/matthewwest/Documents/Important Files/Personal/Programming/vite React Projects/sliderTest/node_modules/swiper/swiper.css';
+import '/Users/matthewwest/Local Sites/mawtestsite/app/public/wp-content/themes/brads-boilerplate-theme-tailwind//node_modules/swiper/swiper.css';
 import '/Users/matthewwest/Local Sites/mawtestsite/app/public/wp-content/themes/brads-boilerplate-theme-tailwind/node_modules/swiper/modules/navigation.css';
 
 import { Navigation } from 'swiper/modules';
