@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer(){
     return(
         <>
-         <div className="home-container-footer about-container-footer">
+         <div className="home-container-footer about-container-footer works-container-footer">
         <footer className="text-xs">© 2023 - all rights reserved</footer>
         </div>
         <div className="home-container-footer2 about-container-footer2 works-container-footer2">

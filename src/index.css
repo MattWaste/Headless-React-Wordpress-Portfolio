@@ -130,20 +130,32 @@ html,body,div{
     'footer footer1 footer2';
   }
 
+  .works-container-new{
+    display:grid;
+    grid-template-rows: 1fr 20fr 1fr;
+    padding-bottom:10px;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';  
+  }
+
   .works-container-main{
     grid-area: main;
-    overflow: auto;
+    overflow: visible;
     grid-column:intro/main2;
   }
   .works-container-intro{
     grid-area: intro;
-    overflow: hidden;
+    overflow:hidden;
+    grid-column: 1/span 3 ;
   }  
   .works-container-header{
     grid-area:header2;
   }
   .works-container-footer{
     grid-area: footer;
+    background-color: #728c62;
   }  
 
 .works-container-main2{
@@ -152,6 +164,23 @@ html,body,div{
   overflow: auto;
 }  
 
+.works-container-MWDevices{
+  display :grid;
+  grid-template-columns: .75fr .75fr .75fr;
+  grid-template-areas:'sect1 sect2 sect3';
+
+}
+
+.works-container-MWDevices-sect1{
+  grid-area: sect1;
+  overflow:hidden;
+
+}
+.works-container-MWDevices-sect2{
+  grid-area: sect2;
+  overflow:visible;
+
+}
 
 
   /*  */  /*  */   /*  */ /*  */
@@ -205,27 +234,6 @@ html,body,div{
   /*  */  /*  */   /*  */ /*  */
 
 
-  swiper {
-    width: 20%;
-    height: 20%;
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-  
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: left;
-    align-items: center;
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 25%;
-    height: 25%;
-    object-fit: contain ;
-  }
   
   .rightChevron {
     left:20rem;

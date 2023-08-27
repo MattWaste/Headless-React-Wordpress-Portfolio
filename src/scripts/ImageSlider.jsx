@@ -51,7 +51,7 @@ export default function ImageSlider(props){
     return(
         <div
           style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-          className={`w-full h-full ${cssClass} ${marginLeft} ${marginRight} ${marginBottom} ${marginTop} ${marginAll} overflow-hidden relative max-w-[400px] max-h-[250px] duration-500 bg-center bg-cover rounded-2xl`}
+          className={`w-full h-full ${cssClass} ${marginLeft} ${marginRight} ${marginBottom} ${marginTop} ${marginAll} max-w-100% overflow-hidden relative max-w-[400px] max-h-[250px] duration-500 bg-center bg-cover rounded-2xl`}
         >
         <div className = ' rightChevron absolute top-[50%] text-2xl rounded-full p-2 text-white cursor-pointer'>
             <BsChevronCompactRight onClick={nextSlide} size={30}></BsChevronCompactRight>
