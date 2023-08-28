@@ -4382,7 +4382,7 @@ function ImageSlider(props) {
     style: {
       backgroundImage: `url(${slides[currentIndex].url})`
     },
-    className: `w-full h-full ${cssClass} ${marginLeft} ${marginRight} ${marginBottom} ${marginTop} ${marginAll} max-w-100% overflow-hidden relative max-w-[400px] max-h-[250px] duration-500 bg-center bg-cover rounded-2xl`
+    className: `w-full h-full ${cssClass} ${marginLeft} ${marginRight} ${marginBottom} ${marginTop} ${marginAll} overflow-hidden relative max-w-[400px] max-h-[250px] duration-500 bg-center bg-cover rounded-2xl`
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: " rightChevron absolute top-[50%] text-2xl rounded-full p-2 text-white cursor-pointer"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(react_icons_bs__WEBPACK_IMPORTED_MODULE_2__.BsChevronCompactRight, {
@@ -4453,15 +4453,15 @@ function Works() {
     id: "mwdevices",
     className: "text-4xl mb-20 rounded-lg works-container-MWDevices  bg-[#62878C]"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", {
-    className: "works-container-MWDevices-sect1"
+    className: "px-24 mt-14 works-container-MWDevices-sect1"
   }, "MW Devices"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-    className: "mt-4 text-base center works-container-MWDevices-sect1"
+    className: "px-24 mt-24 text-xl center works-container-MWDevices-sect1"
   }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum tristique mi at dignissim. In ac risus non nulla imperdiet molestie. Nulla ut augue id lectus sodales ultricies eget quis lectus. Vestibulum a leo nibh. Aliquam pulvinar, dolor a consectetur bibendum, eros sapien vehicula elit, in pharetra nisi magna eu leo. Integer fringilla ante aliquam orci commodo rhoncus. Suspendisse pulvinar rhoncus augue, vel elementum mi condimentum et. Nam pretium, mi vitae consequat volutpat, enim ligula elementum odio, nec sodales nisi est non tortor. Vestibulum lacinia sit amet elit in semper. Aliquam enim risus, aliquam non nulla et, vulputate porttitor dui. Aenean sit amet hendrerit turpis. Curabitur vitae vehicula ipsum. "), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-    className: "mt-4 text-base center works-container-MWDevices-sect3"
+    className: "px-24 mt-24 text-xl center works-container-MWDevices-sect3"
   }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum tristique mi at dignissim. In ac risus non nulla imperdiet molestie. Nulla ut augue id lectus sodales ultricies eget quis lectus. Vestibulum a leo nibh. Aliquam pulvinar, dolor a consectetur bibendum, eros sapien vehicula elit, in pharetra nisi magna eu leo. Integer fringilla ante aliquam orci commodo rhoncus. Suspendisse pulvinar rhoncus augue, vel elementum mi condimentum et. Nam pretium, mi vitae consequat volutpat, enim ligula elementum odio, nec sodales nisi est non tortor. Vestibulum lacinia sit amet elit in semper. Aliquam enim risus, aliquam non nulla et, vulputate porttitor dui. Aenean sit amet hendrerit turpis. Curabitur vitae vehicula ipsum. "), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_ImageSlider_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
     cssClass: "works-container-MWDevices-sect2",
     marginLeft: "ml-10",
-    marginTop: "mt-10"
+    marginTop: "mt-48"
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     id: "dev",
     className: " .works-container-intro text-4xl"

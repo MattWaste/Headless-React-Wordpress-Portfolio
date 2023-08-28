@@ -133,7 +133,6 @@ html,body,div{
   .works-container-new{
     display:grid;
     grid-template-rows: 1fr 20fr 1fr;
-    padding-bottom:10px;
     grid-template-areas: 
     'header'
     'main'
@@ -165,7 +164,7 @@ html,body,div{
 }  
 
 .works-container-MWDevices{
-  display :grid;
+  display: grid;
   grid-template-columns: .75fr .75fr .75fr;
   grid-template-areas:'sect1 sect2 sect3';
 
@@ -237,6 +236,5 @@ html,body,div{
   
   .rightChevron {
     left:20rem;
-    position:absolute;
     z-index: 1;
   }
