@@ -155,7 +155,10 @@ html,body,div{
   .works-container-footer{
     grid-area: footer;
     background-color: #728c62;
+    grid-column: footer/footer2;
   }  
+
+
 
 .works-container-main2{
   grid-area: main2;
@@ -167,6 +170,8 @@ html,body,div{
   display: grid;
   grid-template-columns: .75fr .75fr .75fr;
   grid-template-areas:'sect1 sect2 sect3';
+  overflow: hidden;
+  background-color:#62878C;
 
 }
 

@@ -4191,7 +4191,7 @@ function Footer() {
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("footer", {
     className: "text-xs"
   }, "\xA9 2023 - all rights reserved")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "home-container-footer2 about-container-footer2 works-container-footer2"
+    className: "home-container-footer2 about-container-footer2 "
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("ul", {
     className: "flex items-stretch gap-10 mx-10"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
@@ -4298,9 +4298,9 @@ __webpack_require__.r(__webpack_exports__);
 
 function HomePage() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "pl-14 font-display home-container gap-5 "
+    className: "gap-5 pl-14 font-display home-container "
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("video", {
-    className: "py-40 pr-4  home-container-main2 video-container",
+    className: "py-40 pr-4 home-container-main2 video-container",
     src: "http://mawtestsite.local/wp-content/uploads/2023/07/greenportal4.mp4",
     autoPlay: true,
     loop: true,
@@ -4314,9 +4314,9 @@ function HomePage() {
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "py-5"
   }, "HELLO THERE"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", {
-    className: "text-4xl py-3"
+    className: "py-3 text-4xl"
   }, "I'm Matt West"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", {
-    className: "text-2xl py-3"
+    className: "py-3 text-2xl"
   }, "  Creative technologist, developer, and brand extoller"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "py-3"
   }, " I wear many hats both figuratively and literally. I code and design modern web applications, music tools, and a few things in-between. I've been involved in music production for 10+ years and love to champion the tools that help me each day."), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
@@ -4446,32 +4446,62 @@ __webpack_require__.r(__webpack_exports__);
 
 function Works() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "gap-5 pl-14 font-display works-container "
+    className: "gap-5 font-display works-container "
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "mt-10 mr-10 works-container-intro no-scrollbar"
+    className: "mt-20 mr-10 works-container-intro "
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     id: "mwdevices",
-    className: "text-4xl mb-20 rounded-lg works-container-MWDevices  bg-[#62878C]"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", {
-    className: "px-24 mt-14 works-container-MWDevices-sect1"
+    className: "mb-20 text-4xl rounded-lg works-container-MWDevices"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", {
+    className: "px-24 mt-8 works-container-MWDevices-sect1"
   }, "MW Devices"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "px-24 mt-24 text-xl center works-container-MWDevices-sect1"
-  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum tristique mi at dignissim. In ac risus non nulla imperdiet molestie. Nulla ut augue id lectus sodales ultricies eget quis lectus. Vestibulum a leo nibh. Aliquam pulvinar, dolor a consectetur bibendum, eros sapien vehicula elit, in pharetra nisi magna eu leo. Integer fringilla ante aliquam orci commodo rhoncus. Suspendisse pulvinar rhoncus augue, vel elementum mi condimentum et. Nam pretium, mi vitae consequat volutpat, enim ligula elementum odio, nec sodales nisi est non tortor. Vestibulum lacinia sit amet elit in semper. Aliquam enim risus, aliquam non nulla et, vulputate porttitor dui. Aenean sit amet hendrerit turpis. Curabitur vitae vehicula ipsum. "), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum tristique mi at dignissim. In ac risus non nulla imperdiet molestie. Nulla ut augue id lectus sodales ultricies eget quis lectus. Vestibulum a leo nibh. Aliquam pulvinar, dolor a consectetur bibendum, eros sapien vehicula elit, in pharetra nisi magna eu leo. Integer fringilla ante aliquam orci commodo rhoncus. Suspendisse pulvinar  "), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "px-24 mt-24 text-xl center works-container-MWDevices-sect3"
-  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum tristique mi at dignissim. In ac risus non nulla imperdiet molestie. Nulla ut augue id lectus sodales ultricies eget quis lectus. Vestibulum a leo nibh. Aliquam pulvinar, dolor a consectetur bibendum, eros sapien vehicula elit, in pharetra nisi magna eu leo. Integer fringilla ante aliquam orci commodo rhoncus. Suspendisse pulvinar rhoncus augue, vel elementum mi condimentum et. Nam pretium, mi vitae consequat volutpat, enim ligula elementum odio, nec sodales nisi est non tortor. Vestibulum lacinia sit amet elit in semper. Aliquam enim risus, aliquam non nulla et, vulputate porttitor dui. Aenean sit amet hendrerit turpis. Curabitur vitae vehicula ipsum. "), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_ImageSlider_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum tristique mi at dignissim. In ac risus non nulla imperdiet molestie. Nulla ut augue id lectus sodales ultricies eget quis lectus. Vestibulum a leo nibh. Aliquam pulvinar, dolor a consectetur bibendum, eros sapien vehicula elit, in pharetra nisi magna eu leo. Integer fringilla ante aliquam orci commodo rhoncus. Suspendisse pulvinar rhoncus augue, vel elementum mi condimentum et. "), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_ImageSlider_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
     cssClass: "works-container-MWDevices-sect2",
     marginLeft: "ml-10",
     marginTop: "mt-48"
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     id: "dev",
-    className: " .works-container-intro text-4xl"
-  }, "Dev"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "text-4xl mb-20 rounded-lg works-container-MWDevices   bg-[#A1B296]"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", {
+    className: "px-24 mt-8 works-container-MWDevices-sect1"
+  }, "Dev"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    className: "px-24 mt-24 text-xl center works-container-MWDevices-sect1"
+  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum tristique mi at dignissim. In ac risus non nulla imperdiet molestie. Nulla ut augue id lectus sodales ultricies eget quis lectus. Vestibulum a leo nibh. Aliquam pulvinar, dolor a consectetur bibendum, eros sapien vehicula elit, in pharetra nisi magna eu leo. Integer fringilla ante aliquam orci commodo rhoncus. Suspendisse pulvinar  "), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    className: "px-24 mt-24 text-xl center works-container-MWDevices-sect3"
+  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum tristique mi at dignissim. In ac risus non nulla imperdiet molestie. Nulla ut augue id lectus sodales ultricies eget quis lectus. Vestibulum a leo nibh. Aliquam pulvinar, dolor a consectetur bibendum, eros sapien vehicula elit, in pharetra nisi magna eu leo. Integer fringilla ante aliquam orci commodo rhoncus. Suspendisse pulvinar rhoncus augue, vel elementum mi condimentum et. "), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_ImageSlider_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    cssClass: "works-container-MWDevices-sect2",
+    marginLeft: "ml-10",
+    marginTop: "mt-48"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     id: "design",
-    className: " .works-container-intro text-4xl"
-  }, "Design"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "text-4xl mb-20 rounded-lg works-container-MWDevices   bg-[#AF8497]"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", {
+    className: "px-24 mt-8 works-container-MWDevices-sect1"
+  }, "Design"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    className: "px-24 mt-24 text-xl center works-container-MWDevices-sect1"
+  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum tristique mi at dignissim. In ac risus non nulla imperdiet molestie. Nulla ut augue id lectus sodales ultricies eget quis lectus. Vestibulum a leo nibh. Aliquam pulvinar, dolor a consectetur bibendum, eros sapien vehicula elit, in pharetra nisi magna eu leo. Integer fringilla ante aliquam orci commodo rhoncus. Suspendisse pulvinar  "), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    className: "px-24 mt-24 text-xl center works-container-MWDevices-sect3"
+  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum tristique mi at dignissim. In ac risus non nulla imperdiet molestie. Nulla ut augue id lectus sodales ultricies eget quis lectus. Vestibulum a leo nibh. Aliquam pulvinar, dolor a consectetur bibendum, eros sapien vehicula elit, in pharetra nisi magna eu leo. Integer fringilla ante aliquam orci commodo rhoncus. Suspendisse pulvinar rhoncus augue, vel elementum mi condimentum et. "), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_ImageSlider_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    cssClass: "works-container-MWDevices-sect2",
+    marginLeft: "ml-10",
+    marginTop: "mt-48"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     id: "music",
-    className: ".works-container-intro text-4xl"
-  }, "Music")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
+    className: "text-4xl mb-20 rounded-lg works-container-MWDevices   bg-[#B1C3C6]"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", {
+    className: "px-24 mt-8 works-container-MWDevices-sect1"
+  }, "Music"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    className: "px-24 mt-24 text-xl center works-container-MWDevices-sect1"
+  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum tristique mi at dignissim. In ac risus non nulla imperdiet molestie. Nulla ut augue id lectus sodales ultricies eget quis lectus. Vestibulum a leo nibh. Aliquam pulvinar, dolor a consectetur bibendum, eros sapien vehicula elit, in pharetra nisi magna eu leo. Integer fringilla ante aliquam orci commodo rhoncus. Suspendisse pulvinar  "), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    className: "px-24 mt-24 text-xl center works-container-MWDevices-sect3"
+  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum tristique mi at dignissim. In ac risus non nulla imperdiet molestie. Nulla ut augue id lectus sodales ultricies eget quis lectus. Vestibulum a leo nibh. Aliquam pulvinar, dolor a consectetur bibendum, eros sapien vehicula elit, in pharetra nisi magna eu leo. Integer fringilla ante aliquam orci commodo rhoncus. Suspendisse pulvinar rhoncus augue, vel elementum mi condimentum et. "), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_ImageSlider_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    cssClass: "works-container-MWDevices-sect2",
+    marginLeft: "ml-10",
+    marginTop: "mt-48"
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
 }
 
 /***/ }),
