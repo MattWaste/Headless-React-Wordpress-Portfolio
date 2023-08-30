@@ -60,19 +60,14 @@ html,body,div{
     'intro main main2'
     'footer footer1 footer2';
   }
+  .home-container-intro{
+    grid-area:intro;
+  }
 
   .home-container-main2{
     grid-area: main2;
   }
   
-  
-  .home-container-intro{
-    grid-area:intro;
-  }
-  
-    .home-container-middle{
-      grid-area: middle;
-    }  
   
   .home-container-footer{
     grid-area: footer;
@@ -83,12 +78,7 @@ html,body,div{
   }
   
   
-  .home-container-header{
-    grid-area: header;
-    align-items: center;
-    overflow:visible;
-  }
-    
+
     .about-container {
   
       display: grid;
@@ -102,6 +92,11 @@ html,body,div{
   
     }
   
+  .about-container-header{
+    grid-area: header;
+  
+  }
+  
   .about-container-intro{
     grid-area: intro;
     place-content: end;
@@ -112,11 +107,6 @@ html,body,div{
   
   .about-container-footer{
     grid-area: footer;
-  }
-  
-  .about-container-header{
-    grid-area: header;
-
   }
 
   .works-container{
@@ -130,20 +120,7 @@ html,body,div{
     'footer footer1 footer2';
   }
 
-  .works-container-new{
-    display:grid;
-    grid-template-rows: 1fr 20fr 1fr;
-    grid-template-areas: 
-    'header'
-    'main'
-    'footer';  
-  }
 
-  .works-container-main{
-    grid-area: main;
-    overflow: visible;
-    grid-column:intro/main2;
-  }
   .works-container-intro{
     grid-area: intro;
     overflow:hidden;
@@ -154,9 +131,10 @@ html,body,div{
   }
   .works-container-footer{
     grid-area: footer;
-    background-color: #728c62;
-    grid-column: footer/footer2;
   }  
+  .work-container-footer2{
+    grid-area: footer2;
+  }
 
 
 
@@ -169,9 +147,9 @@ html,body,div{
 .works-container-MWDevices{
   display: grid;
   grid-template-columns: .75fr .75fr .75fr;
+  grid-template-rows: .9fr;
   grid-template-areas:'sect1 sect2 sect3';
-  overflow: hidden;
-  background-color:#62878C;
+  overflow: visible;
 
 }
 
@@ -182,7 +160,12 @@ html,body,div{
 }
 .works-container-MWDevices-sect2{
   grid-area: sect2;
-  overflow:visible;
+  overflow:hidden;
+
+}
+.works-container-MWDevices-sect3{
+  grid-area: sect3;
+  overflow:hidden;
 
 }
 

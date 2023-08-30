@@ -4191,7 +4191,7 @@ function Footer() {
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("footer", {
     className: "text-xs"
   }, "\xA9 2023 - all rights reserved")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "home-container-footer2 about-container-footer2 "
+    className: "home-container-footer2 about-container-footer2 works-container-footer2"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("ul", {
     className: "flex items-stretch gap-10 mx-10"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
@@ -4451,7 +4451,7 @@ function Works() {
     className: "mt-20 mr-10 works-container-intro "
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     id: "mwdevices",
-    className: "mb-20 text-4xl rounded-lg works-container-MWDevices"
+    className: "mb-20 text-4xl rounded-lg works-container-MWDevices bg-[#62878C]"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", {
     className: "px-24 mt-8 works-container-MWDevices-sect1"
   }, "MW Devices"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
