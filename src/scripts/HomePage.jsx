@@ -11,7 +11,7 @@ export default function HomePage(){
         <img src=""></img>
         <div className="home-container-intro py-44">
         <h3 className="py-5">HELLO THERE</h3>
-        <h1 className="py-3 text-4xl">I'm Matt West</h1>
+        <h2 className="py-3 text-4xl">I'm Matt West</h2>
         <h2 className="py-3 text-2xl">  Creative technologist, developer, and brand extoller</h2>
         <p className="py-3"> I wear many hats both figuratively and literally. I code and design modern web applications, music tools, and a few things in-between. I've been involved in music production for 10+ years and love to champion the tools that help me each day.
         </p>
