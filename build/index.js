@@ -4086,7 +4086,7 @@ function About() {
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     src: "http://mawtestsite.local/wp-content/uploads/2023/07/Mosaic-transparent@2x.png"
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "about-container-intro py-80"
+    className: "about-container-intro py-80 "
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "text-4xl text-green"
   }, "Matt West"), " is a life-long learner, a maker of digital imprints, and a designer of things. His work in music technology and web/app development have garnered thousands of users since 2015. Recent highlights include the release of the 'Shattered Delay' Audio Effect and the upcoming 'Muse' web app. ", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null), "He has worked at Ableton for over 8 years as a Brand Manager and product specalist and continues to make and produce music in a number of capacities. You can currently find Matt in Brooklyn New York, likely in his studio or on his bike.")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
@@ -4167,34 +4167,54 @@ __webpack_require__.r(__webpack_exports__);
 // import Form from "./Form";
 
 function Contact() {
+  const [formData, setFormData] = react__WEBPACK_IMPORTED_MODULE_1___default().useState({
+    email: "",
+    subject: "",
+    message: ""
+  });
+  console.log(formData);
+  function handleChange(event) {
+    setFormData(prevFormData => {
+      return {
+        ...prevFormData,
+        [event.target.name]: event.target.value
+      };
+    });
+  }
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "gap-5 contact-container pl-14 font-display"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Grass__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    cssClass: "contact-container-main2",
-    w: "w-[100px]"
+    cssClass: "contact-container-grass"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", {
-    className: "pl-1 mr-16 text-4xl contact-container-intro2"
-  }, "If you want to touch more grass let me help "), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "contact-container-intro"
+    className: "pb-16 mt-24 mr-20 text-4xl text-center contact-container-intro2"
+  }, "If you want to touch more grass, let me help. "), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "p-1 ml-16 mt-36 contact-container-intro"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "mt-20 mb-3 font-bold"
-  }, " email"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
-    id: "email",
+  }, " email"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("form", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+    name: "email",
+    onChange: handleChange,
     className: "w-[402px] h-[43px]  mb-6  bg-zinc-300 rounded-[7px]"
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "mb-3 font-bold"
-  }, " subject"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+  }, " subject"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("form", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+    name: "subject",
+    onChange: handleChange,
     className: " pl-2 w-[402px] h-[43px]  mb-6 bg-zinc-300 rounded-[7px]"
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "mb-3 font-bold"
-  }, " message"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("textarea", {
+  }, " message"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("form", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("textarea", {
+    name: "message",
+    onChange: handleChange,
     id: "message",
-    className: " pl-1 mb-6 w-[402px] h-[86px]  bg-zinc-300 rounded-[7px]"
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+    className: " pl-1 mb-9 w-[402px] h-[86px]  bg-zinc-300 rounded-[7px]"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: ""
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    className: "focus:outline-none bg-[#7DDA28] hover:bg-[#5A9D1B] focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5  dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800",
+    type: "button"
+  }, "Send Message"))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
 }
-(0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-  className: "w-[402px] h-[43px] bg-zinc-300 rounded-[7px]"
-});
 
 /***/ }),
 

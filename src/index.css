@@ -44,6 +44,8 @@ html,body,div{
     mask-position: center;
     mask-size: contain;
     pointer-events:none;
+    z-index: 1;
+
   }
   
   .imageMosaic-container{
@@ -172,22 +174,28 @@ html,body,div{
     'header header1 header2'
     'intro main main2'
     'footer footer1 footer2';
+    overflow: clip;
 }
 
-.contact-container-main2{
-  grid-area: main2;
+.contact-container-grass{
+  grid-area: main;
   grid-column:main/main2;
   overflow: auto;
   width: 400px;
   height: 400px;
+  margin-top: 216px;
+  z-index: 1;
+
 }
 
 .contact-container-intro{
   grid-area: intro;
+  overflow: clip;
 }
 .contact-container-intro2{
   grid-area: intro;
-  grid-column: intro/main;
+  grid-column: intro/main2;
+  /* justify-items: center; */
 }
 
 

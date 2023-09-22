@@ -6,21 +6,43 @@ import Grass from './Grass'
 import ContactForm from "./ContactForm";
 
 export default function Contact(){
+
+    const[formData, setFormData] = React.useState(
+        {email:"",subject:"",message:""}
+        )
+    console.log(formData);
+
+    function handleChange(event){
+        setFormData(prevFormData =>{
+            return{
+                ...prevFormData,
+                [event.target.name]:event.target.value
+            }
+        })
+    }
+
     return(
         <div className="gap-5 contact-container pl-14 font-display">
         <Header></Header>
-        <Grass cssClass ='contact-container-main2' w='w-[100px]' ></Grass>
-        <h2 className="pl-1 mr-16 text-4xl contact-container-intro2">If you want to touch more grass let me help </h2>
-        <div className="contact-container-intro">
+        <Grass cssClass ='contact-container-grass' ></Grass>
+        <h2 className="pb-16 mt-24 mr-20 text-4xl text-center contact-container-intro2">If you want to touch more grass, let me help. </h2>
+        <div className="p-1 ml-16 mt-36 contact-container-intro">
             <h3 className="mt-20 mb-3 font-bold"> email</h3>
-            <input id='email'  className='w-[402px] h-[43px]  mb-6  bg-zinc-300 rounded-[7px]'></input>
+            <form>
+                <input name="email" onChange={handleChange} className='w-[402px] h-[43px]  mb-6  bg-zinc-300 rounded-[7px]'></input>
+            </form>
             <h3 className="mb-3 font-bold"> subject</h3>
-            <input className=' pl-2 w-[402px] h-[43px]  mb-6 bg-zinc-300 rounded-[7px]'></input>
+            <form>
+                <input name="subject" onChange={handleChange} className=' pl-2 w-[402px] h-[43px]  mb-6 bg-zinc-300 rounded-[7px]'></input>
+            </form>
             <h3 className="mb-3 font-bold"> message</h3>
-            <textarea id="message" className=' pl-1 mb-6 w-[402px] h-[86px]  bg-zinc-300 rounded-[7px]'></textarea>
+            <form>
+            <textarea name = "message" onChange={handleChange} id="message" className=' pl-1 mb-9 w-[402px] h-[86px]  bg-zinc-300 rounded-[7px]'></textarea>
+            </form>
+            <div className="">
+            <button className= "focus:outline-none bg-[#7DDA28] hover:bg-[#5A9D1B] focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5  dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800" type="button">Send Message</button>
+            </div>
         </div>
         <Footer></Footer>
         </div>
-    )
-}
-<div className="w-[402px] h-[43px] bg-zinc-300 rounded-[7px]" /> 
+    )}
