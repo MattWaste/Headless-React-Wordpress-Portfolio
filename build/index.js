@@ -4170,7 +4170,8 @@ function Contact() {
   const [formData, setFormData] = react__WEBPACK_IMPORTED_MODULE_1___default().useState({
     email: "",
     subject: "",
-    message: ""
+    message: "",
+    sendCopy: false
   });
   console.log(formData);
   function handleChange(event) {
@@ -4193,25 +4194,34 @@ function Contact() {
     className: "mt-20 mb-3 font-bold"
   }, " email"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("form", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
     name: "email",
+    value: formData.email,
     onChange: handleChange,
     className: "w-[402px] h-[43px]  mb-6  bg-zinc-300 rounded-[7px]"
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "mb-3 font-bold"
-  }, " subject"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("form", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+  }, " subject"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
     name: "subject",
+    value: formData.subject,
     onChange: handleChange,
     className: " pl-2 w-[402px] h-[43px]  mb-6 bg-zinc-300 rounded-[7px]"
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "mb-3 font-bold"
-  }, " message"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("form", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("textarea", {
+  }, " message"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("textarea", {
     name: "message",
+    value: formData.message,
     onChange: handleChange,
     id: "message",
-    className: " pl-1 mb-9 w-[402px] h-[86px]  bg-zinc-300 rounded-[7px]"
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: ""
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "focus:outline-none bg-[#7DDA28] hover:bg-[#5A9D1B] focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5  dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800",
+    className: " mb-3 pl-1 w-[402px] h-[86px]  bg-zinc-300 rounded-[7px]"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+    className: "mb-6",
+    id: "sendCopy",
+    checked: formData.sendCopy,
+    onChange: handleChange,
+    type: "checkbox"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("label", {
+    htmlFor: "sendCopy"
+  }, " Send yourself a copy"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    className: " focus:outline-none bg-[#7DDA28] hover:bg-[#5A9D1B] focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5  dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800",
     type: "button"
   }, "Send Message"))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
 }

@@ -8,7 +8,7 @@ import ContactForm from "./ContactForm";
 export default function Contact(){
 
     const[formData, setFormData] = React.useState(
-        {email:"",subject:"",message:""}
+        {email:"",subject:"",message:"",sendCopy:false}
         )
     console.log(formData);
 
@@ -29,18 +29,16 @@ export default function Contact(){
         <div className="p-1 ml-16 mt-36 contact-container-intro">
             <h3 className="mt-20 mb-3 font-bold"> email</h3>
             <form>
-                <input name="email" onChange={handleChange} className='w-[402px] h-[43px]  mb-6  bg-zinc-300 rounded-[7px]'></input>
-            </form>
+                <input name="email" value={formData.email} onChange={handleChange} className='w-[402px] h-[43px]  mb-6  bg-zinc-300 rounded-[7px]'></input>
             <h3 className="mb-3 font-bold"> subject</h3>
-            <form>
-                <input name="subject" onChange={handleChange} className=' pl-2 w-[402px] h-[43px]  mb-6 bg-zinc-300 rounded-[7px]'></input>
+                <input name="subject" value={formData.subject} onChange={handleChange} className=' pl-2 w-[402px] h-[43px]  mb-6 bg-zinc-300 rounded-[7px]'></input>
+            <h3 className="mb-3 font-bold"> message</h3>    
+            <textarea name = "message" value={formData.message} onChange={handleChange} id="message" className=' mb-3 pl-1 w-[402px] h-[86px]  bg-zinc-300 rounded-[7px]'></textarea>
             </form>
-            <h3 className="mb-3 font-bold"> message</h3>
-            <form>
-            <textarea name = "message" onChange={handleChange} id="message" className=' pl-1 mb-9 w-[402px] h-[86px]  bg-zinc-300 rounded-[7px]'></textarea>
-            </form>
-            <div className="">
-            <button className= "focus:outline-none bg-[#7DDA28] hover:bg-[#5A9D1B] focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5  dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800" type="button">Send Message</button>
+            <input className="mb-6" id='sendCopy' checked={formData.sendCopy} onChange={handleChange} type ='checkbox'></input>
+            <label htmlFor="sendCopy"> Send yourself a copy</label>
+            <div>
+            <button className= " focus:outline-none bg-[#7DDA28] hover:bg-[#5A9D1B] focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5  dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800" type="button">Send Message</button>
             </div>
         </div>
         <Footer></Footer>
