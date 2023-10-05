@@ -4173,15 +4173,26 @@ function Contact() {
     message: "",
     sendCopy: false
   });
-  console.log(formData);
   function handleChange(event) {
+    const {
+      name,
+      value,
+      type,
+      checked
+    } = event.target;
     setFormData(prevFormData => {
       return {
         ...prevFormData,
-        [event.target.name]: event.target.value
+        [name]: type === "checkbox" ? checked : value
       };
     });
   }
+  function handleSubmit(event) {
+    event.preventDefault();
+    console.log(formData);
+    // use this function to send to API
+  }
+
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "gap-5 contact-container pl-14 font-display"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Grass__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -4192,7 +4203,9 @@ function Contact() {
     className: "p-1 ml-16 mt-36 contact-container-intro"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "mt-20 mb-3 font-bold"
-  }, " email"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("form", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+  }, " email"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("form", {
+    onSubmit: handleSubmit
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
     name: "email",
     value: formData.email,
     onChange: handleChange,
@@ -4212,7 +4225,8 @@ function Contact() {
     onChange: handleChange,
     id: "message",
     className: " mb-3 pl-1 w-[402px] h-[86px]  bg-zinc-300 rounded-[7px]"
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+    name: "sendCopy",
     className: "mb-6",
     id: "sendCopy",
     checked: formData.sendCopy,
@@ -4221,9 +4235,9 @@ function Contact() {
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("label", {
     htmlFor: "sendCopy"
   }, " Send yourself a copy"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: " focus:outline-none bg-[#7DDA28] hover:bg-[#5A9D1B] focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5  dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800",
-    type: "button"
-  }, "Send Message"))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+    className: " focus:outline-none bg-[#7DDA28] hover:bg-[#5A9D1B] focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5  dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ",
+    type: "submit"
+  }, "Send Message"))))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
 }
 
 /***/ }),
