@@ -1,23 +1,31 @@
-import { React} from 'react'
+import  React from 'react'
 import { Routes, Route } from "react-router-dom"
 import HomePage from  "./HomePage.jsx";
 import Contact from './Contact.jsx';
 import About from './About.jsx';
 import Works from './Works';
-import Test from './Test';
+import { ApolloClient, ApolloProvider,InMemoryCache } from '@apollo/client';
+import FormSubmission from './FormSubmission.jsx';
+import Form from './Form.jsx';
+
+const client = new ApolloClient({
+  uri: 'https://mawtestsite.local/graphql',
+  cache: new InMemoryCache()
+})
 
 
 function App() {
   return (
-  <div>
+  
+  <ApolloProvider client ={client}>
   <Routes>
     <Route  path="/" element={<HomePage/>}></Route>
     <Route  path="/contact" element={<Contact/>}></Route>   
     <Route  path="/about" element={<About/>}></Route>   
-    <Route  path="/Works" element={<Works/>}></Route>
-    <Route  path='/test' element={<Test/>}></Route>    
+    <Route  path="/works" element={<Works/>}></Route>
+    <Route path="/formsubmission" element={<FormSubmission/>}></Route>
   </Routes>
-   </div>
+  </ApolloProvider>
 )}
 
 export default App
