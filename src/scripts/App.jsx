@@ -5,8 +5,8 @@ import Contact from './Contact.jsx';
 import About from './About.jsx';
 import Works from './Works';
 import { ApolloClient, ApolloProvider,InMemoryCache } from '@apollo/client';
-import FormSubmission from './FormSubmission.jsx';
-import Form from './Form.jsx';
+import FormSubmissions from './FormSubmissions.jsx';
+
 
 const client = new ApolloClient({
   uri: 'https://mawtestsite.local/graphql',
@@ -23,7 +23,7 @@ function App() {
     <Route  path="/contact" element={<Contact/>}></Route>   
     <Route  path="/about" element={<About/>}></Route>   
     <Route  path="/works" element={<Works/>}></Route>
-    <Route path="/formsubmission" element={<FormSubmission/>}></Route>
+    <Route path="/formsubmission" element={<FormSubmissions/>}></Route>
   </Routes>
   </ApolloProvider>
 )}
