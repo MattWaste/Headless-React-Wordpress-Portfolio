@@ -22,8 +22,10 @@ console.log(loading);
    console.log(data);
  
   return (
-<div>{JSON.stringify(data)}</div>
-  )};
+    <div>
+      {data.GET_FORMDATA.edges.map()}
+    </div>
+  )}
 
 export default FormSubmission
 

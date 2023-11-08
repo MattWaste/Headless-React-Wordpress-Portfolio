@@ -3,7 +3,6 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Grass from './Grass'
 // import Form from "./Form";
-import ContactForm from "./ContactForm";
 
 export default function Contact(){
 

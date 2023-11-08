@@ -14,110 +14,97 @@ function boilerplate_add_support() {
 
 add_action('after_setup_theme', 'boilerplate_add_support');
 
-// added 10/5/23
-
-add_action('init', function(){
-	register_post_type('Form Submission',[
-		'public' => true,
-		'label' => 'Form Submission (Contact Page)',
-		'show_in_graphql' => true,
-		'graphql_single_name' => 'formSubmission',
-		'graphql_plural_name' => 'formSubmissions',
-	]);
-});
-
-
-
-
 
 // added 9/25/23  https://www.youtube.com/watch?v=ZRQ94PMNEcg
 
-// add_action('graphql_register_types', function () {
+// returning false for 'send copy' makes the entire function invalid
 
-// 	register_graphql_mutation('createSubmission', [
-// 		'inputFields' => [
-// 			'email' => [
-// 				'type' => 'String',
-// 				'description' => 'User email',
-// 			],
-// 			'subject' => [
-// 				'type' => 'String',
-// 				'description' => 'subject of message',
-// 			],
-// 			'message' => [
-// 				'type' => 'String',
-// 				'description' => 'body of message',
-// 			],
-// 			'sendCopy' => [
-// 				'type' => 'Boolean',
-// 				'description' => ' send user copy',
-// 			],
-// 		],
-// 		'outputFields' => [
-// 			'success' => [
-// 				'type' => 'Boolean',
-// 				'description' => 'Whether or not data was stored successfully',
-// 				'resolve' => function ($payload, $args, $context, $info) {
-// 					return isset($payload['success']) ? $payload['success'] : null;
-// 				}
-// 			],
-// 			'data' => [
-// 				'type' => 'String',
-// 				'description' => 'Payload of submitted fields',
-// 				'resolve' => function ($payload, $args, $context, $info) {
-// 					return isset($payload['data']) ? $payload['data'] : null;
-// 				}
-// 			]
-// 		],
-// 		'mutateAndGetPayload' => function ($input, $context, $info) {
+add_action('graphql_register_types', function () {
 
-// 			if (!class_exists('ACF')) return [
-// 				'success' => false,
-// 				'data' => 'ACF is not installed'
-// 			];
+	register_graphql_mutation('createSubmission', [
+		'inputFields' => [
+			'email' => [
+				'type' => 'String',
+				'description' => 'User email',
+			],
+			'subject' => [
+				'type' => 'String',
+				'description' => 'subject of message',
+			],
+			'message' => [
+				'type' => 'String',
+				'description' => 'body of message',
+			],
+			'sendCopy' => [
+				'type' => 'Boolean',
+				'description' => ' send user copy',
+			],
+		],
+		'outputFields' => [
+			'success' => [
+				'type' => 'Boolean',
+				'description' => 'Whether or not data was stored successfully',
+				'resolve' => function ($payload, $args, $context, $info) {
+					return isset($payload['success']) ? $payload['success'] : null;
+				}
+			],
+			'data' => [
+				'type' => 'String',
+				'description' => 'Payload of submitted fields',
+				'resolve' => function ($payload, $args, $context, $info) {
+					return isset($payload['data']) ? $payload['data'] : null;
+				}
+			]
+		],
+		'mutateAndGetPayload' => function ($input, $context, $info) {
 
-// 			$sanitized_data = [];
-// 			$errors = [];
-// 			$acceptable_fields = [
-// 				'email' => 'field_5db38290cbb0d',
-// 				'subject' => 'field_5db3829bcbb0e',
-// 				'message' => 'field_5db38343d47fe',
-// 				'sendCopy' => 'field_5db382a7cbb0f',
-// 			];
+			if (!class_exists('ACF')) return [
+				'success' => false,
+				'data' => 'ACF is not installed'
+			];
 
-// 			foreach ($acceptable_fields as $field_key => $acf_key) {
-// 				if (!empty($input[$field_key])) {
-// 					$sanitized_data[$field_key] = sanitize_text_field($input[$field_key]);
-// 				} else {
-// 					$errors[] = $field_key . ' was not filled out.';
-// 				}
-// 			}
+			$sanitized_data = [];
+			$errors = [];
+			$acceptable_fields = [
+				'email' => 'field_651f1ca7c29cc',
+				'subject' => 'field_651f2299c29cd',
+				'message' => 'field_651f22bcc29ce',
+				'sendCopy' => 'field_651f22c3c29cf',
+			];
 
-// 			if (!empty($errors)) return [
-// 				'success' => false,
-// 				'data' => $errors
-// 			];
+			foreach ($acceptable_fields as $field_key => $acf_key) {
+				if (!empty($input[$field_key])) {
+					$sanitized_data[$field_key] = sanitize_text_field($input[$field_key]);
+				} else {
+					$errors[] = $field_key . ' was not filled out.';
+				}
+			}
 
-// 			$form_submission = wp_insert_post([
-// 				'post_type' => 'form_submission',
-// 				'post_title' => $sanitized_data['firstName'] . ' ' . $sanitized_data['lastName'],
-// 			], true);
+			if (!empty($errors)) return [
+				'success' => false,
+				'data' => $errors
+			];
 
-// 			if (is_wp_error($form_submission)) return [
-// 				'success' => false,
-// 				'data' => $form_submission->get_error_message()
-// 			];
+			$form_submission = wp_insert_post([
+				'post_type' => 'form_submission',
+				'post_title' => $sanitized_data['email'] . ' ' . $sanitized_data['subject'],
+			], true);
 
-// 			foreach ($acceptable_fields as $field_key => $acf_key) {
-// 				update_field($acf_key, $sanitized_data[$field_key], $form_submission);
-// 			}
+			if (is_wp_error($form_submission)) return [
+				'success' => false,
+				'data' => $form_submission->get_error_message()
+			];
 
-// 			return [
-// 				'success' => true,
-// 				'data' => json_encode($sanitized_data)
-// 			];
+			foreach ($acceptable_fields as $field_key => $acf_key) {
+				update_field($acf_key, $sanitized_data[$field_key], $form_submission);
+			}
 
-// 		}
-// 	]);
+			return [
+				'success' => true,
+				'data' => json_encode($sanitized_data)
+			];
 
-// });
+		}
+	]);
+
+});
