@@ -35,8 +35,8 @@ add_action('graphql_register_types', function () {
 				'type' => 'String',
 				'description' => 'body of message',
 			],
-			'sendCopy' => [
-				'type' => 'Boolean',
+			'send_copy' => [
+				'type' => 'String',
 				'description' => ' send user copy',
 			],
 		],
@@ -69,7 +69,7 @@ add_action('graphql_register_types', function () {
 				'email' => 'field_651f1ca7c29cc',
 				'subject' => 'field_651f2299c29cd',
 				'message' => 'field_651f22bcc29ce',
-				'sendCopy' => 'field_651f22c3c29cf',
+				'send_copy' => 'field_651f22c3c29cf',
 			];
 
 			foreach ($acceptable_fields as $field_key => $acf_key) {
