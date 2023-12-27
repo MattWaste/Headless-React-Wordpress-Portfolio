@@ -36,7 +36,7 @@ add_action('graphql_register_types', function () {
 				'description' => 'body of message',
 			],
 			'send_copy' => [
-				'type' => 'String',
+				'type' => 'Boolean',
 				'description' => ' send user copy',
 			],
 		],

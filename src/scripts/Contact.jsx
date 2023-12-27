@@ -3,8 +3,23 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Grass from './Grass'
 // import Form from "./Form";
+import {useMutation,gql} from '@apollo/client'
+
+
+    // const CONTACT_MUTATION = gql`
+    // mutation CreateSubmissionMutation($clientMutationId: String!, $email: String!, $subject: String!, $message: String!, $send_copy: String!){
+    //   createSubmission(input: {clientMutationId: $clientMutationId, email: $email, subject: $String, message: $String, send_copy: $send_copy}) {
+    //     success
+    //     data
+    //   }
+    // }`
+
+
+    // const [mutateFunction, { data, loading, error }] = useMutation(CONTACT_MUTATION);
 
 export default function Contact(){
+    
+
 
     const[formData, setFormData] = React.useState(
         {email:"",subject:"",message:"",sendCopy:false}
@@ -53,3 +68,18 @@ export default function Contact(){
         <Footer></Footer>
         </div>
     )}
+
+
+
+// // Define mutation
+// const INCREMENT_COUNTER = gql`
+//   # Increments a back-end counter and gets its resulting value
+//   mutation IncrementCounter {
+//     currentValue
+//   }
+// `;
+
+// function MyComponent() {
+//   // Pass mutation to useMutation
+//   const [mutateFunction, { data, loading, error }] = useMutation(INCREMENT_COUNTER);
+// }

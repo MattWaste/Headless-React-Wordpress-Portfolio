@@ -4,8 +4,9 @@ import HomePage from  "./HomePage.jsx";
 import Contact from './Contact.jsx';
 import About from './About.jsx';
 import Works from './Works';
-import { ApolloClient, ApolloProvider,InMemoryCache } from '@apollo/client';
 import FormSubmissions from './FormSubmissions.jsx';
+import FormTest from './FormTest.jsx';
+import { ApolloClient, ApolloProvider,InMemoryCache } from '@apollo/client';
 
 
 const client = new ApolloClient({
@@ -24,6 +25,7 @@ function App() {
     <Route  path="/about" element={<About/>}></Route>   
     <Route  path="/works" element={<Works/>}></Route>
     <Route path="/formsubmission" element={<FormSubmissions/>}></Route>
+    <Route path="/formtest" element= {<FormTest/>}></Route> 
   </Routes>
   </ApolloProvider>
 )}
