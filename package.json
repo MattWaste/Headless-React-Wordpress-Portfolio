@@ -9,31 +9,41 @@
     "buildwp": "wp-scripts build",
     "build": "npm-run-all --sequential buildwp tailwindbuild",
     "wpstart": "wp-scripts start",
-    "start": "npm-run-all --parallel wpstart tailwindwatch",
+    "start": "npm-run-all --parallel wpstart tailwindwatch ",
     "tailwindbuild": "tailwindcss -i ./src/index.css -o ./build/index.css --minify",
     "tailwindwatch": "tailwindcss -i ./src/index.css -o ./build/index.css --watch --minify",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npx npm-force-resolutions"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@craco/craco": "^7.1.0",
     "@tailwindcss/typography": "^0.5.2",
     "@wordpress/scripts": "^23.3.0",
     "autoprefixer": "^10.4.15",
     "browser-sync": "^2.27.10",
+    "dotenv-webpack": "^8.0.1",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.28",
     "postcss-import": "^15.1.0",
+    "react-error-overlay": "6.0.9",
     "tailwindcss": "^3.3.3"
   },
   "dependencies": {
     "@apollo/client": "^3.8.5",
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^0.9.432",
+    "dotenv": "^16.3.1",
     "graphql": "^16.8.1",
+    "react-google-recaptcha-v3": "^1.10.1",
     "react-icons": "^4.10.1",
     "react-router-dom": "^6.14.2",
+    "react-scripts": "5.0.1",
     "tw-elements-react": "^1.0.0-alpha1"
+  },
+  "resolutions": {
+    "react-error-overlay": "6.0.9"
   }
 }
