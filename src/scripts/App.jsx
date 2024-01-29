@@ -7,36 +7,36 @@ import Works from './Works';
 import FormSubmissions from './FormSubmissions.jsx';
 import FormTest from './FormTest.jsx';
 import { ApolloClient, ApolloProvider,InMemoryCache } from '@apollo/client';
-import {
-  GoogleReCaptchaProvider,
-  useGoogleReCaptcha
-} from 'react-google-recaptcha-v3';
+// import {
+//   GoogleReCaptchaProvider,
+//   useGoogleReCaptcha
+// } from 'react-google-recaptcha-v3';
 
-const CAPKEY = process.env.NODE_ENV__RECAPTCHA_KEY;
-console.log(CAPKEY);
+// const CAPKEY = NODE_ENV_RECAPTCHA_KEY;
+// console.log(CAPKEY);
 
 
-const YourReCaptchaComponent = () => {
-  const { executeRecaptcha } = useGoogleReCaptcha();
+// const YourReCaptchaComponent = () => {
+//   const { executeRecaptcha } = useGoogleReCaptcha();
 
-  // Create an event handler so you can call the verification on button click event or form submit
-  const handleReCaptchaVerify = useCallback(async () => {
-    if (!executeRecaptcha) {
-      console.log('Execute recaptcha not yet available');
-      return;
-    }
+//   // Create an event handler so you can call the verification on button click event or form submit
+//   const handleReCaptchaVerify = useCallback(async () => {
+//     if (!executeRecaptcha) {
+//       console.log('Execute recaptcha not yet available');
+//       return;
+//     }
 
-    const token = await executeRecaptcha('yourAction');
-    // Do whatever you want with the token
-  }, [executeRecaptcha]);
+//     const token = await executeRecaptcha('yourAction');
+//     // Do whatever you want with the token
+//   }, [executeRecaptcha]);
 
-  // You can use useEffect to trigger the verification as soon as the component being loaded
-  useEffect(() => {
-    handleReCaptchaVerify();
-  }, [handleReCaptchaVerify]);
+//   // You can use useEffect to trigger the verification as soon as the component being loaded
+//   useEffect(() => {
+//     handleReCaptchaVerify();
+//   }, [handleReCaptchaVerify]);
 
-  return <button onClick={handleReCaptchaVerify}>Verify recaptcha</button>;
-};
+//   return <button onClick={handleReCaptchaVerify}>Verify recaptcha</button>;
+// };
 
 const client = new ApolloClient({
   uri: 'https://mawtestsite.local/graphql',
@@ -46,7 +46,7 @@ const client = new ApolloClient({
 
 function App() {
   return (
-  <GoogleReCaptchaProvider reCaptchaKey= {CAPKEY}>
+  // <GoogleReCaptchaProvider reCaptchaKey= {CAPKEY}>
   <ApolloProvider client ={client}>
   <Routes>
     <Route  path="/" element={<HomePage/>}></Route>
@@ -57,7 +57,7 @@ function App() {
     <Route path="/formtest" element= {<FormTest/>}></Route> 
   </Routes>
   </ApolloProvider>
-  </GoogleReCaptchaProvider>
+  // </GoogleReCaptchaProvider>
 )}
 
 export default App
