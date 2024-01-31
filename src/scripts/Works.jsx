@@ -12,14 +12,17 @@ export default function Works(){
     <div className="mt-20 mr-10 works-container-intro ">
         <div id='mwdevices' className=" text-4xl rounded-lg works-container-MWDevices bg-[#62878C]">
         <h2 className="px-24 mt-8 works-container-MWDevices-sect1">MW Devices</h2>
-        <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum tristique mi at dignissim. In ac risus non nulla imperdiet molestie. Nulla ut augue id lectus sodales ultricies eget quis lectus. Vestibulum a leo nibh. Aliquam pulvinar, dolor a consectetur bibendum, eros sapien vehicula elit, in pharetra nisi magna eu leo. Integer fringilla ante aliquam orci commodo rhoncus. Suspendisse pulvinar  </p>
-        <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum tristique mi at dignissim. In ac risus non nulla imperdiet molestie. Nulla ut augue id lectus sodales ultricies eget quis lectus. Vestibulum a leo nibh. Aliquam pulvinar, dolor a consectetur bibendum, eros sapien vehicula elit, in pharetra nisi magna eu leo. Integer fringilla ante aliquam orci commodo rhoncus. Suspendisse pulvinar rhoncus augue, vel elementum mi condimentum et. </p>
+        <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect1">MW Devices is a Brooklyn based Music software and technology that seeks to make fellow musicians & creatives lives more lively. <br></br><br></br> Taking advantage of the flexible interfaces of Max and Max for Live, early tools like ‘Multi-Band Panner’ and Onlooker have seen four figure downloads since the company's inception in 2015.</p>
+        <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect3">An ethos of ‘immediate and useful’ can be seen in all the tools that MW Devices develops. This can be seen in recent products, including ‘Shattered Delay’, released in late 2023. <br></br><br></br> 2024 will include an increased focus on emerging technologies, including and RNBO~ and embedded computing. Please get intouch for any collaborative ideas or work.
+        </p>
         <ImageSlider cssClass = 'works-container-MWDevices-sect2' marginLeft = "ml-10" marginTop ='mt-48' ></ImageSlider>
-        </div>
-        <div id='dev' className="text-4xl rounded-lg works-container-MWDevices   bg-[#A1B296]">
+    </div>
+    <div id='dev' className="text-4xl rounded-lg works-container-MWDevices   bg-[#A1B296]">
         <h2 className="px-24 mt-8 works-container-MWDevices-sect1">Dev</h2>
-        <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum tristique mi at dignissim. In ac risus non nulla imperdiet molestie. Nulla ut augue id lectus sodales ultricies eget quis lectus. Vestibulum a leo nibh. Aliquam pulvinar, dolor a consectetur bibendum, eros sapien vehicula elit, in pharetra nisi magna eu leo. Integer fringilla ante aliquam orci commodo rhoncus. Suspendisse pulvinar  </p>
-        <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum tristique mi at dignissim. In ac risus non nulla imperdiet molestie. Nulla ut augue id lectus sodales ultricies eget quis lectus. Vestibulum a leo nibh. Aliquam pulvinar, dolor a consectetur bibendum, eros sapien vehicula elit, in pharetra nisi magna eu leo. Integer fringilla ante aliquam orci commodo rhoncus. Suspendisse pulvinar rhoncus augue, vel elementum mi condimentum et. </p>
+        <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect1"> I currently work as a full stack web developer, able to combine my years working with physical computing and real-time DSP with modern web development frameworks and principles. <br></br><br></br> Current technology stack includes HTML,CSS, Javascript, React, Node, Git, Spline, RNBO, Max, M4L, GraphQL, Node, MongoDB, and more. 
+        </p>
+        <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect3">Upcoming web applications include the “Muse” songwriting companion, and custom interactive e-shops. <br></br><br></br> I love to collaborate and currently am taking on both short-term and long-term clients including team recruiting for any larger scale projects.
+        </p>
         <ImageSlider cssClass = 'works-container-MWDevices-sect2' marginLeft = "ml-10" marginTop ='mt-48' ></ImageSlider>
     </div>
     <div id='design' className="text-4xl  rounded-lg works-container-MWDevices   bg-[#AF8497]">
