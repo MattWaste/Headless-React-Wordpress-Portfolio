@@ -27,14 +27,17 @@ export default function Works(){
     </div>
     <div id='design' className="text-4xl  rounded-lg works-container-MWDevices   bg-[#AF8497]">
         <h2 className="px-24 mt-8 works-container-MWDevices-sect1">Design</h2>
-        <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum tristique mi at dignissim. In ac risus non nulla imperdiet molestie. Nulla ut augue id lectus sodales ultricies eget quis lectus. Vestibulum a leo nibh. Aliquam pulvinar, dolor a consectetur bibendum, eros sapien vehicula elit, in pharetra nisi magna eu leo. Integer fringilla ante aliquam orci commodo rhoncus. Suspendisse pulvinar  </p>
-        <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum tristique mi at dignissim. In ac risus non nulla imperdiet molestie. Nulla ut augue id lectus sodales ultricies eget quis lectus. Vestibulum a leo nibh. Aliquam pulvinar, dolor a consectetur bibendum, eros sapien vehicula elit, in pharetra nisi magna eu leo. Integer fringilla ante aliquam orci commodo rhoncus. Suspendisse pulvinar rhoncus augue, vel elementum mi condimentum et. </p>
+        <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect1">Having spent nearly a decade of my career focused on local and global engagement , I find a holistic vision for how to approach brand, design, and product necessary.<br></br><br></br> 
+        Continuity amongst these core elements have led to a number of design and branding projects that have included the use of tools like Figma, Affinity Designer, Affinity Photo, Affinity Publisher, Miro, and Sketch.
+        </p>
+        <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect3">Managing the brand experience of regions that encompass 10’s of millions of people have encouraged me to think globally and act locally. 
+       </p>
         <ImageSlider cssClass = 'works-container-MWDevices-sect2' marginLeft = "ml-10" marginTop ='mt-48' ></ImageSlider>
     </div>
         <div id='music' className="text-4xl  rounded-lg works-container-MWDevices   bg-[#B1C3C6]">
             <h2 className="px-24 mt-8 works-container-MWDevices-sect1">Music</h2>
-            <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum tristique mi at dignissim. In ac risus non nulla imperdiet molestie. Nulla ut augue id lectus sodales ultricies eget quis lectus. Vestibulum a leo nibh. Aliquam pulvinar, dolor a consectetur bibendum, eros sapien vehicula elit, in pharetra nisi magna eu leo. Integer fringilla ante aliquam orci commodo rhoncus. Suspendisse pulvinar  </p>
-            <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum tristique mi at dignissim. In ac risus non nulla imperdiet molestie. Nulla ut augue id lectus sodales ultricies eget quis lectus. Vestibulum a leo nibh. Aliquam pulvinar, dolor a consectetur bibendum, eros sapien vehicula elit, in pharetra nisi magna eu leo. Integer fringilla ante aliquam orci commodo rhoncus. Suspendisse pulvinar rhoncus augue, vel elementum mi condimentum et. </p>
+            <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect1">A cooler older sister and LA FM radio lead to my love of music, and my guiding light. I  have worked professionally in music production for over 10 years with experience writing, producing, and engineering. </p>
+            <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect3">From micro-editing and vocal tuning, to sound design and songwriting, I am happy to collaborate in all parts of the sonic process. </p>
             <ImageSlider cssClass = 'works-container-MWDevices-sect2' marginLeft = "ml-10" marginTop ='mt-48' ></ImageSlider>
         </div> 
     </div>
