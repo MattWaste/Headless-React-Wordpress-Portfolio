@@ -19,6 +19,48 @@
 }
 */
 
+
+body {
+  @apply font-stara;
+}
+
+@font-face {
+  font-family: 'staramedium';
+  src: url('scripts/fonts/stara-medium-webfont.woff2') format('woff2'),
+       url('scripts/fonts/stara-medium-webfont.woff') format('woff');
+       
+
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* @font-face {
+  font-family: 'starabold';
+  src: url('scripts/fonts/stara-bold-webfont.woff2') format('woff2'),
+       url('scripts/fonts/stara-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'staraitalic';
+  src: url('scripts/fonts/stara-mediumitalic-webfont.woff2') format('woff2'),
+       url('scripts/fonts/stara-mediumitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'starasemibold';
+  src: url('scripts/fonts/stara-semibold-webfont.woff2') format('woff2'),
+       url('scripts/fonts/stara-semibold-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+} */
+
+
+
 html,body,div{
     width: 100%;
     height:100%;

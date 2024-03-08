@@ -12,6 +12,7 @@ let bgColor = props.bgColor;
 let w = props.width;
 let h = props.height;
 
+
   return (
     <div className={`${cssClass} ${w} ${h} ${bgColor} ${marginLeft} ${marginRight} ${marginBottom} ${marginTop} ${marginAll}`}>
    <Spline scene="https://prod.spline.design/9zKUBVn7vUYkxFZA/scene.splinecode" />

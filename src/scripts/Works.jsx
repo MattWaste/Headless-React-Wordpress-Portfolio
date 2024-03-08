@@ -11,7 +11,7 @@ export default function Works(){
     <Header></Header>
     <div className="mt-20 mr-10 works-container-intro ">
         <div id='mwdevices' className=" text-4xl rounded-lg works-container-MWDevices bg-[#62878C]">
-        <h2 className="px-24 mt-8 works-container-MWDevices-sect1">MW Devices</h2>
+        <h2 className="px-24 mt--10 works-container-MWDevices-sect1">MW Devices</h2>
         <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect1">MW Devices is a Brooklyn based Music software and technology that seeks to make fellow musicians & creatives lives more lively. <br></br><br></br> Taking advantage of the flexible interfaces of Max and Max for Live, early tools like ‘Multi-Band Panner’ and Onlooker have seen four figure downloads since the company's inception in 2015.</p>
         <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect3">An ethos of ‘immediate and useful’ can be seen in all the tools that MW Devices develops. This can be seen in recent products, including ‘Shattered Delay’, released in late 2023. <br></br><br></br> 2024 will include an increased focus on emerging technologies, including and RNBO~ and embedded computing. Please get intouch for any collaborative ideas or work.
         </p>
