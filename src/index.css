@@ -20,14 +20,14 @@
 */
 
 
-body {
-  @apply font-stara;
-}
+/* body {
+  @apply stara;
+} */
 
 @font-face {
   font-family: 'staramedium';
-  src: url('scripts/fonts/stara-medium-webfont.woff2') format('woff2'),
-       url('scripts/fonts/stara-medium-webfont.woff') format('woff');
+  src: url('http://mawtestsite.local/wp-content/uploads/2024/03/stara-medium-webfont.woff') format('woff'),
+       url('http://mawtestsite.local/wp-content/uploads/2024/03/stara-medium-webfont.woff2') format('woff2');
        
 
   font-weight: normal;
