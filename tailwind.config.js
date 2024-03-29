@@ -4,11 +4,15 @@ module.exports = {
   theme: {
     extend: {
     fontFamily:{ 
-      'stara':[ 'staramedium','Inter','sans-serif'],
-      // 'staraBold':[ 'starabold','Inter','sans-serif'],
-      // 'staraItalic':[ 'staraitalic','Inter','sans-serif'],
-      // 'starasemiBold':[ 'starasemibold','Inter','sans-serif'],
-
+      'sans': ['staramedium','Inter','sans-serif'],
+      'Inter': ['Inter','sans-serif','staramedium',],
+      'staramedium':[ 'staramedium','Inter','sans-serif'],
+      'staraBold':[ 'starabold','Inter','sans-serif'],
+      'staraItalic':[ 'staraitalic','Inter','sans-serif'],
+      'starasemiBold':[ 'starasemibold','Inter','sans-serif'],
+      'theanodidot':[ 'theanodidot','Inter','sans-serif'],
+      'librecalson':[ 'librecalson','Inter','sans-serif'],
+      'poppinsmedium':[ 'poppinsmedium','Inter','sans-serif']
     },
   },
   plugins: [require("@tailwindcss/typography"),

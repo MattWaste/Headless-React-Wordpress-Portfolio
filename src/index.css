@@ -21,7 +21,7 @@
 
 
 /* body {
-  @apply stara;
+  @apply staramedium;
 } */
 
 @font-face {
@@ -35,30 +35,47 @@
 
 }
 
-/* @font-face {
+ @font-face {
   font-family: 'starabold';
-  src: url('scripts/fonts/stara-bold-webfont.woff2') format('woff2'),
-       url('scripts/fonts/stara-bold-webfont.woff') format('woff');
+  src: url('http://mawtestsite.local/wp-content/uploads/2024/03/stara-bold-webfont.woff') format('woff'),
+  url('http://mawtestsite.local/wp-content/uploads/2024/03/stara-bold-webfont.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'staraitalic';
-  src: url('scripts/fonts/stara-mediumitalic-webfont.woff2') format('woff2'),
-       url('scripts/fonts/stara-mediumitalic-webfont.woff') format('woff');
+  src: url('scripts/fonts/stara-mediumitalic-webfont.woff') format('woff'),
+   url('scripts/fonts/stara-mediumitalic-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'starasemibold';
-  src: url('scripts/fonts/stara-semibold-webfont.woff2') format('woff2'),
-       url('scripts/fonts/stara-semibold-webfont.woff') format('woff');
+  src: url('http://mawtestsite.local/wp-content/uploads/2024/03/stara-semibold-webfont.woff') format('woff'),
+   url('http://mawtestsite.local/wp-content/uploads/2024/03/stara-semibold-webfont.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
-} */
+} 
 
+@font-face {
+  font-family: 'theanodidot';
+  src: url('http://mawtestsite.local/wp-content/uploads/2024/03/theanodidot-regular-webfont.woff') format('woff'),
+  url('http://mawtestsite.local/wp-content/uploads/2024/03/theanodidot-regular-webfont.woff2') format('woff2');
+}
+
+
+@font-face {
+  font-family: 'poppinsmedium' ;
+  src: url('http://mawtestsite.local/wp-content/uploads/2024/03/poppins-medium-webfont.woff') format('woff'),
+  url('http://mawtestsite.local/wp-content/uploads/2024/03/poppins-medium-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'librecaslon' ;
+  src: url('http://mawtestsite.local/wp-content/uploads/2024/03/librecaslontext-regular-webfont.woff') format('woff');
+}
 
 
 html,body,div{
@@ -296,4 +313,32 @@ html,body,div{
   .rightChevron {
     left:20rem;
     z-index: 1;
+  }
+
+
+
+    /*  */  /*  */   /*  */ /*  */
+  /*  */  /*  */   /*  */ /*  */
+  /*  */  /*  */   /*  */ /*  */
+  /*  */  /*  */   /*  */ /*  */
+
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 20%;
+    }
+  }
+  .text-gradient {
+    background: linear-gradient(-45deg, green,rgb(230, 207, 61),black,purple);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gradient 10s ease infinite;
   }

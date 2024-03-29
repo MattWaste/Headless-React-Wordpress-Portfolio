@@ -48,7 +48,7 @@ function App() {
   return (
   // <GoogleReCaptchaProvider reCaptchaKey= {CAPKEY}>
   <ApolloProvider client ={client}>
-  <Routes>
+  <Routes classname = 'font-staramedium'>
     <Route  path="/" element={<HomePage/>}></Route>
     <Route  path="/contact" element={<Contact/>}></Route>   
     <Route  path="/about" element={<About/>}></Route>   
