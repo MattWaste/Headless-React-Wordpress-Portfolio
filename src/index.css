@@ -84,13 +84,18 @@ html,body,div{
     scroll-behavior: smooth;
   }
   body{
-    background:#728c62;
+    /* background:#728c62; */
       position: relative;
       min-width: 320px;
       min-height: 100vh;
       margin: 0;
       display: flex;
       place-items: center;
+      background: linear-gradient(90deg, rgba(114, 140, 98, 0.6), rgba(112, 145, 128, 0.6), rgba(110, 150, 158, .6)), 
+      radial-gradient(circle at 0% 0%, rgba(114, 140, 98, 0.5), rgba(137, 188, 171, 0.5), rgba(160, 235, 245, 0.5),transparent), 
+      radial-gradient(circle at 0% 0%, rgba(30, 41, 24, 0.5), rgba(42, 114, 30, 0.5), rgba(53, 186, 35, 0.5),transparent);
+      background-size: 70% 70%;
+      animation: homegradient cubic-bezier(0.445, 0.05, 0.55, 0.95) 10s infinite;
 
   }
 
@@ -120,7 +125,38 @@ html,body,div{
     'header header1 header2'
     'intro main main2'
     'footer footer1 footer2';
+    /* background: linear-gradient(90deg, rgba(114, 140, 98, 0.6), rgba(112, 145, 128, 0.6), rgba(110, 150, 158, .6)), 
+    radial-gradient(circle at 0% 0%, rgba(114, 140, 98, 0.5), rgba(137, 188, 171, 0.5), rgba(160, 235, 245, 0.5),transparent), 
+    radial-gradient(circle at 0% 0%, rgba(30, 41, 24, 0.5), rgba(42, 114, 30, 0.5), rgba(53, 186, 35, 0.5),transparent);
+    backdrop-filter: blur(100px); */
+    
+
+
+  ;
+  /* background-size: 70% 70%;
+  animation: homegradient cubic-bezier(0.445, 0.05, 0.55, 0.95) 30s infinite; */
+
   }
+  
+  @keyframes homegradient {
+    0% {
+      background-position: 0% 0%, 0% 0%, 0% 0%;
+    }
+    50% {
+      background-position: 100% 50%, 50% 50%, 50% 50%;
+    }
+    75% {
+      background-position: 100% 100%, 100% 100%, 100% 100%;
+    }
+    100% {
+      background-position: 1% 1%, 1% 1%, 1% 1%;
+    }
+  }
+
+  .blurg{
+    backdrop-filter: blur(200px);
+  }
+
   .home-container-intro{
     grid-area:intro;
   }
@@ -336,9 +372,15 @@ html,body,div{
   }
   .text-gradient {
     background: linear-gradient(-45deg, green,rgb(230, 207, 61),black,purple);
-    background-size: 200% auto;
+    background-size: 400% 400% ;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     animation: gradient 10s ease infinite;
   }
+
+
+
+
+    
+ 
