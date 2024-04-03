@@ -10,10 +10,10 @@ export default function Header(){
                 <div className="dropdown">
                     <button className="dropbtn hover:text-violet-600"> <a href="/works">Works</a></button>
                     <div className="dropdown-content">
-                    <a className="hover:text-[#62878C]" href={'http://mawtestsite.local/works/#mwdevices'}> MW Devices</a>
-                    <a className="hover:text-[#A1B296]" href={'http://mawtestsite.local/works/#dev'}> Dev</a>
-                    <a className="hover:text-[#AF8497]" href={'http://mawtestsite.local/works/#design'}> Brand & Design</a>
-                    <a className="hover:text-[#B1C3C6]" href={'http://mawtestsite.local/works/#music'}> Music</a>
+                    <a className="hover:text-[#62878C]" href={'http://mawtestsite.local/works#mwdevices'}> MW Devices</a>
+                    <a className="hover:text-[#A1B296]" href={'http://mawtestsite.local/works#dev'}> Dev</a>
+                    <a className="hover:text-[#AF8497]" href={'http://mawtestsite.local/works#design'}> Brand & Design</a>
+                    <a className="hover:text-[#B1C3C6]" href={'http://mawtestsite.local/works#music'}> Music</a>
                 </div>
                 </div>
             </ul>

@@ -72,7 +72,7 @@ export default function HomePage(){
 
 
     return(
-        <div className="gap-5 pl-14 font-display home-container blurg ">
+        <div className="gap-5 pl-14 font-display home-container blurg">
         <video className="py-40 pr-4 home-container-main2 video-container" src="http://mawtestsite.local/wp-content/uploads/2023/07/greenportal4.mp4"   autoPlay loop muted width="400px" height="300px" ></video>
         <Header></Header>
         <img src=""></img>
@@ -84,7 +84,7 @@ export default function HomePage(){
         </p>
         <button className= "focus:outline-none txt-yellow-400 bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800" type="button" onClick= {()=>{window.location.href = 'http://mawtestsite.local/contact'}}>Work with me</button>
         </div>
-        <canvas id="myCanvas" width="200" height="200"></canvas>
+        {/* <canvas id="myCanvas" width="200" height="200"></canvas> */}
         <Footer></Footer>
         </div>
     )
