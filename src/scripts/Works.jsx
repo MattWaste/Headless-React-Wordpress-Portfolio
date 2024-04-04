@@ -9,7 +9,8 @@ export default function Works(){
 <div>
     <div className="gap-5 font-display works-container blurg ">
     <Header></Header>
-    <div className="mt-20 mr-10 works-container-intro ">
+    <div className=" works-container-intro">
+        <div id = 'works' className="text-4xl rounded-lg works-container-MWDevices"></div>
         <div id='mwdevices' className=" text-4xl rounded-lg works-container-MWDevices bg-[#62878C]">
             <h2 className="px-24 mt-8 works-container-MWDevices-sect1">MW Devices</h2>
             <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect1">MW Devices is a Brooklyn based Music software and technology that seeks to make fellow musicians & creatives lives more lively. <br></br><br></br> Taking advantage of the flexible interfaces of Max and Max for Live, early tools like ‘Multi-Band Panner’ and Onlooker have seen four figure downloads since the company's inception in 2015.</p>

@@ -12,7 +12,10 @@ module.exports = {
       'starasemiBold':[ 'starasemibold','Inter','sans-serif'],
       'theanodidot':[ 'theanodidot','Inter','sans-serif'],
       'librecalson':[ 'librecalson','Inter','sans-serif'],
-      'poppinsmedium':[ 'poppinsmedium','Inter','sans-serif']
+      'poppinsmedium':[ 'poppinsmedium','Inter','sans-serif'],
+      spacing:{
+        'vh': '98vh'
+      }
     },
   },
   plugins: [require("@tailwindcss/typography"),
