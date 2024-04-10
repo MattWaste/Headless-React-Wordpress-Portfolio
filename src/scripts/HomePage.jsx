@@ -74,7 +74,7 @@ export default function HomePage(){
     return(
         <div className="gap-5 pl-14 font-display home-container blurg">
         <video className="py-40 pr-4 home-container-main2 video-container" src="http://mawtestsite.local/wp-content/uploads/2023/07/greenportal4.mp4"   autoPlay loop muted width="400px" height="300px" ></video>
-        <Header></Header>
+        <Header className ='home-container-header'></Header>
         <img src=""></img>
         <div className="home-container-intro py-44">
         <h3 className="py-5 text-2xl ">HELLO THERE</h3>

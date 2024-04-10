@@ -5,7 +5,7 @@ import Footer from "./Footer";
 export default function About(){
     return(
         <div className="gap-5 pl-14 font-display about-container blurg ">
-        <Header></Header>
+        <Header className = 'about-container-header'></Header>
         <div className="w-4/5 py-32 mt-10 about-container-main2">
             <img src="http://mawtestsite.local/wp-content/uploads/2023/07/Mosaic-transparent@2x.png"></img>
         </div>

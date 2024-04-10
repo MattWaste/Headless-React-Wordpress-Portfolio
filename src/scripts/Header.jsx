@@ -1,8 +1,12 @@
 
-export default function Header(){
+export default function Header(props){
+
+    let cssClass = props.className;
+    let id = props.id;
+
     return(
        
-        <div className="text-lg home-container-header about-container-header works-container-header">
+        <div id={`${id}`} className={`${cssClass} text-lg `}>
             <ul className="flex items-stretch gap-10 mx-8 my-5"> 
                 <li><a className=" hover:text-violet-600"  href="/">Home</a></li>
                 <li><a className=" hover:text-violet-600" href="/contact">Contact</a></li>
