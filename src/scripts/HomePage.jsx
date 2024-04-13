@@ -72,7 +72,7 @@ export default function HomePage(){
 
 
     return(
-        <div className="gap-5 pl-14 font-display home-container blurg">
+        <div className="gap-5 pl-14 font-display home-container bg blurg">
         <video className="py-40 pr-4 home-container-main2 video-container" src="http://mawtestsite.local/wp-content/uploads/2023/07/greenportal4.mp4"   autoPlay loop muted width="400px" height="300px" ></video>
         <Header className ='home-container-header'></Header>
         <img src=""></img>

@@ -1,14 +1,41 @@
-import React from "react";
+import React, {useEffect}  from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import ImageSlider from './ImageSlider.jsx';
 
 
-export default function Works(){
-    return(
-<div>
-<Header id = 'staticHeader'></Header>
 
+
+export default function Works(){
+
+
+
+    useEffect(() => {
+        const handleScroll = () => {
+          var header = document.getElementById('staticHeader');
+          var scrollPosition = window.scrollY > window.innerHeight;
+          if (scrollPosition) {
+            header.style.backdropFilter = 'blur(150px)';
+          } else {
+            header.style.backdropFilter = 'blur(0px)';
+          }
+        }
+    
+        window.addEventListener('scroll', handleScroll);
+    
+        // Clean up function
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        }
+      }, []);
+    
+
+
+
+
+    return(
+<div className="">
+<Header id = 'staticHeader' className = 'staticHeader.blur'></Header>
     <div className="gap-5 font-display works-container blurg ">
     <div className=" works-container-intro">
         <div id = 'works' className="text-4xl works-container-MWDevices">
