@@ -77,9 +77,6 @@
   src: url('http://mawtestsite.local/wp-content/uploads/2024/03/librecaslontext-regular-webfont.woff') format('woff');
 }
 
-:root {
-  --shared-bg-color: red; /* Replace 'red' with the actual color */
-}
 
 html,body,div{
     width: 100%;
@@ -89,8 +86,8 @@ html,body,div{
   body{
     background:#728c62;
       position: relative;
-      min-width: 320px;
-      min-height: 100vh;
+      /* min-width: 320px;
+      min-height: 100vh; */
       margin: 0;
       display: flex;
       place-items: center;
@@ -208,10 +205,12 @@ html,body,div{
   
   .about-container-intro{
     grid-area: intro;
-    place-content: end;
+    align-self: center;
   }
   .about-container-main2{
-    grid-area: main2;
+    grid-area:main/main2;
+    grid-column:main/main2;
+    overflow: clip;
   }
   
   .about-container-footer{

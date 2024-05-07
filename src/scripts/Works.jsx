@@ -13,7 +13,7 @@ export default function Works(){
     useEffect(() => {
         const handleScroll = () => {
           var header = document.getElementById('staticHeader');
-          var scrollPosition = window.scrollY > window.innerHeight;
+          var scrollPosition = window.scrollY > 8;
           if (scrollPosition) {
             header.style.backdropFilter = 'blur(150px)';
           } else {
@@ -39,10 +39,8 @@ export default function Works(){
     <div className="gap-5 font-display works-container blurg ">
     <div className=" works-container-intro">
         <div id = 'works' className="text-4xl works-container-MWDevices">
-            <h2 className="px-24 mt-8 works-container-MWDevices-sect1">Works</h2>
-            <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect1">I am a multi-disciplinary creative with a focus on music, technology, design, and web development. <br></br><br></br> I am currently based in Brooklyn, NY, and am available for freelance work, collaborations, and full-time positions. <br></br><br></br> Please reach out to me for any inquiries or questions.
-            </p>
-            {/* <ImageSlider cssClass = 'works-container-MWDevices-sect2' marginLeft = "ml-10" marginTop ='mt-48' ></ImageSlider> */}
+            <img className=" w-[800px] h-[800px] " src="http://mawtestsite.local/wp-content/uploads/2024/04/logo_Platform_Export_12_4_20.svg" alt="Logo" />
+            <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect1">See what I do </p>
         </div>
         <div id='mwdevices' className=" text-4xl  works-container-MWDevices bg-[#62878C]">
             <h2 className="px-24 mt-8 works-container-MWDevices-sect1">MW Devices</h2>
