@@ -86,8 +86,8 @@ html,body,div{
   body{
     background:#728c62;
       position: relative;
-      /* min-width: 320px;
-      min-height: 100vh; */
+      min-width: 320px;
+      min-height: 100vh;
       margin: 0;
       display: flex;
       place-items: center;

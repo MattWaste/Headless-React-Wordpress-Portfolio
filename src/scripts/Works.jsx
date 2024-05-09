@@ -36,11 +36,11 @@ export default function Works(){
     return(
 <div className="">
 <Header id = 'staticHeader' className = 'staticHeader.blur'></Header>
-    <div className="gap-5 font-display works-container blurg ">
+    <div className="font-display works-container blurg ">
     <div className=" works-container-intro">
-        <div id = 'works' className="text-4xl works-container-MWDevices">
-            <img className=" w-[800px] h-[800px] " src="http://mawtestsite.local/wp-content/uploads/2024/04/logo_Platform_Export_12_4_20.svg" alt="Logo" />
-            <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect1">See what I do </p>
+        <div id = 'works' className="content-start text-4xl works-container-MWDevices">
+            <img className="w-[800px] h-[400px] works-container-MWDevices-sect2 " src="http://mawtestsite.local/wp-content/uploads/2024/04/logo_Platform_Export_12_4_20.svg" alt="Logo" />
+            <p className= "content-end mb-[100px] text-2xl text-center works-container-MWDevices-sect2">See what I do </p>
         </div>
         <div id='mwdevices' className=" text-4xl  works-container-MWDevices bg-[#62878C]">
             <h2 className="px-24 mt-8 works-container-MWDevices-sect1">MW Devices</h2>
