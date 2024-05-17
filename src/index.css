@@ -86,8 +86,8 @@ html,body,div{
   body{
     background:#728c62;
       position: relative;
-      min-width: 320px;
-      min-height: 100vh;
+      /* min-width: 320px; */
+      /* min-height: 100vh; */
       margin: 0;
       display: flex;
       place-items: center;
@@ -156,6 +156,7 @@ html,body,div{
   .blurg{
     backdrop-filter: blur(200px);
     min-height: 100%;
+    max-height: 100%;
   }
 
   .home-container-header{
@@ -295,20 +296,21 @@ html,body,div{
 
 
 
-.works-container-main2{
-  grid-area: main2;
-  grid-column:intro/main2;
-  overflow: auto;
-}  
-
 .works-container-MWDevices{
   display: grid;
-  grid-template-columns: .75fr .75fr .75fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:'sect1 sect2 sect3';
-  min-height: 100vh;
-  max-height: 100vh;
+  min-height: 100vh ;
+  max-height:100vh ;
 
 }
+
+
+#works{
+  max-height: 89.5vh;
+  min-height: 89.5vh;
+}
+
 
 .works-container-MWDevices-sect1{
   grid-area: sect1;

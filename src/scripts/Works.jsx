@@ -8,39 +8,46 @@ import ImageSlider from './ImageSlider.jsx';
 
 export default function Works(){
 
+  useEffect(() => {
+    const handleScroll = () => {
+      var header = document.getElementById('staticHeader');
+      var scrollPosition = window.scrollY > 8;
+      if (scrollPosition) {
+        header.style.backdropFilter = 'blur(150px)';
+      } else {
+        header.style.backdropFilter = 'blur(0px)';
+      }
 
+      // var blur = document.getElementById('works')
+      // if (window.scrollY > 20) {
+      //   blur.style.height = '80vh';
+      // } else {
+      //   blur.style.height = '100vh'; // reset to initial value when not scrolled
+      // }
+    }
 
-    useEffect(() => {
-        const handleScroll = () => {
-          var header = document.getElementById('staticHeader');
-          var scrollPosition = window.scrollY > 8;
-          if (scrollPosition) {
-            header.style.backdropFilter = 'blur(150px)';
-          } else {
-            header.style.backdropFilter = 'blur(0px)';
-          }
-        }
-    
-        window.addEventListener('scroll', handleScroll);
-    
-        // Clean up function
-        return () => {
-          window.removeEventListener('scroll', handleScroll);
-        }
-      }, []);
-    
+    window.addEventListener('scroll', handleScroll);
 
-
+    // Clean up function
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }, [])
 
 
     return(
 <div className="">
 <Header id = 'staticHeader' className = 'staticHeader.blur'></Header>
-    <div className="font-display works-container blurg ">
+    <div className="h-full font-display works-container blurg ">
     <div className=" works-container-intro">
         <div id = 'works' className="content-start text-4xl works-container-MWDevices">
             <img className="w-[800px] h-[400px] works-container-MWDevices-sect2 " src="http://mawtestsite.local/wp-content/uploads/2024/04/logo_Platform_Export_12_4_20.svg" alt="Logo" />
             <p className= "content-end mb-[100px] text-2xl text-center works-container-MWDevices-sect2">See what I do </p>
+            <div className="animate-bounce content-end mt-[110px] works-container-MWDevices-sect2" >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6 mx-auto">
+            <path strokeLinecap="square" strokeLinejoin="bevel" strokeWidth={4} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+            </div>       
         </div>
         <div id='mwdevices' className=" text-4xl  works-container-MWDevices bg-[#62878C]">
             <h2 className="px-24 mt-8 works-container-MWDevices-sect1">MW Devices</h2>
@@ -73,7 +80,7 @@ export default function Works(){
             <ImageSlider cssClass = 'works-container-MWDevices-sect2' marginLeft = "ml-10" marginTop ='mt-48' ></ImageSlider>
         </div> 
     </div>
-    <Footer></Footer>
+    <Footer className =''></Footer>
     </div>
 </div>
 ) 
