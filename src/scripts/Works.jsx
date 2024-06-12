@@ -2,6 +2,22 @@ import React, {useEffect}  from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import ImageSlider from './ImageSlider.jsx';
+import AudioPlayer from './AudioPlayer.jsx';
+
+
+/*
+
+bg mw devices = rgb(137,215,130)
+
+bg dev = rgb(161,178,150) orig
+
+bg design = rgb(175,132,151) orig
+
+bg music = rgb(177,195,198) orig
+
+*/
+
+
 
 
 
@@ -26,15 +42,12 @@ export default function Works(){
       // }
     }
 
-    window.addEventListener('scroll', handleScroll);
-
+    window.addEventListener('scroll', handleScroll); 
     // Clean up function
     return () => {
       window.removeEventListener('scroll', handleScroll);
     }
   }, [])
-
-
     return(
 <div className="">
 <Header id = 'staticHeader' className = 'staticHeader.blur'></Header>
@@ -49,38 +62,77 @@ export default function Works(){
             </svg>
             </div>       
         </div>
-        <div id='mwdevices' className=" text-4xl  works-container-MWDevices bg-[#62878C]">
-            <h2 className="px-24 mt-8 works-container-MWDevices-sect1">MW Devices</h2>
-            <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect1">MW Devices is a Brooklyn based Music software and technology that seeks to make fellow musicians & creatives lives more lively. <br></br><br></br> Taking advantage of the flexible interfaces of Max and Max for Live, early tools like ‘Multi-Band Panner’ and Onlooker have seen four figure downloads since the company's inception in 2015.</p>
-            <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect3">An ethos of ‘immediate and useful’ can be seen in all the tools that MW Devices develops. This can be seen in recent products, including ‘Shattered Delay’, released in late 2023. <br></br><br></br> 2024 will include an increased focus on emerging technologies, including and RNBO~ and embedded computing. Please get intouch for any collaborative ideas or work.
-            </p>
-            <ImageSlider cssClass = 'works-container-MWDevices-sect2' marginLeft = "ml-10" marginTop ='mt-48' ></ImageSlider>
+        <div id='mwdevices' className=" text-2xl works-container-MWDevices bg-[rgb(137,215,130)]">
+            <h2 className="pl-24 text-5xl mt-28 font-poppinsmedium works-container-MWDevices-sect1">MW Devices</h2>
+            <p className= "pl-24 mt-48 text-3xl -mr-28 works-container-MWDevices-sect1">Is a Brooklyn based music software and technology that seeks to make fellow musicians & creatives lives more lively. </p>
+            <p className="pl-8 pr-24 works-container-MWDevices-sect3 mt-[34REM]"> Tools like ‘Multi-Band Panner’ and 'Onlooker' have seen four figure downloads since the company's inception in 2015.</p>
+            <p className="works-container-MWDevices-sect2 mt-[60REM] pr-24 ">
+            2024 will include an increased focus on emerging technologies, including Gen~, RNBO, & embedded computing.
+            </p> 
+            <p className="pl-8 pr-24 mt-[77REM] works-container-MWDevices-sect3 ">
+              Recent collaborations inlcude working with Ableton on the 'Building Max Devices' Pack for Live 12.
+            </p> 
+            <video autoPlay loop muted className="rounded-md mt-96 works-container-MWDevices-sect2"  src='http://mawtestsite.local/wp-content/uploads/2024/05/Screen-Recording-2024-05-21-at-5.56.35 PM-1.mov'></video>
+            <img className="works-container-MWDevices-sect1 pl-14  mt-[54REM]" src= 'http://mawtestsite.local/wp-content/uploads/2024/05/Screen-Shot-2020-05-29-at-8.24.37-PM-1.png'></img>
+            <img className="works-container-MWDevices-sect2 mt-[76REM]" src= 'http://mawtestsite.local/wp-content/uploads/2024/05/Screenshot-2024-05-22-at-10.21.50 AM.png'></img>
+            {/* <ImageSlider cssClass = 'works-container-MWDevices-sect2' marginLeft = "ml-10" marginTop ='mt-48' ></ImageSlider> */}
         </div>
-        <div id='dev' className="text-4xl  works-container-MWDevices   bg-[#A1B296]">
-            <h2 className="px-24 mt-8 works-container-MWDevices-sect1">Dev</h2>
-            <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect1"> I currently work as a full stack web developer, able to combine my years working with physical computing and real-time DSP with modern web development frameworks and principles. <br></br><br></br> Current technology stack includes HTML,CSS, Javascript, React, Node, Git, Spline, RNBO, Max, M4L, GraphQL, Node, MongoDB, and more. 
-            </p>
-            <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect3">Upcoming web applications include the “Muse” songwriting companion, and custom interactive e-shops. <br></br><br></br> I love to collaborate and currently am taking on both short-term and long-term clients including team recruiting for any larger scale projects.
-            </p>
-            <ImageSlider cssClass = 'works-container-MWDevices-sect2' marginLeft = "ml-10" marginTop ='mt-48' ></ImageSlider>
+
+
+        <div className="h-auto">
+        <h2 className="px-24 py-24  bg-[#82b3d7] pt-28 text-5xl font-poppinsmedium">Development</h2>            
+        <div id='dev' className="text-2xl  pl-24 pr-24 pb-24 works-container-Dev   bg-[#82b3d7]">
+          <img className ='object-cover w-4/5 works-container-Dev-sect1 h-3/5' src ='http://mawtestsite.local/wp-content/uploads/2024/05/website_work_coding.png'></img>
+          <h3 className="self-end pb-48 text-3xl font-staraBold works-container-Dev-sect1">Modern Code</h3>
+          <p className="self-end pb-20 pr-10 text-xl text-balance works-container-Dev-sect1"> In rhoncus velit nisl, mollis ultrices diam porta eu. Morbi vitae eleifend nibh. Mauris eget mattis magna. Suspendisse finibus nisl a fringilla blandit.  </p>
+          <img className ='object-contain w-4/5 h-3/5 works-container-Dev-sect2 ' src ='http://mawtestsite.local/wp-content/uploads/2024/05/webstack_composite.png'></img>
+          <h3 className="self-end pb-48 text-3xl font-staraBold works-container-Dev-sect2">Wide Stack</h3>
+          <p className="self-end pb-20 pr-10 text-xl works-container-Dev-sect2"> In rhoncus velit nisl, mollis ultrices diam porta eu. Morbi vitae eleifend nibh. Mauris eget mattis magna. Suspendisse finibus nisl a fringilla blandit. </p>
+          <img className ='object-cover w-4/5 h-3/5 works works-container-Dev-sect3' src ='http://mawtestsite.local/wp-content/uploads/2024/05/ai_training_model_1.png'></img>
+          <h3 className="self-end pb-48 text-3xl font-staraBold works-container-Dev-sect3">New Tech</h3>
+          <p className="self-end pb-20 pr-10 text-xl works-container-Dev-sect3">  In rhoncus velit nisl, mollis ultrices diam porta eu. Morbi vitae eleifend nibh. Mauris eget mattis magna. Suspendisse finibus nisl a fringilla blandit. </p>
+          <img className ='object-cover w-4/5 h-3/5 works-container-Dev-sect4' src ='http://mawtestsite.local/wp-content/uploads/2024/05/raspberry_pi_push3.jpeg'></img>
+          <h3 className="self-end pb-48 text-3xl font-staraBold works-container-Dev-sect4"> Embedded Compute</h3>
+          <p className="self-end pb-20 pr-10 text-xl works-container-Dev-sect4"> In rhoncus velit nisl, mollis ultrices diam porta eu. Morbi vitae eleifend nibh. Mauris eget mattis magna. Suspendisse finibus nisl a fringilla blandit.  </p>
         </div>
-        <div id='design' className="text-4xl   works-container-MWDevices   bg-[#AF8497]">
-            <h2 className="px-24 mt-8 works-container-MWDevices-sect1">Design</h2>
-            <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect1">Having spent nearly a decade of my career focused on local and global engagement , I find a holistic vision for how to approach brand, design, and product necessary.<br></br><br></br> 
-            Continuity amongst these core elements have led to a number of design and branding projects that have included the use of tools like Figma, Affinity Designer, Affinity Photo, Affinity Publisher, Miro, and Sketch.
-            </p>
-            <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect3">Managing the brand experience of regions that encompass 10’s of millions of people have encouraged me to think globally and act locally. 
-            </p>
-            <ImageSlider cssClass = 'works-container-MWDevices-sect2' marginLeft = "ml-10" marginTop ='mt-48' ></ImageSlider>
         </div>
-        <div id='music' className="text-4xl   works-container-MWDevices   bg-[#B1C3C6]">
-            <h2 className="px-24 mt-8 works-container-MWDevices-sect1">Music</h2>
-            <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect1">A cooler older sister and LA FM radio lead to my love of music, and my guiding light. I  have worked professionally in music production for over 10 years with experience writing, producing, and engineering. </p>
-            <p className= "px-24 mt-24 text-xl center works-container-MWDevices-sect3">From micro-editing and vocal tuning, to sound design and songwriting, I am happy to collaborate in all parts of the sonic process. </p>
-            <ImageSlider cssClass = 'works-container-MWDevices-sect2' marginLeft = "ml-10" marginTop ='mt-48' ></ImageSlider>
+        
+        <div className="h-auto">
+        <h2 className="px-24 py-24  bg-[#d7a582]  pt-28 text-5xl font-poppinsmedium">Brand & Design</h2>            
+        <div id='design' className="text-4xl px-24   works-container-Design bg-[#d7a582]">
+          <video className="p-8 works-container-Design-sect1" autoPlay loop muted  src= 'http://mawtestsite.local/wp-content/uploads/2024/05/brand_excercise_compressed.mov'></video>
+          <h3 className="pl-8 text-3xl pt-[28REM] font-staraBold works-container-Design-sect1">Brand</h3>
+          <p className = 'p-8 text-xl pt-[33REM] works-container-Design-sect1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius maximus ipsum, non tincidunt quam. Donec pretium sem nisl, quis vehicula nisi sollicitudin cursus. Vivamus feugiat mauris nec lectus semper finibus sit amet ac risus. Nullam ac turpis a purus aliquet eleifend. In porta tristique arcu, a egestas dolor mattis non. Vivamus malesuada risus nec purus ultricies dictum.r</p>
+
+          <img className ='p-8 works-container-Design-sect2' src ='http://mawtestsite.local/wp-content/uploads/2024/05/design_books_new.jpg'></img>
+          <h3 className="pl-8 text-3xl pt-[28REM] font-staraBold works-container-Design-sect2">Research</h3>
+          <p className = 'p-8 text-xl pt-[33REM] works-container-Design-sect2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius maximus ipsum, non tincidunt quam. Donec pretium sem nisl, quis vehicula nisi sollicitudin cursus. Vivamus feugiat mauris nec lectus semper finibus sit amet ac risus. Nullam ac turpis a purus aliquet eleifend. In porta tristique arcu, a egestas dolor mattis non. Vivamus malesuada risus nec purus ultricies dictum.</p>
+
+          <img className ='p-8 works-container-Design-sect3' src ='http://mawtestsite.local/wp-content/uploads/2024/05/Figma_delay_creation.png'></img>
+          <h3 className="pl-8 text-3xl pt-[28REM] font-staraBold works-container-Design-sect3">Design</h3>
+          <p className = 'p-8 text-xl pt-[33REM] works-container-Design-sect3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius maximus ipsum, non tincidunt quam. Donec pretium sem nisl, quis vehicula nisi sollicitudin cursus. Vivamus feugiat mauris nec lectus semper finibus sit amet ac risus. Nullam ac turpis a purus aliquet eleifend. In porta tristique arcu, a egestas dolor mattis non. Vivamus malesuada risus nec purus ultricies dictum.</p>
+        </div>
+    
+         
+      <div className="h-auto">
+        <h2 className="px-24 py-24  bg-[#d78289] pt-28 text-5xl font-poppinsmedium">Music</h2>
+        <div id='music' className="text-4xl works-container-Music bg-[#d78289]">    
+          <div className ='px-24 h-36 works-container-Music-sect1'>
+            <img className = 'pb-10' src = 'http://mawtestsite.local/wp-content/uploads/2024/05/IMG_2631_small.jpg'></img>
+            <AudioPlayer url = 'http://mawtestsite.local/wp-content/uploads/2024/05/Chordal-Reasons-4_16_24.mp3'></AudioPlayer>
+            <AudioPlayer url = 'http://mawtestsite.local/wp-content/uploads/2024/05/Chordal-Reasons-4_16_24.mp3'></AudioPlayer>
+          </div>
+          <div className="className ='px-24 pb-10 text-xl h-36 works-container-Music-sect2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius maximus ipsum, non tincidunt quam. Donec pretium sem nisl, quis vehicula nisi sollicitudin cursus. Vivamus feugiat mauris nec lectus semper finibus sit amet ac risus. Nullam ac turpis a purus aliquet eleifend. In porta tristique arcu, a egestas dolor mattis non. Vivamus malesuada risus nec purus ultricies dictum.
+          <AudioPlayer url = 'http://mawtestsite.local/wp-content/uploads/2024/05/Chordal-Reasons-4_16_24.mp3'></AudioPlayer>
+          <AudioPlayer url = 'http://mawtestsite.local/wp-content/uploads/2024/05/Chordal-Reasons-4_16_24.mp3'></AudioPlayer>
+
+          </div>
         </div> 
+      </div>
+      </div>
     </div>
-    <Footer className =''></Footer>
+    {/* <Footer id ='worksFooter'></Footer>         */}
     </div>
 </div>
 ) 
