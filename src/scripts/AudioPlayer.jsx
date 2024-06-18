@@ -1,13 +1,21 @@
 import React, { useState, useRef } from 'react';
 import ReactPlayer from 'react-player';
 
-const AudioPlayer = ({ url }) => {
+const AudioPlayer = ({ url}) => {
   const [playing, setPlaying] = useState(false);
   const [played, setPlayed] = useState(0);
   const [seeking, setSeeking] = useState(false);
-  const [volume, setVolume] = useState(0.8); // Add this line
+  const [volume, setVolume] = useState(0.7); // Add this line
+  const [hover, setHover] = useState(false);
 
   const playerRef = useRef(null);
+
+  const handleHover = () => {
+    setHover(!hover);
+    if (hover) {
+
+    }
+  }
 
   const handlePlayPause = () => {
     setPlaying(!playing);
@@ -49,8 +57,7 @@ const AudioPlayer = ({ url }) => {
         width="0"
         height="0"
       />
-      <button style={{ backgroundColor: 'blue', color: 'white' }} onClick={handlePlayPause}>
-        {playing ? 'Pause' : 'Play'}
+      <button className={playing ? 'pause-button' : 'play-button'} onClick={handlePlayPause} onDragOver={handleHover}>
       </button>
       <input
         type='range' min={0} max={0.999999} step='any' // Change the step value
