@@ -63,7 +63,7 @@ export default function Contact(){
         <div className="gap-5 contact-container pl-14 font-display blurg">
         <Header className='contact-container-header'></Header>
         <h2 className="pb-16 mt-24 mr-20 text-4xl text-center contact-container-intro2">If you want to touch more grass, let me help. </h2>
-        <Grass cssClass ='contact-container-grass' marginLeft = 'm-4' ></Grass>
+        <Grass cssClass ='contact-container-grass' marginLeft = 'm-4'></Grass>
         <div className="p-1 ml-16 mt-36 contact-container-intro">
         <form onSubmit={handleSubmit}>
             <h3 className="mt-20 mb-3 font-bold"> email</h3>
