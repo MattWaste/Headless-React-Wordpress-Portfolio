@@ -139,107 +139,7 @@ max-width: auto;
 
 
   
-  /* .home-container {
-    display: grid;
-    grid-template-columns: 1fr .25fr 1fr;
-    grid-template-rows: 1fr 20fr 1fr;
-    padding-bottom:10px;
-    grid-template-areas: 
-    'header header1 header2'
-    'intro main main2'
-    'footer . footer2';
-  }
   
-
-  .home-container-header{
-    grid-area:header2;
-  }
-
-  .home-container-intro{
-    grid-area:intro;
-  }
-
-  .home-container-main2{
-    grid-area: main2;
-  }
-  
-  
-  .home-container-footer{
-
-
-    grid-area: footer;
-  }
-  
-  .home-container-footer2{
-    grid-area: footer2;
-  }
-   */
-  
-
-    /* .about-container {
-    display: grid;
-    grid-template-columns: 1fr .25fr 1fr;
-    grid-template-rows: 1fr 20fr 1fr;
-    padding-bottom:10px;
-    grid-template-areas: 
-    'header header1 header2'
-    'intro main main2'
-    'footer footer1 footer2';
-    max-width: 100vh;
-    max-height:100vh;
-    } */
-  
-  /* .about-container-header{
-    grid-area: header2;
-
-  
-  }
-  
-  .about-container-intro{
-    grid-area: intro;
-    align-self: center;
-  }
-  .about-container-main2{
-    grid-area:main/main2;
-    grid-column:main/main2;
-    overflow: clip;
-  }
-  
-  .about-container-footer{
-    grid-area: footer;
-  } */
- 
-  /* .works-container{
-    display: grid;
-    grid-template-columns: 1fr .25fr 1fr;
-    grid-template-rows: 1fr 20fr 1fr;
-    padding-top: 120px;
-    padding-bottom:10px;
-    grid-template-areas: 
-    'header header1 header2'
-    'intro main main2'
-    'footer footer1 footer2';
-  } */
-   
-
-  /* .works-container-intro{
-    grid-area: intro;
-    grid-column: 1/span 3 ;
-  }  
-  */
-  /* .works-container-footer{
-    grid-area: footer;
-  } 
-
-  .work-container-footer2{
-    grid-area: footer2;
-  }
-
-#worksFooter{
-max-height: 10vh;
-position: fixed;
-bottom: 0 ;
-} */
 
 .works-container-logo{
   display: grid;
@@ -247,25 +147,6 @@ bottom: 0 ;
 }
 
 
-/* .works-container-logo{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:'sect1 sect2 sect3';
-  min-height: 100vh ;
-  max-height:150vh ;
-} */
-
-/* .works-container-logo-sect1{
-  grid-area: sect1;
-  
-}
-.works-container-logo-sect2{
-  grid-area: sect2;
-}
-  
-.works-container-logo-sect3{
-  grid-area: sect3;
-} */
 
 .works-container-MWDevicesA{
   display: grid;
@@ -279,33 +160,6 @@ bottom: 0 ;
 }
 
 
-
-
-/* .works-container-MWDevices-sect1{
-  grid-area: sect1;
-  grid-column: sect1/sect2;
-  overflow: visible;
-  object-fit:cover;
-
-}
-
-  
-.works-container-MWDevices-sect3{
-  grid-area: sect3;
-  overflow: hidden;
-  object-fit:cover;
-  box-sizing: border-box;
-
-
-}
-
-.works-container-MWDevices-sect4{
-  grid-area: sect4;
-  overflow: hidden;
-  object-fit: cover ;
-  box-sizing: border-box;
-
-} */
 
 .works-container-Dev{
   display: grid;
@@ -404,75 +258,11 @@ bottom: 0 ;
 
 }
 
-/* .dev-container{
-  display: grid;
-grid-template-columns:1fr 1fr;
-max-width: 80%;
-margin: 0 auto;
-gap: 20px;
-} */
 
 #works{
   min-height: 87.5vh;
   max-height: 87.5vh;
 }
-
-/*  */
-/* .contact-container{
-  display: grid;
-  grid-template-columns: 1fr .25fr 1fr;
-  grid-template-rows: 1fr 20fr 1fr;
-  padding-bottom:10px;
-  grid-template-areas: 
-  'header header1 header2'
-  'intro main main2'
-  'footer footer1 footer2';
-  max-height:100vh;
-  max-width: 100vh;
-} */
-
-
-
-
-/* .contact-container-grass{
-grid-area: main;
-grid-column:main/main2;
-margin-top: 216px;
-max-height: 50%;
-max-width: auto; */
-/* mask-image: url(http://mawtestsite.local/wp-content/uploads/2023/07/elipse_export.png);
-mask-repeat: no-repeat;
-mask-position: center;
-mask-size: contain; */
-/* pointer-events:none;
-z-index: 1;
-
-} */
-
-/* .grass{
-
-  max-height: 50%;
-  margin-top: 216px;
-  background-color: red;
-}
-
-
-
-.contact-container-header{
-  grid-area: header2;
-}
-
-.contact-container-intro{
-grid-area: intro;
-overflow: clip;
-}
-.contact-container-intro2{
-grid-area: intro;
-grid-column: intro/main2;
-} */
-
-
-
 
 .audio-player-container {
   height: 100px; /* Set the height */
@@ -654,26 +444,6 @@ grid-column: intro/main2;
     box-sizing: border-box;
   }
 
-/* #staticFooter{
-  flex-direction: flex;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 100000;
-  height: 60px;
-  width: 100%; 
-  padding-bottom: 80px;
-
-} */
-
-
-
-
-  /* .staticHeader.blurg{
-    backdrop-filter: blur(150px);
-    background-color: transparent;
-  } */
-
 
   #staticHeader:hover{
     padding-bottom: 180px;
@@ -681,24 +451,6 @@ grid-column: intro/main2;
     background-color: transparent;
   }
   
-  
-  /* .headerBlur{
-    flex-direction: flex;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 60px;
-    width: 100%;
-    padding-left: 59.08%;
-    padding-bottom: 80px;
-    background: linear-gradient(90deg, rgba(114, 140, 98, 0.6), rgba(112, 145, 128, 0.6), rgba(110, 150, 158, .6)), 
-      radial-gradient(circle at 0% 0%, rgba(114, 140, 98, 0.5), rgba(137, 188, 171, 0.5), rgba(160, 235, 245, 0.5),transparent), 
-      radial-gradient(circle at 0% 0%, rgba(30, 41, 24, 0.5), rgba(42, 114, 30, 0.5), rgba(53, 186, 35, 0.5),transparent);
-      background-size: 200% 200%;
-      animation: homegradient cubic-bezier(0.445, 0.05, 0.55, 0.95) 10s infinite;
-      background-color: #728c62;
-  } */
-
 
 
    .blurg{
