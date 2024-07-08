@@ -28,7 +28,7 @@
     "postcss": "^8.4.28",
     "postcss-import": "^15.1.0",
     "react-error-overlay": "6.0.9",
-    "tailwindcss": "^3.3.3",
+    "tailwindcss": "^3.4.4",
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {

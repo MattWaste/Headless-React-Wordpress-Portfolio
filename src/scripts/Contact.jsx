@@ -81,7 +81,7 @@ export default function Contact(){
         //     <button className= " focus:outline-none bg-[#7DDA28] hover:bg-[#5A9D1B] focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5  dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 " type="submit">Send Message
         //     </button>
         //     <div classname = ''>
-        //     <ReCAPTCHA className="  pt-10" sitekey="6Le5KMgpAAAAADoxanPdRux1g3ovy-lDIVM-MG_4" onChange={handleCaptchaChange}></ReCAPTCHA>
+        //     <ReCAPTCHA className="pt-10 " sitekey="6Le5KMgpAAAAADoxanPdRux1g3ovy-lDIVM-MG_4" onChange={handleCaptchaChange}></ReCAPTCHA>
         //     </div>
         //   </div>  
         // </form>
@@ -90,9 +90,9 @@ export default function Contact(){
         // </div>
 
         <div className='main-container'>
-        <Header id = 'staticHeader' className = 'staticHeader.blur'></Header>
-        <h2 className="text-4xl px-24 mt-60 text-center ">If you want to touch more grass, let me help. </h2>
-        <div className="contact-container grow">
+        <Header></Header>
+        <h2 className="px-24 text-4xl text-center mt-60 ">If you want to touch more grass, let me help. </h2>
+        <div className="px-24 contact-container grow">
               <div className="">
                 <form className="p-1 mr-16" onSubmit={handleSubmit}>
                   <h3 className="mt-20 mb-3 font-bold"> email</h3>
@@ -103,7 +103,7 @@ export default function Contact(){
                   <input  value={subjectValue} onChange={e => {setSubjectValue(e.target.value)}} maxLength={100}     
                   className=' p-2 w-full h-full  mb-6 bg-zinc-300 rounded-[7px]'>   
                   </input>            
-                  <h3 className="mb-3 font-bold"> message</h3>    
+                  <h3 className="mb-3 font-bold text-black"> message</h3>    
                   <textarea value={messageValue} onChange={e => {setMessageValue(e.target.value)}} maxLength={2000} 
                   className=' mb-3 w-full h-full pl-1 bg-zinc-300 rounded-[7px]'>  
                   </textarea>            
@@ -112,8 +112,8 @@ export default function Contact(){
                   <ReCAPTCHA className="pt-10" sitekey="6Le5KMgpAAAAADoxanPdRux1g3ovy-lDIVM-MG_4" onChange={handleCaptchaChange}></ReCAPTCHA>
                 </form>
               </div>
-              <div className=" pt-16">
-              <Grass cssClass ='sm:h-1/2 cursor-pointer rounded-md'></Grass>   
+              <div className="mt-10">
+              <Grass cssClass =' overflow-clip  cursor-pointer  min-h-[300px] h-4/5 rounded-md'></Grass>   
               </div>
         </div>
         <Footer></Footer>

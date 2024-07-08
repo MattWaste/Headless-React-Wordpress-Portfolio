@@ -7,8 +7,8 @@ export default function Header(props){
 
     return(
        
-        <div id={`${id}`} className={`${cssClass} text-lg `}>
-            <ul className="flex justify-end items-stretch gap-10 px-36 my-5"> 
+        <div id={`${id}`} className={`${cssClass} overflow-visible text-lg `}>
+            <ul className="flex flex-wrap justify-end gap-10 py-5 sm:justify-center sm:gap-4 sm:px-4 px-36"> 
                 <li><a className=" hover:text-violet-600"  href="/">Home</a></li>
                 <li><a className=" hover:text-violet-600" href="/contact">Contact</a></li>
                 <li><a className=" hover:text-violet-600" href="/about">About</a></li>

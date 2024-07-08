@@ -57,8 +57,9 @@
 }
 
 
-html{
-    scroll-behavior: smooth;
+body,html{
+
+   scroll-behavior: smooth;
   }
 
 
@@ -70,8 +71,7 @@ html{
     radial-gradient(circle at 0% 0%, rgba(114, 140, 98, 0.8), rgba(137, 188, 171, 0.8), rgba(160, 235, 245, 0.8), rgba(114, 140, 98, 0)), 
     radial-gradient(circle at 0% 0%, rgba(30, 41, 24, 0.8), rgba(42, 114, 30, 0.8), rgba(53, 186, 35, 0.8), rgba(30, 41, 24, 0));
     background-size: 70% 70%;
-    animation: homegradient cubic-bezier(0.445, 0.05, 0.55, 0.95) 25s infinite;
-    scroll-behavior: smooth;
+    animation: homegradient cubic-bezier(0.445, 0.05, 0.55, 0.95) 20s infinite;
     backdrop-filter: blur(200px);
   }
 
@@ -130,8 +130,6 @@ html{
     mask-size: contain;
     pointer-events:none;
     z-index: 1;
-    margin-left: 50px;
-
   }
   
   .imageMosaic{
@@ -211,7 +209,7 @@ max-width: auto;
     grid-area: footer;
   } */
  
-  .works-container{
+  /* .works-container{
     display: grid;
     grid-template-columns: 1fr .25fr 1fr;
     grid-template-rows: 1fr 20fr 1fr;
@@ -221,15 +219,15 @@ max-width: auto;
     'header header1 header2'
     'intro main main2'
     'footer footer1 footer2';
-  }
+  } */
+   
 
-  .works-container-intro{
+  /* .works-container-intro{
     grid-area: intro;
-    /* overflow:hidden; */
     grid-column: 1/span 3 ;
   }  
- 
-  .works-container-footer{
+  */
+  /* .works-container-footer{
     grid-area: footer;
   } 
 
@@ -241,20 +239,23 @@ max-width: auto;
 max-height: 10vh;
 position: fixed;
 bottom: 0 ;
+} */
+
+.works-container-logo{
+  display: grid;
+  grid-template-columns: 1fr; /* Creates a single column */
 }
 
 
-
-
-.works-container-logo{
+/* .works-container-logo{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:'sect1 sect2 sect3';
   min-height: 100vh ;
   max-height:150vh ;
-}
+} */
 
-.works-container-logo-sect1{
+/* .works-container-logo-sect1{
   grid-area: sect1;
   
 }
@@ -264,7 +265,7 @@ bottom: 0 ;
   
 .works-container-logo-sect3{
   grid-area: sect3;
-}
+} */
 
 .works-container-MWDevicesA{
   display: grid;
@@ -280,7 +281,7 @@ bottom: 0 ;
 
 
 
-.works-container-MWDevices-sect1{
+/* .works-container-MWDevices-sect1{
   grid-area: sect1;
   grid-column: sect1/sect2;
   overflow: visible;
@@ -304,7 +305,7 @@ bottom: 0 ;
   object-fit: cover ;
   box-sizing: border-box;
 
-}
+} */
 
 .works-container-Dev{
   display: grid;
@@ -331,7 +332,6 @@ bottom: 0 ;
   grid-template-columns: 1fr 1fr;
   max-width:95%;
   margin: 0 auto;
-
 }
 
 .about-container{
@@ -342,12 +342,40 @@ bottom: 0 ;
   gap: 40px;
 }
 
-@media screen and (max-width: 641px) {
+@media screen and (max-width: 768px) {
   .contact-container{
     display: grid;
     grid-template-columns: 1fr;
     max-width:90%;
     margin: 0 auto;
+    gap: 40px;
+    padding: 0 1REM;
+  }
+
+  .main-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;  
+  }
+
+  .home-container-new{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width:95%;
+    margin: 0 auto;
+  }
+
+  .video-container{
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    mask-image: url(http://mawtestsite.local/wp-content/uploads/2023/07/elipse_export.png);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    pointer-events:none;
+    z-index: 1;
   }
   
 }
@@ -612,15 +640,18 @@ grid-column: intro/main2;
 
 
   #staticHeader{
-    position: fixed;
+    position: sticky;
     top: 0;
+      left: 0;
     right: 0;
     z-index: 100000;
     height: 60px;
     width: 100%; /* Adjust this value */
+    padding-bottom: 80px;
     background-color: transparent;
     backdrop-filter:'0px' ;
     transition: padding-bottom .1s ease-in-out;
+    box-sizing: border-box;
   }
 
 /* #staticFooter{
@@ -637,8 +668,8 @@ grid-column: intro/main2;
 
 
 
-/* 
-  #staticHeader.blurg{
+
+  /* .staticHeader.blurg{
     backdrop-filter: blur(150px);
     background-color: transparent;
   } */
@@ -646,6 +677,8 @@ grid-column: intro/main2;
 
   #staticHeader:hover{
     padding-bottom: 180px;
+    backdrop-filter: blur(150px);
+    background-color: transparent;
   }
   
   

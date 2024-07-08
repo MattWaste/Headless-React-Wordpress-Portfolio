@@ -1,7 +1,5 @@
 import React, {useState, useEffect}  from "react";
 import Header from "./Header";
-import Footer from "./Footer";
-import ImageSlider from './ImageSlider.jsx';
 import AudioPlayer from './AudioPlayer.jsx';
 
 
@@ -167,45 +165,43 @@ setBackgroundColor('rgb(' + Math.round(r) + ',' + Math.round(g) + ',' + Math.rou
   }, [])
     return(
 <div>
-<Header id = 'staticHeader' className = 'staticHeader.blur'></Header>
-    <div className="h-full font-display works-container">
-    <div className=" works-container-intro">
-        <div id = 'works' className="content-start text-4xl works-container-logo">
-            <img className="w-[800px] h-[400px] works-container-logo-sect2 " src="http://mawtestsite.local/wp-content/uploads/2024/04/logo_Platform_Export_12_4_20.svg" alt="Logo" />
-            <p className= "content-end mb-[100px] text-2xl text-center works-container-logo-sect2">See what I do </p>
-            <div className="animate-bounce content-end mt-[110px] works-container-logo-sect2" >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6 mx-auto">
-            <path strokeLinecap="square" strokeLinejoin="bevel" strokeWidth={4} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-            </div>       
-        </div>
- 
-      <h2 id='mwdevices' style={{backgroundColor: backgroundColor}} className="px-24 text-7xl py-24 font-poppinsmedium">
+<div className=" main-container">
+<Header id = 'staticHeader' className='staticHeader.blur'></Header>
+        <div className="px-48 place-items-center works-container-logo">
+            <img className="w-2/5 mt-40 h-2/5" src="http://mawtestsite.local/wp-content/uploads/2024/04/logo_Platform_Export_12_4_20.svg" alt="Logo" />
+            <p className= "pt-12 pb-12 text-2xl text-center">See what I do </p>
+            <div className="pb-64 animate-bounce" >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6 mx-auto mt-24 mb-36">
+              <path strokeLinecap="square" strokeLinejoin="bevel" strokeWidth={4} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+              </svg>
+            </div>
+        </div>       
+      <h2 id='mwdevices' style={{backgroundColor: backgroundColor}} className="px-24 py-24 text-7xl font-poppinsmedium">
       <span className="textTransition">MW Devices</span>
       </h2>
       <section>
-      <div style={{backgroundColor: backgroundColor}} className=" gap-10  px-48 pb-14 place-items-center works-container-MWDevicesA">
+      <div style={{backgroundColor: backgroundColor}} className="gap-10 px-48 pb-14 place-items-center works-container-MWDevicesA">
         <video autoPlay loop muted className="col-span-1 rounded-md" src='http://mawtestsite.local/wp-content/uploads/2024/05/Screen-Recording-2024-05-21-at-5.56.35 PM-1.mov'></video>
-        <p className="col-span-1 text-2xl w-4/5 text-center ">MW Devices Is a Brooklyn based music software and technology company that seeks to make fellow musicians and creatives lives more lively. Tools like ‘Multi-Band Panner’, 'Onlooker', and 'Shattered Delay' have seen four figure downloads since the company's inception in 2015.</p>
+        <p className="w-4/5 col-span-1 text-2xl text-center ">MW Devices Is a Brooklyn based music software and technology company that seeks to make fellow musicians and creatives lives more lively. Tools like ‘Multi-Band Panner’, 'Onlooker', and 'Shattered Delay' have seen four figure downloads since the company's inception in 2015.</p>
       </div>
-      <div style={{backgroundColor: backgroundColor}} className="gap-10 pb-24 px-48 works-container-MWDevicesB">
+      <div style={{backgroundColor: backgroundColor}} className="gap-10 px-48 pb-24 works-container-MWDevicesB">
           <div>
-            <img className="object-cover motion-image w-full mb-10 h-36" src= 'http://mawtestsite.local/wp-content/uploads/2024/05/Screenshot-2024-05-22-at-10.21.50 AM.png'></img>
+            <img className="object-cover w-full mb-10 motion-image h-36" src= 'http://mawtestsite.local/wp-content/uploads/2024/05/Screenshot-2024-05-22-at-10.21.50 AM.png'></img>
             <h3 className="pb-5 text-3xl font-staraBold ">Collaborators</h3>
-            <p className="text-xl w-4/5 ">Recent collaborations inlcude working with Ableton on the 'Building Max Devices' Pack for Live 12. Here is an included XY controller device I made with the support of the  Max for Live Team, taking advantage of Javascript and Max.</p>
+            <p className="w-4/5 text-xl ">Recent collaborations inlcude working with Ableton on the 'Building Max Devices' Pack for Live 12. Here is an included XY controller device I made with the support of the  Max for Live Team, taking advantage of Javascript and Max.</p>
           </div>
           <div>
-            <img className="object-cover motion-image w-full mb-10 h-36" src= 'http://mawtestsite.local/wp-content/uploads/2024/06/gen_slice.png'></img>
+            <img className="object-cover w-full mb-10 motion-image h-36" src= 'http://mawtestsite.local/wp-content/uploads/2024/06/gen_slice.png'></img>
             <h3 className="pb-5 text-3xl font-staraBold">New Frontiers</h3>
-            <p className="text-xl w-4/5 "> 2024 will include an increased focus on emerging technologies, including Gen~, RNBO, and embedded computing. Please get intouch for any collaborative ideas or work. </p>
+            <p className="w-4/5 text-xl "> 2024 will include an increased focus on emerging technologies, including Gen~, RNBO, and embedded computing. Please get intouch for any collaborative ideas or work. </p>
           </div>
       </div>
       </section>
              
-        <h2 id='dev'style={{backgroundColor: backgroundColor}}  className="px-24 py-24 text-7xl  font-poppinsmedium">
+        <h2 id='dev'style={{backgroundColor: backgroundColor}}  className="px-24 py-24 text-7xl font-poppinsmedium">
         <span className="textTransition">Development</span></h2>            
         <section>
-          <div style={{backgroundColor: backgroundColor}}  className="gap-10 px-48 pb-24  works-container-Dev">
+          <div style={{backgroundColor: backgroundColor}}  className="gap-10 px-48 pb-24 works-container-Dev">
           <div className="">
             <img className="object-cover w-4/5 mb-10 h-80" src ='http://mawtestsite.local/wp-content/uploads/2024/05/website_work_coding.png'></img>
             <h3 className="pb-5 text-3xl font-staraBold ">Modern Code</h3>
@@ -230,7 +226,7 @@ setBackgroundColor('rgb(' + Math.round(r) + ',' + Math.round(g) + ',' + Math.rou
         </section>
 
       
-      <h2 style={{backgroundColor: backgroundColor}} id='design' className="px-24  py-24 pt-28 text-7xl font-poppinsmedium"><span className="textTransition">Brand and Design</span></h2>
+      <h2 style={{backgroundColor: backgroundColor}} id='design' className="px-24 py-24 pt-28 text-7xl font-poppinsmedium"><span className="textTransition">Brand and Design</span></h2>
       <section>
       <div style={{backgroundColor: backgroundColor}} className="gap-10 px-48 pb-24 works-container-Design ">
         <div>
@@ -255,7 +251,7 @@ setBackgroundColor('rgb(' + Math.round(r) + ',' + Math.round(g) + ',' + Math.rou
          id='music' className="px-24 py-24 bg-[#d78289] pt-28 text-7xl font-poppinsmedium"><span className="textTransition">Music</span></h2>        
         <section>
         <div style={{backgroundColor: backgroundColor}} className="px-48 ">
-          <div className="gap-10  pb-10 place-items-center works-container-Music">
+          <div className="gap-10 pb-10 place-items-center works-container-Music">
             <img className="object-cover h-full rounded-md " src='http://mawtestsite.local/wp-content/uploads/2024/05/IMG_2631_small.jpg'></img>
             <p className="self-center text-2xl ">I am a leading expert in the Ableton ecosystem and have helped with live playback for some of the biggest artists touring today. From micro-editing and vocal tuning, to sound design and songwriting, I am happy to collaborate in all parts of the sonic process. See some examples of my work below.</p>
           </div>
@@ -277,9 +273,7 @@ setBackgroundColor('rgb(' + Math.round(r) + ',' + Math.round(g) + ',' + Math.rou
           </div>
         </div>    
         </section>
-
-      </div>
+      </div>   
     </div>
-</div>
 ) 
 }

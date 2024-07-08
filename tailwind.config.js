@@ -1,9 +1,12 @@
 module.exports = {
   content: ["./**/*.php", "./src/**/*.js","./index.html",
   "./src/**/*.{js,ts,jsx,tsx,css}","./node_modules/tw-elements/dist/js/**/*.js"],
-  theme: {
+  theme:{
+    screens:{
+      'sm':{'max':'767px'},
+    },
     extend: {
-    fontFamily:{ 
+      fontFamily:{ 
       'sans': ['staramedium','Inter','sans-serif'],
       'Inter': ['Inter','sans-serif','staramedium',],
       'staramedium':[ 'staramedium','Inter','sans-serif'],

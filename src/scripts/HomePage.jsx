@@ -23,7 +23,7 @@ export default function HomePage(){
         // <Footer></Footer>
         // </div>
         <div className='main-container'>
-        <Header id = 'staticHeader' className = 'staticHeader.blur'></Header>
+        <Header></Header>
         <div className="px-24 pt-60 home-container-new grow">
             <div>
                 <h3 className="py-5 text-2xl ">HELLO THERE</h3>
@@ -33,7 +33,7 @@ export default function HomePage(){
                 </p>
                 <button className= "focus:outline-none txt-yellow-400 bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800" type="button" onClick= {()=>{window.location.href = 'http://mawtestsite.local/contact'}}>Work with me</button>
             </div>
-            <div className="pt-8">
+            <div className="pt-8 ">
                 <video className="video-container" src="http://mawtestsite.local/wp-content/uploads/2023/07/greenportal4.mp4"   autoPlay loop muted width="400px" height="400px" ></video>
             </div>
         </div>

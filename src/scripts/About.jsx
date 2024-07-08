@@ -18,8 +18,8 @@ export default function About(){
         // </div>
         // <Footer></Footer>
         // </div>
-        <div className="main-container">
-<Header id = 'staticHeader' className = 'staticHeader.blur'></Header>
+<div className="main-container">
+<Header></Header>
     <div className="content-center px-24 pb-6 about-container grow ">
         <div className="place-content-center">
             <p className="text-xl">
