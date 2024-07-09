@@ -1,6 +1,7 @@
 import React, {useState, useEffect}  from "react";
 import Header from "./Header";
 import AudioPlayer from './AudioPlayer.jsx';
+import Footer from "./Footer.jsx";
 
 
 /*
@@ -164,96 +165,94 @@ setBackgroundColor('rgb(' + Math.round(r) + ',' + Math.round(g) + ',' + Math.rou
     }
   }, [])
     return(
-<div>
-<div className=" main-container">
-<Header id = 'staticHeader' className='staticHeader.blur'></Header>
-        <div className="px-48 place-items-center works-container-logo">
-            <img className="w-2/5 mt-40 h-2/5" src="http://mawtestsite.local/wp-content/uploads/2024/04/logo_Platform_Export_12_4_20.svg" alt="Logo" />
-            <p className= "pt-12 pb-12 text-2xl text-center">See what I do </p>
+<div className="main-container">
+<Header id = 'staticHeader'></Header>
+        <div className="px-48 sm:px-0 place-items-center works-container-logo ">
+            <img className="w-2/3 min-h-[300px] min-w-[300px] sm:mt-0  mt-40 h-4/5 " src="http://mawtestsite.local/wp-content/uploads/2024/04/logo_Platform_Export_12_4_20.svg" alt="Logo" />
+            <p className= "pt-12 pb-12 text-2xl text-center sm:pt-0">See what I do </p>
             <div className="pb-64 animate-bounce" >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6 mx-auto mt-24 mb-36">
               <path strokeLinecap="square" strokeLinejoin="bevel" strokeWidth={4} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
               </svg>
             </div>
         </div>       
-      <h2 id='mwdevices' style={{backgroundColor: backgroundColor}} className="px-24 py-24 text-7xl font-poppinsmedium">
+      <h2 id='mwdevices' style={{backgroundColor: backgroundColor}} className="px-24 py-24 sm:text-5xl text-7xl sm:px-6 sm:text-center sm:py-14 sm:text-nowrap font-poppinsmedium">
       <span className="textTransition">MW Devices</span>
       </h2>
       <section>
-      <div style={{backgroundColor: backgroundColor}} className="gap-10 px-48 pb-14 place-items-center works-container-MWDevicesA">
+      <div style={{backgroundColor: backgroundColor}} className="gap-10 px-48 sm:px-6 pb-14 place-items-center works-container-MWDevicesA">
         <video autoPlay loop muted className="col-span-1 rounded-md" src='http://mawtestsite.local/wp-content/uploads/2024/05/Screen-Recording-2024-05-21-at-5.56.35 PM-1.mov'></video>
         <p className="w-4/5 col-span-1 text-2xl text-center ">MW Devices Is a Brooklyn based music software and technology company that seeks to make fellow musicians and creatives lives more lively. Tools like ‘Multi-Band Panner’, 'Onlooker', and 'Shattered Delay' have seen four figure downloads since the company's inception in 2015.</p>
       </div>
-      <div style={{backgroundColor: backgroundColor}} className="gap-10 px-48 pb-24 works-container-MWDevicesB">
+      <div style={{backgroundColor: backgroundColor}} className="gap-10 px-48 pb-24 sm:pb-6 sm:gap-5 sm:px-6 works-container-MWDevicesB">
           <div>
             <img className="object-cover w-full mb-10 motion-image h-36" src= 'http://mawtestsite.local/wp-content/uploads/2024/05/Screenshot-2024-05-22-at-10.21.50 AM.png'></img>
-            <h3 className="pb-5 text-3xl font-staraBold ">Collaborators</h3>
-            <p className="w-4/5 text-xl ">Recent collaborations inlcude working with Ableton on the 'Building Max Devices' Pack for Live 12. Here is an included XY controller device I made with the support of the  Max for Live Team, taking advantage of Javascript and Max.</p>
+            <h3 className="pb-5 text-3xl font-staraBold sm:text-2xl ">Collaborators</h3>
+            <p className="text-xl sm:w-full ">Recent collaborations inlcude working with Ableton on the 'Building Max Devices' Pack for Live 12. Here is an included XY controller device I made with the support of the  Max for Live Team, taking advantage of Javascript and Max.</p>
           </div>
           <div>
             <img className="object-cover w-full mb-10 motion-image h-36" src= 'http://mawtestsite.local/wp-content/uploads/2024/06/gen_slice.png'></img>
-            <h3 className="pb-5 text-3xl font-staraBold">New Frontiers</h3>
-            <p className="w-4/5 text-xl "> 2024 will include an increased focus on emerging technologies, including Gen~, RNBO, and embedded computing. Please get intouch for any collaborative ideas or work. </p>
+            <h3 className="pb-5 text-3xl sm:text-2xl font-staraBold">New Paths</h3>
+            <p className="text-xl sm:w-full "> 2024 will include an increased focus on emerging technologies, including Gen~, RNBO, and embedded computing. Please get intouch for any collaborative ideas or work. </p>
           </div>
       </div>
       </section>
              
-        <h2 id='dev'style={{backgroundColor: backgroundColor}}  className="px-24 py-24 text-7xl font-poppinsmedium">
+        <h2 id='dev'style={{backgroundColor: backgroundColor}}  className="px-24 py-24 sm:text-5xl text-7xl sm:px-6 sm:text-center sm:py-14 sm:text-nowrap font-poppinsmedium">
         <span className="textTransition">Development</span></h2>            
         <section>
-          <div style={{backgroundColor: backgroundColor}}  className="gap-10 px-48 pb-24 works-container-Dev">
+          <div style={{backgroundColor: backgroundColor}}  className="gap-10 px-48 pb-24 sm:pb-1 sm:gap-6 sm:px-6 works-container-Dev">
           <div className="">
-            <img className="object-cover w-4/5 mb-10 h-80" src ='http://mawtestsite.local/wp-content/uploads/2024/05/website_work_coding.png'></img>
-            <h3 className="pb-5 text-3xl font-staraBold ">Modern Code</h3>
-            <p className ='w-4/5 text-xl '>I work as a full-stack engineer fluent in coding principles and the latest technology. Here is an example of modern react being used to conditionally render the header you see above!</p>
+            <img className="object-cover w-4/5 mb-10 sm:w-full sm:object-contain sm:h-36 h-80" src ='http://mawtestsite.local/wp-content/uploads/2024/05/website_work_coding.png'></img>
+            <h3 className="pb-5 text-3xl sm:text-2xl font-staraBold ">Modern Code</h3>
+            <p className ='w-4/5 text-xl sm:w-full '>I work as a full-stack engineer fluent in coding principles and the latest technology. Here is an example of modern React being used to conditionally render the header you see above!</p>
           </div>
           <div className="">
-            <img className="object-contain w-4/5 mb-10 h-80" src ='http://mawtestsite.local/wp-content/uploads/2024/05/webstack_composite.png'></img>
-            <h3 h3 className="pb-5 text-3xl font-staraBold ">Wide Stack</h3>
-            <p className ='w-4/5 text-xl '>My current technology stack includes HTML, CSS, Javascript, Python, React, Node, Conda, Git, Spline, RNBO, Max, M4L, GraphQL, MongoDB Express, and more.</p>
+            <img className="object-contain w-4/5 mb-10 sm:w-full h-80 sm:h-36" src ='http://mawtestsite.local/wp-content/uploads/2024/05/webstack_composite.png'></img>
+            <h3 h3 className="pb-5 text-3xl sm:text-2xl font-staraBold ">Wide  Stack</h3>
+            <p className ='w-4/5 text-xl sm:w-full '>My current technology stack includes HTML, CSS, Javascript, Python, React, Node, Conda, Git, Spline, RNBO, Max, M4L, GraphQL, MongoDB Express, and more.</p>
           </div>
           <div className="">
-            <img className="object-cover w-4/5 mb-10 h-80" src ='http://mawtestsite.local/wp-content/uploads/2024/05/ai_training_model_1.png'></img>
-            <h3 className="pb-5 text-3xl font-staraBold " >New Tech</h3>
-            <p className ='w-4/5 text-xl '> AI has proven one of the most exciting new technologies, and it would be a mistake to avoid taking advantage of it. I have been exploring AI (and subsets like ML, MIR, NLP). Here is an example of a locally configured voice cloning model that I trained on myself.</p>
+            <img className="object-cover w-4/5 mb-10 sm:w-full sm:h-36 h-80" src ='http://mawtestsite.local/wp-content/uploads/2024/05/ai_training_model_1.png'></img>
+            <h3 className="pb-5 text-3xl sm:text-2xl font-staraBold " >New Tech</h3>
+            <p className ='w-4/5 text-xl sm:w-full '> AI has proven one of the most exciting new technologies. I have been exploring AI (and subsets like ML, MIR, NLP). Here is an example of a locally configured voice cloning model that I trained on myself.</p>
           </div>
           <div className="">
-            <img className="object-cover w-4/5 mb-10 h-80" src ='http://mawtestsite.local/wp-content/uploads/2024/05/raspberry_pi_push3.jpeg'></img>
-            <h3 className="pb-5 text-3xl font-staraBold " >Embedded Compute</h3>
-            <p className ='w-4/5 text-xl '>Recent area's of interest have included embedded compute— Using technologies like RNBO and TensorFlow-Lite, I'm currently exploring running and manipulating realtime audio via raspberry Pi. </p>
+            <img className="object-cover w-4/5 mb-10 sm:w-full sm:h-36 h-80" src ='http://mawtestsite.local/wp-content/uploads/2024/05/raspberry_pi_push3.jpeg'></img>
+            <h3 className="pb-5 text-3xl sm:text-2xl font-staraBold " >Embedded Compute</h3>
+            <p className ='w-4/5 text-xl sm:w-full '>Recent area's of interest have included embedded compute— Using technologies like RNBO and TensorFlow-Lite, I'm currently exploring running and manipulating realtime audio via raspberry Pi. </p>
           </div>
           </div>
         </section>
 
       
-      <h2 style={{backgroundColor: backgroundColor}} id='design' className="px-24 py-24 pt-28 text-7xl font-poppinsmedium"><span className="textTransition">Brand and Design</span></h2>
+      <h2 style={{backgroundColor: backgroundColor}} id='design' className="px-24 py-24 sm:text-5xl text-7xl sm:px-6 sm:text-center sm:py-14 font-poppinsmedium"><span className="textTransition">Brand & Design</span></h2>
       <section>
-      <div style={{backgroundColor: backgroundColor}} className="gap-10 px-48 pb-24 works-container-Design ">
+      <div style={{backgroundColor: backgroundColor}} className="gap-10 px-48 pb-24 sm:pb-0 sm:px-6 works-container-Design ">
         <div>
-        <video className="object-cover h-[20REM]  mb-10 " autoPlay loop muted  src= 'http://mawtestsite.local/wp-content/uploads/2024/05/brand_excercise_compressed.mov'></video>
-          <h3 className="pb-5 text-3xl font-staraBold">Brand</h3>
-          <p className="text-xl"> I believe a holistic approach to brand, community, and product is essential. My work as an Ableton Brand Manager demonstrated the intersection of these elements, and taught me how to nourish a growing and vibrant community along with the tools to do so (above is a Miro Brand Map I created for the company Groover).</p>
+        <video className="object-cover h-[20REM] sm:w-full   mb-10 " autoPlay loop muted  src= 'http://mawtestsite.local/wp-content/uploads/2024/05/brand_excercise_compressed.mov'></video>
+          <h3 className="pb-5 text-3xl sm:text-2xl font-staraBold">Brand</h3>
+          <p className="text-xl"> I believe a holistic approach to brand, community, and product is key. My work as an Ableton Brand Manager demonstrated the intersection of these elements, and taught me how to nourish a growing and vibrant community along with the tools to do so.</p>
         </div>
         <div>
-          <img className="object-cover motion-image h-[20REM] mb-10 " src='http://mawtestsite.local/wp-content/uploads/2024/05/design_books_new.jpg'></img>
-          <h3 className="pb-5 text-3xl font-staraBold">Research</h3>
-          <p className="text-xl">Human centered design practices remain essential. I have had the pleasure to participate in and execute a large number of user research sessions for Ableton, Nanaya, & others. Gauging your community and how their sentiment about product, brand, & design is invaluable. </p>
+          <img className="object-cover motion-image h-[20REM] sm:w-full mb-10 " src='http://mawtestsite.local/wp-content/uploads/2024/05/design_books_new.jpg'></img>
+          <h3 className="pb-5 text-3xl sm:text-2xl font-staraBold">Research</h3>
+          <p className="text-xl">Human centered design practices remain essential. I have had the pleasure to participate in and execute a large number of user research sessions for Ableton, Nanaya, & others. Gauging your community and their sentiment about product, brand, & design is invaluable. </p>
         </div>
         <div>
-          <img className="object-cover h-[20REM] mb-10 motion-image " src='http://mawtestsite.local/wp-content/uploads/2024/05/Figma_delay_creation.png'></img>
-          <h3 className="pb-5 text-3xl font-staraBold">Design</h3>
-          <p className="text-xl"> I have enjoyed learning the tools of the design trade and have spent over 5 years refining the vision for great products. My toolset includes Figma, Affinity Designer, Affinity Photo, Affinity Publisher, Davinci Resolve, Miro, and Sketch. Design is a throughline that I am aware of through all my work and collaborations.</p>
+          <img className="object-cover h-[20REM] mb-10 sm:w-full  motion-image " src='http://mawtestsite.local/wp-content/uploads/2024/05/Figma_delay_creation.png'></img>
+          <h3 className="pb-5 text-3xl sm:text-2xl font-staraBold">Design</h3>
+          <p className="text-xl"> I have enjoyed learning the tools of the design trade and have spent over 5 years refining the vision for great products. My toolset includes Figma, Affinity Designer, Affinity Photo, Affinity Publisher, Davinci Resolve, Miro, and Sketch. Design is a throughline that I am aware of through all my work and collabs.</p>
         </div>
       </div>
       </section> 
-
         <h2 style={{backgroundColor: backgroundColor}}
-         id='music' className="px-24 py-24 bg-[#d78289] pt-28 text-7xl font-poppinsmedium"><span className="textTransition">Music</span></h2>        
+         id='music' className="px-24 py-24 sm:text-5xl text-7xl sm:px-6 sm:text-center sm:py-14 sm:text-nowrap font-poppinsmedium"><span className="textTransition">Music</span></h2>        
         <section>
-        <div style={{backgroundColor: backgroundColor}} className="px-48 ">
+        <div style={{backgroundColor: backgroundColor}} className="px-48 sm:px-6 ">
           <div className="gap-10 pb-10 place-items-center works-container-Music">
             <img className="object-cover h-full rounded-md " src='http://mawtestsite.local/wp-content/uploads/2024/05/IMG_2631_small.jpg'></img>
-            <p className="self-center text-2xl ">I am a leading expert in the Ableton ecosystem and have helped with live playback for some of the biggest artists touring today. From micro-editing and vocal tuning, to sound design and songwriting, I am happy to collaborate in all parts of the sonic process. See some examples of my work below.</p>
+            <p className="self-center text-2xl sm:text-xl ">I am a leading expert in the Ableton ecosystem and have helped with live playback for some of the biggest artists touring today. From micro-editing and vocal tuning, to sound design and songwriting, I am happy to collaborate in all parts of the sonic process. See some examples of my work below.</p>
           </div>
           <div style={{backgroundColor: backgroundColor}} className=" bg-[#d78289] gap-10 pb-10 works-container-Music2">
             <AudioPlayer url='http://mawtestsite.local/wp-content/uploads/2024/05/Chordal-Reasons-4_16_24.mp3' />
@@ -261,19 +260,11 @@ setBackgroundColor('rgb(' + Math.round(r) + ',' + Math.round(g) + ',' + Math.rou
             <AudioPlayer url='http://mawtestsite.local/wp-content/uploads/2024/05/Small-Light.mp3' />
             <AudioPlayer url='http://mawtestsite.local/wp-content/uploads/2024/05/Small-Light.mp3' />
             <div className="">
-          <footer className="mt-24 text-xs">© 2024 - all rights reserved</footer>
           </div>
-          <ul  className="flex items-stretch gap-10 mt-24 footer2 ml-28">
-            <li><a  href='https://www.youtube.com/watch?v=iYznuO2ANVk'><img className="max-h-5" src='http://mawtestsite.local/wp-content/uploads/2023/07/yt_logo_dark.png'></img></a></li>
-            <li><a  href='https://github.com/MattWaste'><img className="max-h-5" src='http://mawtestsite.local/wp-content/uploads/2023/07/github-mark.png'></img></a></li>
-            <li><a  href='https://mwdevices.gumroad.com/'><img className="max-h-5" src='http://mawtestsite.local/wp-content/uploads/2023/07/free-gumroad-7662442-6297428.png'></img></a></li>
-            <li><a  href='https://www.instagram.com/mwdevices/'><img className="max-h-5" src='http://mawtestsite.local/wp-content/uploads/2023/07/ig_logo_sm_png.png'></img></a></li>
-            <li><a  href='https://www.linkedin.com/in/matthew-west-profile/'><img className="max-h-5" src='http://mawtestsite.local/wp-content/uploads/2023/08/linkedin-logo.png'></img></a></li>
-        </ul>  
           </div>
         </div>    
         </section>
+        <Footer></Footer>
       </div>   
-    </div>
 ) 
 }
