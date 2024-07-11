@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: 'staramedium';
-  src: url('http://mawtestsite.local/wp-content/uploads/2024/03/stara-medium-webfont.woff') format('woff'),
+  src: url('https://mattewest.com/wp-content/uploads/2024/04/stara-medium-webfont.woff') format('woff'),
        url('http://mawtestsite.local/wp-content/uploads/2024/03/stara-medium-webfont.woff2') format('woff2');
        
 
@@ -16,7 +16,7 @@
 
  @font-face {
   font-family: 'starabold';
-  src: url('http://mawtestsite.local/wp-content/uploads/2024/03/stara-bold-webfont.woff') format('woff'),
+  src: url('https://mattewest.com/wp-content/uploads/2024/07/stara-bold-webfont.woff') format('woff'),
   url('http://mawtestsite.local/wp-content/uploads/2024/03/stara-bold-webfont.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
@@ -47,7 +47,7 @@
 
 @font-face {
   font-family: 'poppinsmedium' ;
-  src: url('http://mawtestsite.local/wp-content/uploads/2024/03/poppins-medium-webfont.woff') format('woff'),
+  src: url('https://mattewest.com/wp-content/uploads/2024/04/poppins-medium-webfont.woff') format('woff'),
   url('http://mawtestsite.local/wp-content/uploads/2024/03/poppins-medium-webfont.woff2') format('woff2');
 }
 
@@ -124,7 +124,7 @@ body,html{
     max-height: 100%;
     max-width: 100%;
     overflow: hidden;
-    mask-image: url(http://mawtestsite.local/wp-content/uploads/2023/07/elipse_export.png);
+    mask-image: url(https://mattewest.com/wp-content/uploads/2023/07/elipse_export.png);
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: contain;
@@ -225,18 +225,6 @@ body,html{
     gap: 20px;
     max-width:95%;
     margin: 0 auto;
-  }
-
-  .video-container{
-    max-height: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    mask-image: url(http://mawtestsite.local/wp-content/uploads/2023/07/elipse_export.png);
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: contain;
-    pointer-events:none;
-    z-index: 1;
   }
 
    .about-container{
@@ -447,10 +435,11 @@ body,html{
     width: 100%; /* Adjust this value */
     padding-bottom: 80px;
     background-color: transparent;
-    backdrop-filter:'0px' ;
     transition: padding-bottom .1s ease-in-out;
     box-sizing: border-box;
     backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+
   }
 
 

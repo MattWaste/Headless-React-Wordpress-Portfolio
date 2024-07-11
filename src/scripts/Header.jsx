@@ -39,10 +39,10 @@ useEffect(() => {
                 <div className="dropdown">
                     <button className={`dropbtn ${cssClass2} hover:text-violet-600`}> <a href="/works">Works</a></button>
                     <div  className="dropdown-content">
-                    <a className=" hover:text-[#38A12E]" href={'http://mawtestsite.local/works#mwdevices'}>{isSmallScreen ? 'MWD': 'MW Devices'}</a>
-                    <a className=" hover:text-[#3752FF]" href={'http://mawtestsite.local/works#dev'}>Dev</a>
-                    <a className=" hover:text-[#F69D1B]" href={'http://mawtestsite.local/works#design'}>{isSmallScreen ? 'B&D': 'Brand & Design'}</a>
-                    <a className=" hover:text-[#E22C1D]" href={'http://mawtestsite.local/works#music'}>Music</a>
+                    <a className=" hover:text-[#38A12E]" href={'https://mattewest.com/works#mwdevices'}>{isSmallScreen ? 'MWD': 'MW Devices'}</a>
+                    <a className=" hover:text-[#3752FF]" href={'https://mattewest.com/works#dev'}>Dev</a>
+                    <a className=" hover:text-[#F69D1B]" href={'https://mattewest.com/works#design'}>{isSmallScreen ? 'B&D': 'Brand & Design'}</a>
+                    <a className=" hover:text-[#E22C1D]" href={'https://mattewest.com/works#music'}>Music</a>
                     </div>
                 </div>
             </ul>

@@ -4087,14 +4087,14 @@ function About() {
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: ""
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-    className: "text-xl  sm:pt-0"
+    className: "text-xl sm:pt-0"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "text-5xl text-gradient font-poppinsmedium"
   }, "Matt West"), " is a life-long learner, a maker of digital imprints, and a designer of things. His work in web/app development and music technology have garnered thousands of users since 2015. Recent highlights include the release of the 'Shattered Delay' audio effect and the upcoming 'Muse' web app.", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null), "He has worked at Ableton for over 9 years as a Brand Manager and product specalist and continues to make and produce music in a number of capacities. You can currently find Matt in Brooklyn, New York\u2014 Likely in his studio or on his bike.")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: ""
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-    className: "max-h-[600px] min-h-[350px]",
-    src: "http://mawtestsite.local/wp-content/uploads/2023/07/Mosaic-transparent@2x.png"
+    className: "max-h-[450px] min-h-[350px]",
+    src: "https://mattewest.com/wp-content/uploads/2024/07/Mosaic-transparent@2x.png"
   }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
 }
 
@@ -4135,38 +4135,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-// import {
-//   GoogleReCaptchaProvider,
-//   useGoogleReCaptcha
-// } from 'react-google-recaptcha-v3';
-
-// const CAPKEY = NODE_ENV_RECAPTCHA_KEY;
-// console.log(CAPKEY);
-
-// const YourReCaptchaComponent = () => {
-//   const { executeRecaptcha } = useGoogleReCaptcha();
-
-//   // Create an event handler so you can call the verification on button click event or form submit
-//   const handleReCaptchaVerify = useCallback(async () => {
-//     if (!executeRecaptcha) {
-//       console.log('Execute recaptcha not yet available');
-//       return;
-//     }
-
-//     const token = await executeRecaptcha('yourAction');
-//     // Do whatever you want with the token
-//   }, [executeRecaptcha]);
-
-//   // You can use useEffect to trigger the verification as soon as the component being loaded
-//   useEffect(() => {
-//     handleReCaptchaVerify();
-//   }, [handleReCaptchaVerify]);
-
-//   return <button onClick={handleReCaptchaVerify}>Verify recaptcha</button>;
-// };
-
 const client = new _apollo_client__WEBPACK_IMPORTED_MODULE_8__.ApolloClient({
-  uri: 'https://mawtestsite.local/graphql',
+  uri: 'https://mattewest.com/graphql',
   cache: new _apollo_client__WEBPACK_IMPORTED_MODULE_9__.InMemoryCache()
 });
 function App() {
@@ -4435,7 +4405,7 @@ function Contact() {
     (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "main-container"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", {
-      className: "px-24 pt-56 text-4xl text-center sm:px-12 sm:pt-28 "
+      className: "px-24 text-4xl text-center pt-52 sm:px-12 sm:pt-28 "
     }, "If you want to touch more grass, let me help. "), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "px-24 sm:px-12 contact-container grow"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -4444,7 +4414,7 @@ function Contact() {
       className: "p-1 mr-16 sm:mr-6",
       onSubmit: handleSubmit
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
-      className: "mt-20 mb-3 font-bold"
+      className: "mt-20 mb-3 font-bold sm:text-center"
     }, " email"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
       value: emailValue,
       onChange: e => {
@@ -4453,7 +4423,7 @@ function Contact() {
       maxLength: 100,
       className: "w-full p-2 h-full  mb-6  bg-zinc-300 rounded-[7px]"
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
-      className: "mb-3 font-bold"
+      className: "mb-3 font-bold sm:text-center"
     }, " subject"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
       value: subjectValue,
       onChange: e => {
@@ -4462,7 +4432,7 @@ function Contact() {
       maxLength: 100,
       className: " p-2 w-full h-full  mb-6 bg-zinc-300 rounded-[7px]"
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
-      className: "mb-3 font-bold text-black"
+      className: "mb-3 font-bold text-black sm:text-center"
     }, " message"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("textarea", {
       value: messageValue,
       onChange: e => {
@@ -4470,12 +4440,14 @@ function Contact() {
       },
       maxLength: 2000,
       className: " mb-3 w-full h-full pl-1 bg-zinc-300 rounded-[7px]"
-    }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "sm:flex sm:justify-center"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
       className: " focus:outline-none bg-[#7DDA28] hover:bg-[#5A9D1B] focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5  dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ",
       type: "submit"
-    }, "Send Message"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(react_google_recaptcha__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }, "Send Message")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(react_google_recaptcha__WEBPACK_IMPORTED_MODULE_4__["default"], {
       key: isSmallScreen ? "compact" : "normal",
-      className: "pt-10 overflow-clip",
+      className: "pt-10 sm:flex sm:justify-center",
       sitekey: "6Le5KMgpAAAAADoxanPdRux1g3ovy-lDIVM-MG_4",
       size: isSmallScreen ? "compact" : "normal",
       onChange: handleCaptchaChange
@@ -4517,31 +4489,31 @@ function Footer(props) {
     href: "https://www.youtube.com/watch?v=iYznuO2ANVk"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     className: "max-h-5 min-h-5 min-w-5",
-    src: "http://mawtestsite.local/wp-content/uploads/2023/07/yt_logo_dark.png",
+    src: "https://mattewest.com/wp-content/uploads/2023/07/yt_logo_dark.png",
     alt: "YouTube"
   }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: "https://github.com/MattWaste"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     className: "max-h-5 min-h-5 min-w-5",
-    src: "http://mawtestsite.local/wp-content/uploads/2023/07/github-mark.png",
+    src: "https://mattewest.com/wp-content/uploads/2023/07/github-mark.png",
     alt: "GitHub"
   }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: "https://mwdevices.gumroad.com/"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     className: "max-h-5 min-h-5 min-w-5",
-    src: "http://mawtestsite.local/wp-content/uploads/2023/07/free-gumroad-7662442-6297428.png",
+    src: "https://mattewest.com/wp-content/uploads/2023/07/free-gumroad-7662442-6297428.png",
     alt: "Gumroad"
   }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: "https://www.instagram.com/mwdevices/"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     className: "max-h-5 min-h-5 min-w-5",
-    src: "http://mawtestsite.local/wp-content/uploads/2023/07/ig_logo_sm_png.png",
+    src: "https://mattewest.com/wp-content/uploads/2024/07/ig_logo_sm_png.png",
     alt: "Instagram"
   }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: "https://www.linkedin.com/in/matthew-west-profile/"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     className: "max-h-5 min-h-5 min-w-5",
-    src: "http://mawtestsite.local/wp-content/uploads/2023/08/linkedin-logo.png",
+    src: "https://mattewest.com/wp-content/uploads/2024/07/linkedin-logo1.png",
     alt: "LinkedIn"
   }))))));
 }
@@ -4778,16 +4750,16 @@ function Header(props) {
     className: "dropdown-content"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     className: " hover:text-[#38A12E]",
-    href: 'http://mawtestsite.local/works#mwdevices'
+    href: 'https://mattewest.com/works#mwdevices'
   }, isSmallScreen ? 'MWD' : 'MW Devices'), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     className: " hover:text-[#3752FF]",
-    href: 'http://mawtestsite.local/works#dev'
+    href: 'https://mattewest.com/works#dev'
   }, "Dev"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     className: " hover:text-[#F69D1B]",
-    href: 'http://mawtestsite.local/works#design'
+    href: 'https://mattewest.com/works#design'
   }, isSmallScreen ? 'B&D' : 'Brand & Design'), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     className: " hover:text-[#E22C1D]",
-    href: 'http://mawtestsite.local/works#music'
+    href: 'https://mattewest.com/works#music'
   }, "Music")))));
 }
 
@@ -4815,52 +4787,38 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function HomePage() {
-  return (
-    // <div className="gap-5 pl-14 home-container">
-    // <video className="py-40 pr-4 home-container-main2 video-container" src="http://mawtestsite.local/wp-content/uploads/2023/07/greenportal4.mp4"   autoPlay loop muted width="400px" height="300px" ></video>
-    // <Header className ='home-container-header'></Header>
-    // <div className="pt-[8rem] home-container-intro">
-    // <h3 className="py-5 text-2xl ">HELLO THERE</h3>
-    // <h2 className="py-3 text-7xl text-gradient font-poppinsmedium text-violet-700" >I'm Matt West</h2>
-    // <h2 className="py-3 text-3xl">  Creative technologist, developer & <br></br>  brand extoller</h2>
-    // <p className="py-3 text-xl "> I wear many hats both figuratively and literally. I code and design modern web applications, music tools, and a few things in-between. I've been involved in music production for 10+ years and love to champion the tools that help me each day.
-    // </p>
-    // <button className= "focus:outline-none txt-yellow-400 bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800" type="button" onClick= {()=>{window.location.href = 'http://mawtestsite.local/contact'}}>Work with me</button>
-    // </div>
-    // <Footer></Footer>
-    // </div>
-    (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "main-container"
-    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "px-24 pt-56 sm:self-center sm:px-6 sm:pt-28 home-container-new grow"
-    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
-      className: "py-5 text-2xl sm:py-0 sm:text-center "
-    }, "HELLO THERE"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", {
-      className: "py-3 sm:text-center sm:text-5xl text-7xl text-gradient font-poppinsmedium"
-    }, "I'm Matt West"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", {
-      className: "py-3 text-3xl sm:text-center sm:textl-2xl"
-    }, "  Creative technologist, developer & ", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null), "  brand extoller"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-      className: "py-3 text-xl sm:text-center "
-    }, " I wear many hats both figuratively and literally. I code and design modern web applications, music tools, and a few things in-between. I've been involved in music production for 10+ years and love to champion the tools that help me each day."), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "flex sm:justify-center"
-    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-      className: "focus:outline-none txt-yellow-400 bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800",
-      type: "button",
-      onClick: () => {
-        window.location.href = 'http://mawtestsite.local/contact';
-      }
-    }, "Work with me"))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "pt-8"
-    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("video", {
-      className: "video-container min-h-[250px] min-w-[250px]",
-      src: "http://mawtestsite.local/wp-content/uploads/2023/07/greenportal4.mp4",
-      autoPlay: true,
-      loop: true,
-      muted: true,
-      width: "400px",
-      height: "400px"
-    }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null))
-  );
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "main-container"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "px-24 pt-52 sm:self-center sm:px-6 sm:pt-28 home-container-new grow"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
+    className: "py-5 text-2xl sm:py-0 sm:text-center "
+  }, "HELLO THERE"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", {
+    className: "py-3 sm:text-center sm:text-5xl text-7xl text-gradient font-poppinsmedium"
+  }, "I'm Matt West"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", {
+    className: "py-3 text-3xl sm:text-center sm:textl-2xl"
+  }, "  Creative technologist, developer & ", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null), "  brand extoller"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    className: "py-3 text-xl sm:text-center "
+  }, " I wear many hats both figuratively and literally. I code and design modern web applications, music tools, and a few things in-between. I've been involved in music production for 10+ years and love to champion the tools that help me each day."), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "flex sm:justify-center"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    className: "focus:outline-none txt-yellow-400 bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800",
+    type: "button",
+    onClick: () => {
+      window.location.href = 'https://mattewest.com/contact';
+    }
+  }, "Work with me"))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "pt-8"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("video", {
+    className: "video-container min-h-[250px] min-w-[250px]",
+    src: "https://mattewest.com/wp-content/uploads/2023/07/greenportal4.mp4",
+    playsInline: true,
+    autoPlay: true,
+    loop: true,
+    muted: true,
+    width: "400px",
+    height: "400px"
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
 }
 
 /* 
@@ -4927,6 +4885,7 @@ function Works() {
         if (entry.isIntersecting) {
           entry.target.style.animationPlayState = 'running';
         } else {
+          asdasd;
           entry.target.style.animationPlayState = 'paused';
         }
       });
@@ -5042,8 +5001,10 @@ function Works() {
       var scrollPosition = window.scrollY > 8;
       if (scrollPosition) {
         header.style.backdropFilter = 'blur(150px)';
+        header.style.webkitBackdropFilter = 'blur(150px)';
       } else {
         header.style.backdropFilter = 'blur(0px)';
+        header.style.webkitBackdropFilter = 'blur(0px)';
       }
 
       // var blur = document.getElementById('works')
@@ -5067,7 +5028,7 @@ function Works() {
     className: "px-48 sm:px-0 place-items-center works-container-logo "
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     className: "w-2/3 min-h-[300px] min-w-[300px] sm:mt-0  mt-40 h-4/5 ",
-    src: "http://mawtestsite.local/wp-content/uploads/2024/04/logo_Platform_Export_12_4_20.svg",
+    src: "https://mattewest.com/wp-content/uploads/2024/07/logo_Platform_Export_12_4_20.svg",
     alt: "Logo"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "pt-12 pb-12 text-2xl text-center sm:pt-0"
@@ -5100,9 +5061,10 @@ function Works() {
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("video", {
     autoPlay: true,
     loop: true,
+    playsInline: true,
     muted: true,
     className: "col-span-1 rounded-md",
-    src: "http://mawtestsite.local/wp-content/uploads/2024/05/Screen-Recording-2024-05-21-at-5.56.35\u202FPM-1.mov"
+    src: "https://mattewest.com/wp-content/uploads/2024/07/Screen-Recording-2024-05-21-at-5.56.35-PM-1.mov"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "w-4/5 col-span-1 text-2xl text-center "
   }, "MW Devices Is a Brooklyn based music software and technology company that seeks to make fellow musicians and creatives lives more lively. Tools like \u2018Multi-Band Panner\u2019, 'Onlooker', and 'Shattered Delay' have seen four figure downloads since the company's inception in 2015.")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -5112,14 +5074,14 @@ function Works() {
     className: "gap-10 px-48 pb-24 sm:pb-6 sm:gap-5 sm:px-6 works-container-MWDevicesB"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     className: "object-cover w-full mb-10 motion-image h-36",
-    src: "http://mawtestsite.local/wp-content/uploads/2024/05/Screenshot-2024-05-22-at-10.21.50\u202FAM.png"
+    src: "https://mattewest.com/wp-content/uploads/2024/07/Screenshot-2024-05-22-at-10.21.50-AM.png"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "pb-5 text-3xl font-staraBold sm:text-2xl "
   }, "Collaborators"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "text-xl sm:w-full "
   }, "Recent collaborations inlcude working with Ableton on the 'Building Max Devices' Pack for Live 12. Here is an included XY controller device I made with the support of the  Max for Live Team, taking advantage of Javascript and Max.")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     className: "object-cover w-full mb-10 motion-image h-36",
-    src: "http://mawtestsite.local/wp-content/uploads/2024/06/gen_slice.png"
+    src: "https://mattewest.com/wp-content/uploads/2024/07/gen_slice.png"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "pb-5 text-3xl sm:text-2xl font-staraBold"
   }, "New Paths"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
@@ -5141,7 +5103,7 @@ function Works() {
     className: ""
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     className: "object-cover w-4/5 mb-10 sm:w-full sm:object-contain sm:h-36 h-80",
-    src: "http://mawtestsite.local/wp-content/uploads/2024/05/website_work_coding.png"
+    src: "https://mattewest.com/wp-content/uploads/2024/07/website_work_coding.png"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "pb-5 text-3xl sm:text-2xl font-staraBold "
   }, "Modern Code"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
@@ -5150,7 +5112,7 @@ function Works() {
     className: ""
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     className: "object-contain w-4/5 mb-10 sm:w-full h-80 sm:h-36",
-    src: "http://mawtestsite.local/wp-content/uploads/2024/05/webstack_composite.png"
+    src: "https://mattewest.com/wp-content/uploads/2024/07/webstack_composite.png"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     h3: true,
     className: "pb-5 text-3xl sm:text-2xl font-staraBold "
@@ -5160,7 +5122,7 @@ function Works() {
     className: ""
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     className: "object-cover w-4/5 mb-10 sm:w-full sm:h-36 h-80",
-    src: "http://mawtestsite.local/wp-content/uploads/2024/05/ai_training_model_1.png"
+    src: "https://mattewest.com/wp-content/uploads/2024/07/ai_training_model_1.png"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "pb-5 text-3xl sm:text-2xl font-staraBold "
   }, "New Tech"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
@@ -5169,7 +5131,7 @@ function Works() {
     className: ""
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     className: "object-cover w-4/5 mb-10 sm:w-full sm:h-36 h-80",
-    src: "http://mawtestsite.local/wp-content/uploads/2024/05/raspberry_pi_push3.jpeg"
+    src: "https://mattewest.com/wp-content/uploads/2024/07/raspberry_pi_push3.jpeg"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "pb-5 text-3xl sm:text-2xl font-staraBold "
   }, "Embedded Compute"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
@@ -5190,23 +5152,24 @@ function Works() {
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("video", {
     className: "object-cover h-[20REM] sm:w-full   mb-10 ",
     autoPlay: true,
+    playsInline: true,
     loop: true,
     muted: true,
-    src: "http://mawtestsite.local/wp-content/uploads/2024/05/brand_excercise_compressed.mov"
+    src: "https://mattewest.com/wp-content/uploads/2024/07/brand_excercise_compressed-1.mov"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "pb-5 text-3xl sm:text-2xl font-staraBold"
   }, "Brand"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "text-xl"
   }, " I believe a holistic approach to brand, community, and product is key. My work as an Ableton Brand Manager demonstrated the intersection of these elements, and taught me how to nourish a growing and vibrant community along with the tools to do so.")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     className: "object-cover motion-image h-[20REM] sm:w-full mb-10 ",
-    src: "http://mawtestsite.local/wp-content/uploads/2024/05/design_books_new.jpg"
+    src: "https://mattewest.com/wp-content/uploads/2024/07/design_books_new.jpg"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "pb-5 text-3xl sm:text-2xl font-staraBold"
   }, "Research"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "text-xl"
-  }, "Human centered design practices remain essential. I have had the pleasure to participate in and execute a large number of user research sessions for Ableton, Nanaya, & others. Gauging your community and their sentiment about product, brand, & design is invaluable. ")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+  }, "Human centered design practices remain essential. I have had the pleasure to participate in and execute a large number of user research sessions for Ableton & others. Gauging your community and their sentiment about product, brand, & design is invaluable. ")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     className: "object-cover h-[20REM] mb-10 sm:w-full  motion-image ",
-    src: "http://mawtestsite.local/wp-content/uploads/2024/05/Figma_delay_creation.png"
+    src: "https://mattewest.com/wp-content/uploads/2024/07/Figma_delay_creation.png"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "pb-5 text-3xl sm:text-2xl font-staraBold"
   }, "Design"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
@@ -5227,8 +5190,8 @@ function Works() {
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "gap-10 pb-10 place-items-center works-container-Music"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-    className: "object-cover h-full rounded-md ",
-    src: "http://mawtestsite.local/wp-content/uploads/2024/05/IMG_2631_small.jpg"
+    className: "object-cover rounded-md ",
+    src: "https://mattewest.com/wp-content/uploads/2020/10/IMG_2631_small-min.jpg"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "self-center text-2xl sm:text-xl "
   }, "I am a leading expert in the Ableton ecosystem and have helped with live playback for some of the biggest artists touring today. From micro-editing and vocal tuning, to sound design and songwriting, I am happy to collaborate in all parts of the sonic process. See some examples of my work below.")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -5237,13 +5200,13 @@ function Works() {
     },
     className: " bg-[#d78289] gap-10 pb-10 works-container-Music2"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_AudioPlayer_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    url: "http://mawtestsite.local/wp-content/uploads/2024/05/Chordal-Reasons-4_16_24.mp3"
+    url: "https://mattewest.com/wp-content/uploads/2024/07/Chordal-Reasons-4_16_24.mp3"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_AudioPlayer_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    url: "http://mawtestsite.local/wp-content/uploads/2024/05/Charged_Crystal_5_29_24.mp3"
+    url: "https://mattewest.com/wp-content/uploads/2024/07/Charged_Crystal_5_29_24.mp3"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_AudioPlayer_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    url: "http://mawtestsite.local/wp-content/uploads/2024/05/Small-Light.mp3"
+    url: "https://mattewest.com/wp-content/uploads/2024/07/Small-Light.mp3"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_AudioPlayer_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    url: "http://mawtestsite.local/wp-content/uploads/2024/05/Small-Light.mp3"
+    url: "https://mattewest.com/wp-content/uploads/2024/07/Power_Trip__Live12_5_29_24-120Emaj.mp3"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: ""
   })))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Footer_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], null));
