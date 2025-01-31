@@ -190,12 +190,12 @@ setBackgroundColor('rgb(' + Math.round(r) + ',' + Math.round(g) + ',' + Math.rou
           <div>
             <img className="object-cover w-full mb-10 motion-image h-36" src= 'https://mattewest.com/wp-content/uploads/2024/07/Screenshot-2024-05-22-at-10.21.50-AM.png'></img>
             <h3 className="pb-5 text-3xl font-staraBold sm:text-2xl ">Collaborators</h3>
-            <p className="text-xl sm:w-full ">Recent collaborations inlcude working with Ableton on the 'Building Max Devices' Pack for Live 12. Here is an included XY controller device I made with the support of the  Max for Live Team, taking advantage of Javascript and Max.</p>
+            <p className="text-xl sm:w-full ">Recent collaborations include working with Ableton on the 'Building Max Devices' Pack for Live 12. Here is an included XY controller device I made with the support of the  Max for Live Team, taking advantage of Javascript and Max.</p>
           </div>
           <div>
             <img className="object-cover w-full mb-10 motion-image h-36" src= 'https://mattewest.com/wp-content/uploads/2024/07/gen_slice.png'></img>
             <h3 className="pb-5 text-3xl sm:text-2xl font-staraBold">New Paths</h3>
-            <p className="text-xl sm:w-full "> 2024 will include an increased focus on emerging technologies, including Gen~, RNBO, and embedded computing. Please get intouch for any collaborative ideas or work. </p>
+            <p className="text-xl sm:w-full "> 2024 will include an increased focus on emerging technologies, including Gen~, RNBO, and embedded computing. Please get in touch for any collaborative ideas or work. </p>
           </div>
       </div>
       </section>
@@ -207,12 +207,12 @@ setBackgroundColor('rgb(' + Math.round(r) + ',' + Math.round(g) + ',' + Math.rou
           <div className="">
             <img className="object-cover w-4/5 mb-10 sm:w-full sm:object-contain sm:h-36 h-80" src ='https://mattewest.com/wp-content/uploads/2024/07/website_work_coding.png'></img>
             <h3 className="pb-5 text-3xl sm:text-2xl font-staraBold ">Modern Code</h3>
-            <p className ='w-4/5 text-xl sm:w-full '>I work as a full-stack engineer fluent in coding principles and the latest technology. Here is an example of modern React being used to conditionally render the header you see above!</p>
+            <p className ='w-4/5 text-xl sm:w-full '>I am full-stack fluent in coding principles and the latest technology. Here is an example of modern React being used to conditionally render the header you see above!</p>
           </div>
           <div className="">
             <img className="object-contain w-4/5 mb-10 sm:w-full h-80 sm:h-36" src ='https://mattewest.com/wp-content/uploads/2024/07/webstack_composite.png'></img>
             <h3 h3 className="pb-5 text-3xl sm:text-2xl font-staraBold ">Wide  Stack</h3>
-            <p className ='w-4/5 text-xl sm:w-full '>My current technology stack includes HTML, CSS, Javascript, Python, React, Node, Conda, Git, Spline, RNBO, Max, M4L, GraphQL, MongoDB Express, and more.</p>
+            <p className ='w-4/5 text-xl sm:w-full '>My current technology stack includes HTML/CSS, Javascript, Python, React, Node, Next,Spline, RNBO, Max, M4L, SQL, GraphQL, MongoDB, Express, and more.</p>
           </div>
           <div className="">
             <img className="object-cover w-4/5 mb-10 sm:w-full sm:h-36 h-80" src ='https://mattewest.com/wp-content/uploads/2024/07/ai_training_model_1.png'></img>
@@ -222,7 +222,7 @@ setBackgroundColor('rgb(' + Math.round(r) + ',' + Math.round(g) + ',' + Math.rou
           <div className="">
             <img className="object-cover w-4/5 mb-10 sm:w-full sm:h-36 h-80" src ='https://mattewest.com/wp-content/uploads/2024/07/raspberry_pi_push3.jpeg'></img>
             <h3 className="pb-5 text-3xl sm:text-2xl font-staraBold " >Embedded Compute</h3>
-            <p className ='w-4/5 text-xl sm:w-full '>Recent area's of interest have included embedded compute— Using technologies like RNBO and TensorFlow-Lite, I'm currently exploring running and manipulating realtime audio via raspberry Pi. </p>
+            <p className ='w-4/5 text-xl sm:w-full '>Recent areas of interest have included embedded compute— Using technologies like RNBO and TensorFlow-Lite, I'm currently exploring running and manipulating realtime audio via raspberry Pi. </p>
           </div>
           </div>
         </section>
@@ -231,19 +231,19 @@ setBackgroundColor('rgb(' + Math.round(r) + ',' + Math.round(g) + ',' + Math.rou
       <section>
       <div style={{backgroundColor: backgroundColor}} className="gap-10 px-48 pb-24 sm:pb-0 sm:px-6 works-container-Design ">
         <div>
-        <video className="object-cover h-[20REM] sm:w-full   mb-10 " autoPlay playsInline loop muted  src= 'https://mattewest.com/wp-content/uploads/2024/07/brand_excercise_compressed-1.mov'></video>
-          <h3 className="pb-5 text-3xl sm:text-2xl font-staraBold">Brand</h3>
-          <p className="text-xl"> I believe a holistic approach to brand, community, and product is key. My work as an Ableton Brand Manager demonstrated the intersection of these elements, and taught me how to nourish a growing and vibrant community along with the tools to do so.</p>
-        </div>
-        <div>
           <img className="object-cover motion-image h-[20REM] sm:w-full mb-10 " src='https://mattewest.com/wp-content/uploads/2024/07/design_books_new.jpg'></img>
           <h3 className="pb-5 text-3xl sm:text-2xl font-staraBold">Research</h3>
-          <p className="text-xl">Human centered design practices remain essential. I have had the pleasure to participate in and execute a large number of user research sessions for Ableton & others. Gauging your community and their sentiment about product, brand, & design is invaluable. </p>
+          <p className="text-xl">Human centered design practices remain essential. I have had the pleasure to participate in and execute user research sessions for Ableton & others. Gauging your community and their sentiment about product, brand, & design is invaluable. </p>
+        </div>
+        <div>
+        <video className="object-cover h-[20REM] sm:w-full   mb-10 " autoPlay playsInline loop muted  src= 'https://mattewest.com/wp-content/uploads/2024/07/brand_excercise_compressed-1.mov'></video>
+          <h3 className="pb-5 text-3xl sm:text-2xl font-staraBold">Brand</h3>
+          <p className="text-xl"> I believe a holistic approach to brand, community, and marketing is key. My work as an Ableton Brand Manager demonstrated the intersection of these elements, and taught me how to nourish a growing and vibrant community along with the tools to do so.</p>
         </div>
         <div>
           <img className="object-cover h-[20REM] mb-10 sm:w-full  motion-image " src='https://mattewest.com/wp-content/uploads/2024/07/Figma_delay_creation.png'></img>
           <h3 className="pb-5 text-3xl sm:text-2xl font-staraBold">Design</h3>
-          <p className="text-xl"> I have enjoyed learning the tools of the design trade and have spent over 5 years refining the vision for great products. My toolset includes Figma, Affinity Designer, Affinity Photo, Affinity Publisher, Davinci Resolve, Miro, and Sketch. Design is a throughline that I am aware of through all my work and collabs.</p>
+          <p className="text-xl"> I have enjoyed learning the tools of the design trade and have spent over 5 years refining the vision for great products. My toolset includes Figma,the Affinity Suite, Davinci Resolve, Miro, and Sketch.</p>
         </div>
       </div>
       </section> 
@@ -252,8 +252,8 @@ setBackgroundColor('rgb(' + Math.round(r) + ',' + Math.round(g) + ',' + Math.rou
         <section>
         <div style={{backgroundColor: backgroundColor}} className="px-48 sm:px-6 ">
           <div className="gap-10 pb-10 place-items-center works-container-Music">
-            <img className="object-cover rounded-md " src='https://mattewest.com/wp-content/uploads/2020/10/IMG_2631_small-min.jpg'></img>
-            <p className="self-center text-2xl sm:text-xl ">I am a leading expert in the Ableton ecosystem and have helped with live playback for some of the biggest artists touring today. From micro-editing and vocal tuning, to sound design and songwriting, I am happy to collaborate in all parts of the sonic process. See some examples of my work below.</p>
+            <img className="object-cover  min-h-[300px]  min-w-[300px] sm:min-w-0 sm:min-h-0 " src='https://mattewest.com/wp-content/uploads/2020/10/IMG_2631_small-min.jpg'></img>
+            <p className="self-center text-xl ">I am a leading expert in the Ableton ecosystem and have helped with live playback for some of the biggest artists touring today. From micro-editing and vocal tuning, to sound design and songwriting, I am happy to collaborate in all parts of the sonic process. See some examples of my work below.</p>
           </div>
           <div style={{backgroundColor: backgroundColor}} className=" bg-[#d78289] gap-10 pb-10 works-container-Music2">
             <AudioPlayer url='https://mattewest.com/wp-content/uploads/2024/07/Chordal-Reasons-4_16_24.mp3' />

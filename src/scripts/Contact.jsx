@@ -29,34 +29,42 @@ export default function Contact(){
   const [messageValue, setMessageValue] = useState('')
   const [sendCopyValue, setSendCopyValue] = useState(true)
   const [captchaValue, setCaptchaValue] = useState(null);
+  const [success, setSuccess] = useState(false);
 
 
   const [CreateSubmissionMutation, { data, loading, error }] = useMutation(CONTACT_MUTATION);
    
-  if (loading) return 'Submitting...';
-
-  if (error) return `Submission error! ${error.message}`, console.log(error);
-
-
 
   const handleCaptchaChange = (value) => {
     setCaptchaValue(value);
   }
 
-  const handleSubmit = (e) =>{
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-  if( captchaValue ===null){
-    return;
-  }else {
-    CreateSubmissionMutation({ variables: {      
-      clientMutationId: 'example',
-      email: emailValue ,
-      send_copy: sendCopyValue,
-      subject: subjectValue ,
-      message: messageValue }});
-  }
-  }
+  
+    if (captchaValue === null) {
+      // Handle the case where captcha is not filled out
+      alert("Captcha is required.");
+      return;
+    }
+  
+    try {
+      await CreateSubmissionMutation({
+        variables: {
+          clientMutationId: 'example',
+          email: emailValue,
+          send_copy: sendCopyValue,
+          subject: subjectValue,
+          message: messageValue
+        }
+      });
+      setSuccess(true);
+console.log('it worked!');    
+} catch (error) {
+      // Handle or log the error
+      console.error("Submission failed:", error);
+    }
+  };
 
 useEffect(() => {
   // Define the function to handle resize
@@ -126,8 +134,8 @@ useEffect(() => {
                   className=' mb-3 w-full h-full pl-1 bg-zinc-300 rounded-[7px]'>  
                   </textarea>
                   <div className="sm:flex sm:justify-center">          
-                  <button className= " focus:outline-none bg-[#7DDA28] hover:bg-[#5A9D1B] focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5  dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 " type="submit">Send Message
-                  </button>
+                  <button className= "focus:outline-none bg-[#7DDA28] hover:bg-[#5A9D1B] ``  focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5  dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 " type="submit"> { success ? 'chat soon!'  :'Send Message'}
+                 </button>
                   </div>
                   <ReCAPTCHA
                   key={isSmallScreen ? "compact" : "normal"} 

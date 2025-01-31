@@ -65,11 +65,20 @@ body,html{
 
 
   
-  body{
-    background:rgb(114, 140, 98);
+  body {
+    background: rgb(114, 140, 98);
+    background: -webkit-linear-gradient(90deg, rgba(114, 140, 98, 0.8), rgba(112, 145, 128, 0.8), rgba(110, 150, 158, 0.8)), 
+                -webkit-radial-gradient(circle at 0% 0%, rgba(114, 140, 98, 0.8), rgba(137, 188, 171, 0.8), rgba(160, 235, 245, 0.8), rgba(114, 140, 98, 0)), 
+                -webkit-radial-gradient(circle at 0% 0%, rgba(30, 41, 24, 0.8), rgba(42, 114, 30, 0.8), rgba(53, 186, 35, 0.8), rgba(30, 41, 24, 0));
+    background: -moz-linear-gradient(90deg, rgba(114, 140, 98, 0.8), rgba(112, 145, 128, 0.8), rgba(110, 150, 158, 0.8)), 
+                -moz-radial-gradient(circle at 0% 0%, rgba(114, 140, 98, 0.8), rgba(137, 188, 171, 0.8), rgba(160, 235, 245, 0.8), rgba(114, 140, 98, 0)), 
+                -moz-radial-gradient(circle at 0% 0%, rgba(30, 41, 24, 0.8), rgba(42, 114, 30, 0.8), rgba(53, 186, 35, 0.8), rgba(30, 41, 24, 0));
+    background: -o-linear-gradient(90deg, rgba(114, 140, 98, 0.8), rgba(112, 145, 128, 0.8), rgba(110, 150, 158, 0.8)), 
+                -o-radial-gradient(circle at 0% 0%, rgba(114, 140, 98, 0.8), rgba(137, 188, 171, 0.8), rgba(160, 235, 245, 0.8), rgba(114, 140, 98, 0)), 
+                -o-radial-gradient(circle at 0% 0%, rgba(30, 41, 24, 0.8), rgba(42, 114, 30, 0.8), rgba(53, 186, 35, 0.8), rgba(30, 41, 24, 0));
     background: linear-gradient(90deg, rgba(114, 140, 98, 0.8), rgba(112, 145, 128, 0.8), rgba(110, 150, 158, 0.8)), 
-    radial-gradient(circle at 0% 0%, rgba(114, 140, 98, 0.8), rgba(137, 188, 171, 0.8), rgba(160, 235, 245, 0.8), rgba(114, 140, 98, 0)), 
-    radial-gradient(circle at 0% 0%, rgba(30, 41, 24, 0.8), rgba(42, 114, 30, 0.8), rgba(53, 186, 35, 0.8), rgba(30, 41, 24, 0));
+                radial-gradient(circle at 0% 0%, rgba(114, 140, 98, 0.8), rgba(137, 188, 171, 0.8), rgba(160, 235, 245, 0.8), rgba(114, 140, 98, 0)), 
+                radial-gradient(circle at 0% 0%, rgba(30, 41, 24, 0.8), rgba(42, 114, 30, 0.8), rgba(53, 186, 35, 0.8), rgba(30, 41, 24, 0));
     background-size: 70% 70%;
     animation: homegradient cubic-bezier(0.445, 0.05, 0.55, 0.95) 20s infinite;
     backdrop-filter: blur(200px);
