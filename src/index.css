@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: 'staramedium';
-  src: url('http://mawtestsite.local/wp-content/uploads/2024/03/stara-medium-webfont.woff') format('woff'),
+  src: url('https://mattewest.com/wp-content/uploads/2024/04/stara-medium-webfont.woff') format('woff'),
        url('http://mawtestsite.local/wp-content/uploads/2024/03/stara-medium-webfont.woff2') format('woff2');
        
 
@@ -16,7 +16,7 @@
 
  @font-face {
   font-family: 'starabold';
-  src: url('http://mawtestsite.local/wp-content/uploads/2024/03/stara-bold-webfont.woff') format('woff'),
+  src: url('https://mattewest.com/wp-content/uploads/2024/07/stara-bold-webfont.woff') format('woff'),
   url('http://mawtestsite.local/wp-content/uploads/2024/03/stara-bold-webfont.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
@@ -47,7 +47,7 @@
 
 @font-face {
   font-family: 'poppinsmedium' ;
-  src: url('http://mawtestsite.local/wp-content/uploads/2024/03/poppins-medium-webfont.woff') format('woff'),
+  src: url('https://mattewest.com/wp-content/uploads/2024/04/poppins-medium-webfont.woff') format('woff'),
   url('http://mawtestsite.local/wp-content/uploads/2024/03/poppins-medium-webfont.woff2') format('woff2');
 }
 
@@ -65,11 +65,20 @@ body,html{
 
 
   
-  body{
-    background:rgb(114, 140, 98);
+  body {
+    background: rgb(114, 140, 98);
+    background: -webkit-linear-gradient(90deg, rgba(114, 140, 98, 0.8), rgba(112, 145, 128, 0.8), rgba(110, 150, 158, 0.8)), 
+                -webkit-radial-gradient(circle at 0% 0%, rgba(114, 140, 98, 0.8), rgba(137, 188, 171, 0.8), rgba(160, 235, 245, 0.8), rgba(114, 140, 98, 0)), 
+                -webkit-radial-gradient(circle at 0% 0%, rgba(30, 41, 24, 0.8), rgba(42, 114, 30, 0.8), rgba(53, 186, 35, 0.8), rgba(30, 41, 24, 0));
+    background: -moz-linear-gradient(90deg, rgba(114, 140, 98, 0.8), rgba(112, 145, 128, 0.8), rgba(110, 150, 158, 0.8)), 
+                -moz-radial-gradient(circle at 0% 0%, rgba(114, 140, 98, 0.8), rgba(137, 188, 171, 0.8), rgba(160, 235, 245, 0.8), rgba(114, 140, 98, 0)), 
+                -moz-radial-gradient(circle at 0% 0%, rgba(30, 41, 24, 0.8), rgba(42, 114, 30, 0.8), rgba(53, 186, 35, 0.8), rgba(30, 41, 24, 0));
+    background: -o-linear-gradient(90deg, rgba(114, 140, 98, 0.8), rgba(112, 145, 128, 0.8), rgba(110, 150, 158, 0.8)), 
+                -o-radial-gradient(circle at 0% 0%, rgba(114, 140, 98, 0.8), rgba(137, 188, 171, 0.8), rgba(160, 235, 245, 0.8), rgba(114, 140, 98, 0)), 
+                -o-radial-gradient(circle at 0% 0%, rgba(30, 41, 24, 0.8), rgba(42, 114, 30, 0.8), rgba(53, 186, 35, 0.8), rgba(30, 41, 24, 0));
     background: linear-gradient(90deg, rgba(114, 140, 98, 0.8), rgba(112, 145, 128, 0.8), rgba(110, 150, 158, 0.8)), 
-    radial-gradient(circle at 0% 0%, rgba(114, 140, 98, 0.8), rgba(137, 188, 171, 0.8), rgba(160, 235, 245, 0.8), rgba(114, 140, 98, 0)), 
-    radial-gradient(circle at 0% 0%, rgba(30, 41, 24, 0.8), rgba(42, 114, 30, 0.8), rgba(53, 186, 35, 0.8), rgba(30, 41, 24, 0));
+                radial-gradient(circle at 0% 0%, rgba(114, 140, 98, 0.8), rgba(137, 188, 171, 0.8), rgba(160, 235, 245, 0.8), rgba(114, 140, 98, 0)), 
+                radial-gradient(circle at 0% 0%, rgba(30, 41, 24, 0.8), rgba(42, 114, 30, 0.8), rgba(53, 186, 35, 0.8), rgba(30, 41, 24, 0));
     background-size: 70% 70%;
     animation: homegradient cubic-bezier(0.445, 0.05, 0.55, 0.95) 20s infinite;
     backdrop-filter: blur(200px);
@@ -124,7 +133,7 @@ body,html{
     max-height: 100%;
     max-width: 100%;
     overflow: hidden;
-    mask-image: url(http://mawtestsite.local/wp-content/uploads/2023/07/elipse_export.png);
+    mask-image: url(https://mattewest.com/wp-content/uploads/2023/07/elipse_export.png);
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: contain;
@@ -225,18 +234,6 @@ body,html{
     gap: 20px;
     max-width:95%;
     margin: 0 auto;
-  }
-
-  .video-container{
-    max-height: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    mask-image: url(http://mawtestsite.local/wp-content/uploads/2023/07/elipse_export.png);
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: contain;
-    pointer-events:none;
-    z-index: 1;
   }
 
    .about-container{
@@ -447,10 +444,11 @@ body,html{
     width: 100%; /* Adjust this value */
     padding-bottom: 80px;
     background-color: transparent;
-    backdrop-filter:'0px' ;
     transition: padding-bottom .1s ease-in-out;
     box-sizing: border-box;
     backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+
   }
 
 

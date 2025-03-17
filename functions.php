@@ -66,9 +66,9 @@ add_action('graphql_register_types', function () {
 			$sanitized_data = [];
 			$errors = [];
 			$acceptable_fields = [
-				'email' => 'field_651f1ca7c29cc',
-				'subject' => 'field_651f2299c29cd',
-				'message' => 'field_651f22bcc29ce',
+				'email' => 'field_668dadc24d06c',
+				'subject' => 'field_668dadd13ed91',
+				'message' => 'field_668dafb6cad75',
 				'send_copy' => 'field_651f22c3c29cf',
 			];
 
