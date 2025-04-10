@@ -46,8 +46,7 @@ https://mattewest.com/
   
 ## Customization
 
-Modify the theme files, style sheets, and scripts within t<img width="152" alt="simple_logo_5_23_20" src="https://github.com/user-attachments/assets/2f341b97-252b-4c11-9488-6066710e83d9" />
-he `/wp-content` folder to meet your design and functionality requirements. Use WordPress hooks and filters to safely extend or override default behaviors. If you're extending multisite features, refer to the Site API documentation included within the WordPress core documentation.
+Modify the theme files, style sheets, and scripts within the `/wp-content` folder to meet your design and functionality requirements. Use WordPress hooks and filters to safely extend or override default behaviors. If you're extending multisite features, refer to the Site API documentation included within the WordPress core documentation.
 
 ## Acknowledgements
 
